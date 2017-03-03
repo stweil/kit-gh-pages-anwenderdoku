@@ -1,1 +1,1 @@
-# kit-gh-pages-anwenderdoku
+# Kitodo - Anwenderdoku
