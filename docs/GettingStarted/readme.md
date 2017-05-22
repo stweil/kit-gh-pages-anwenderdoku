@@ -1,4 +1,5 @@
 Enthält vielleicht Übersichtsdokumente, die erklären, wofür man Kitodo eigentlich einsetzt.
+
 - wie kommt man ran ?
 - was darf man damit tun ?
 - welche Voraussetzungen brauche ich für den Einsatz ?
