@@ -3,8 +3,8 @@ site_name: Marshmallow Generator
 pages:
 - Home: 'index.md'
 - Aus dem alten Wiki: 
-	- Anwenderdokumentation: 'docs/AusWiki/Home.md'
+    - Anwenderdokumentation: 'docs/AusWiki/Home.md'
 - Getting Started:
-	- Installing:
-		- Installation Kitodo.Production 3.x: 'docs/GettingStarted/installing/Installationsanleitung-für-Kitodo.Production-3.x.md'
+    - Installing:
+        - Installation Kitodo.Production 3.x: 'docs/GettingStarted/installing/Installationsanleitung-für-Kitodo.Production-3.x.md'
 		
