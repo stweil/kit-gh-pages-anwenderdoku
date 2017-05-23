@@ -1,0 +1,484 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.6/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.6/ http://www.mediawiki.org/xml/export-0.6.xsd" version="0.6" xml:lang="de">
+  <siteinfo>
+    <sitename>Medienwerkstatt</sitename>
+    <base>http://wikis.sub.uni-hamburg.de/medienwerkstatt/index.php/Retrodigitalisierung_in_der_SUB_Hamburg</base>
+    <generator>MediaWiki 1.19.5</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Medienwerkstatt</namespace>
+      <namespace key="5" case="first-letter">Medienwerkstatt Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="100" case="first-letter">Intern</namespace>
+      <namespace key="101" case="first-letter">Intern talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Allgemeines zum Workflow</title>
+    <ns>0</ns>
+    <id>168</id>
+      <sha1>jn4hk5yau2l2v1gy0zk97bwk44vqkqa</sha1>
+    <revision>
+      <id>3137</id>
+      <timestamp>2016-04-06T08:21:44Z</timestamp>
+      <contributor>
+        <username>Kaminan</username>
+        <id>21</id>
+      </contributor>
+      <text xml:space="preserve" bytes="2308">In jedem eigenständigen Digitalisierungsprojekt gibt es mindestens einen zugeordneten Workflow oder in der Sprache von Goobi eine '''Produktionsvorlage''' mit einer individuellen Abfolge von Arbeitsschritten, die bis zum Export in die Webpräsentation durchlaufen werden müssen. Es kann aber auch innerhalb eines Projektes mehr als eine Produktionsvorlage geben - z.B. wenn sowohl im Hause gescannt wird als auch über einen Dienstleister Scans gefertigt werden. Die Auswahl für die Produktionsvorlagen stellt sich beispielhaft so dar:
+
+[[Datei:Workflow1.1.JPG]]
+
+Jeder einzelner Arbeitsschritt in der Produktionsvorlage wird einer oder mehreren Benutzergruppen zur Abarbeitung zugeordnet. In der Benutzergruppe drückt sich das grundsätzliche Arbeitspaket aus. Und jeder Bearbeiter in Goobi wird sowohl einem Projekt als auch einer oder mehreren Benutzergruppe zugeordnet. Die bisher eingerichteten Benutzergruppen an der SUB Hamburg fächern sich folgendermaßen aus:
+
+[[Datei:Benutzergruppenneu.jpg]]
+
+
+Aus diesen Zuordnungen ergibt sich für jeden Bearbeiter/jede Bearbeiterin das inhaltlich passende Arbeitspaket im Menupunkt '''Meine Aufgaben'''
+
+
+==Vorgänge und Farbsymbolik==
+Innerhalb eines Projektes wird jedes bibliographisch selbständige Werk in Goobi aufgenommen und als '''Vorgang''' verwaltet. Der einzelne Vorgang wird in Listen über den sog. ATS-Schlüssel in Verbindung mit der PPN identifizierbar. Innerhalb eines Vorgangs werden sich die einzelnen Arbeitsschritte in einem unterschiedlichen Stadium befinden. Eine Aufgabe kann mit vier verschiedenen Statusfarben versehen sein:
+*rot - Gesperrt
+*gelb - Offen
+*orange - In Bearbeitung
+*grün - Abgeschlossen
+
+‚Gesperrt’ heißt, die Aufgabe ist aktuell gesperrt und gerade nicht in Bearbeitung. Die Sperre wird dann aufgehoben, sobald eine Vorgängeraufgabe abgeschlossen wurde. Da die erste Aufgabe keinen Vorgänger besitzt, ist diese mindestens im Status ‚Offen' zu definieren. ‚Offen’ heißt, die Aufgabe kann durch einen zuständigen Benutzer bearbeitet werden. ‚In Bearbeitung’ bedeutet, ein Benutzer bearbeitet die Aufgabe gerade. Für andere ist sie dann gesperrt. ‚Abgeschlossen soll ausdrücken, dass die Aufgabe abgeschlossen ist. Es kann mit der nächsten begonnen werden.
+
+[[Kategorie:Goobidokumentation]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Anlegen von Vorgängen</title>
+    <ns>0</ns>
+    <id>150</id>
+      <sha1>igfyi09s6o46ecjl1m8jps9t32xg2ui</sha1>
+    <revision>
+      <id>3138</id>
+      <timestamp>2016-04-06T09:00:38Z</timestamp>
+      <contributor>
+        <username>Kaminan</username>
+        <id>21</id>
+      </contributor>
+      <text xml:space="preserve" bytes="5568">==Allgemeines==
+Für jede Ausgabe eines Werkes wird in Goobi ein eigener Vorgang angelegt. Voraussetzung: Für jede Ausgabe eines Werkes wird im CBS ein Titelsatz für die Druckausgabe und ein Titelsatz für das Digitalisat angelegt (O-Aufnahme per Script). Jeder Vorgang wird in Goobi mit einer individuellen Vorgangskennung verwaltet, die sich aus dem ATS-Schluessel und der PPN zusammensetzt. Bei Zeitschriften und mehrbändigen Werken wird diese Vorgangskennung entsprechend um die Bandzählung in numerischer Form ergänzt.
+
+Dabei wird für jeden Band eines mehrbändigen Werkes oder einer Zeitschrift ein eigener Vorgang in Goobi angelegt.
+
+Diese Aufgabe wird von Personen mit der Goobi-Berechtigungsstufe &quot;Projectmanagement&quot; ausgeführt.
+
+==Neuen Vorgang anlegen==
+Vor Anlegen des Vorgangs werden die vorhandenen Produktionsvorlagen als Auswahlliste angeboten. Ein einmal ausgewählter Workflow kann nicht mehr geändert werden. Bei Fehler Vorgang abbrechen bzw. Vorgang löschen und neu anlegen - siehe Hinweis unten.
+
+[[Datei:vorgang1.1.JPG]]
+
+Per Mausklick auf den Button [[Datei:Icon_stern.PNG]] wird die zum Projekt passende Produktionsvorlage gewählt und es erscheint das zunächst noch ungefüllte nachfolgende Formular.
+*Arbeitsschritt1: Mit der Eingabe der PPN zur Druckausgabe (ohne den Textvorlauf PPN wie unten) oder eines Barcodes als Suchschlüssel werden die passenden bibliographischen Daten aus dem Campuskatalog eingespielt. Die Suche im Campuskatalog wird durch ein einfaches Enter zum Abschluss der Eingabe im Feld für den Suchschlüssel ausgelöst oder durch den Link &quot;Übernehmen&quot;.
+''Hinweis'': Der Suchschlüssel &quot;Barcode 8200&quot; funktioniert nicht im Unterschied zu &quot;Barcode&quot;. 
+
+
+'''Kontrollieren, ob Sonderzeichen richtig übernommen wurden und wenn nötig korrigieren!'''
+
+[[Datei:vorgang2.1.JPG]]
+
+*Arbeitsschritt2: Auswahl der passenden Kollektion(en) aus dem Auswahlmenü (Strg-Taste für Mehrfachauswahl)
+*Arbeitsschritt3: Eingabe der PPN der O-Aufnahme mit dem Vorlauf PPN in das Feld 'PPN digital a-Satz'; Ergänzen des Vorlaufs PPN bei dem Feld 'PPN analog a-Satz'
+*Arbeitsschritt4: &quot;Generieren&quot; auslösen zur Bildung der individuellen Vorgangskennung aus ATS-Schlüssel und PPN der digitalen Aufnahme - siehe Link neben dem 1. Eingabefeld. ''Hinweis'' zur Vorganskennung: Evtl. Leerstellen oder Sonderzeichen im ATS-Schlüssel müssen herausgenommen werden; &quot;ß&quot; in &quot;ss&quot; wandeln -restliche Umlaute werden automatisch aufgelöst
+*Arbeitsschritt5: Überprüfen der Signatur / des Besitzers des vorliegenden Exemplars und ggf. Korrektur!
+*Arbeitsschritt6: Sollte die zu scannende Vorlage eine Leihgabe vom Staatsarchiv o.a. sein, die leihende Bibliothek im Feld &quot;Besitzer&quot; mit vollem Namen vermerken.
+*Arbeitsschritt7: Speichern und evtl. Fehlermeldungen beachten!
+
+
+Weitere Hinweise zur Dateneingabe:
+*Felder mit Stern sind Pflichtfelder für Goobi. 
+*DocTyp wird von Goobi automatisch erkannt (mögliche Werte: Monographie, mehrbändiges Werk, Zeitschrift, beigefügtes Werk, Portrait)
+*Regelsatz - Erfassungsschema für die Struktur- und Metadaten - Voreinstellung 'subhh' bleibt
+*Sammelbände '''Kasch''' muessen wegen des Konvolutcharakters in x-Vorgänge unter Goobi aufgelöst werden. Analog wird in diesen Abschnitten parallel zu den bibliographischen Einheiten gescannt.
+
+Hinweise zu mehrbändigen Werken:
+*Die Daten werden über die PPN der f-Stufe abgerufen.
+*Das Feld &quot;Nummer Benennung&quot; muss für die Bildung der Vorgangskennung belegt sein und spielt für die weitere Datenerfassung keine Rolle! Um die richtige Reihenfolge herzustellen, sollte mit führenden Nullen aufgefüllt werden z.B. 0001
+*Wenn ein individueller Titel beim Band fehlt, wird beim Titel der Gesamttitel wiederholt (s. MODS-Anweisung)
+*Das Feld &quot;Nummer (Sortierung) muss den reinen Zahlenwert der Zählung wiedergeben. (Komplexe Bandzählungen - siehe Anleitung aus Dresden oder Verfahren am GDZ/Bandzaehlung x10)
+*Das Feld &quot;Bandnummer&quot; holt bei mehrbd. Werken die Bandzählung aus der PICA-Kategorie 4160
+
+
+Hinweise zu Zeitschriftenbänden:
+* Bei den Zeitschriften wird zur PPN der Serie verknüpft =&gt; beim einzelnen Band ist relativ viel Erfassungsaufwand zu leisten; es werden entsprechend keine O-Aufnahmen der Baende angelegt
+Was bei dem Anlegen von Vorgängen für Zeitschriften zu beachten ist, wird hier erläutert&lt;br&gt;
+[[Anlegen von Vorgängen für Zeitschriften]]&lt;br&gt;
+[[Media:Wiki_zeitschriften.doc|Arbeitsanweisung]] (Word Dokument)
+
+&lt;br&gt;
+[[Anlegen von Vorgängen für Portraits]]
+
+==Einen Vorgang löschen==
+Um einen Vorgang wieder zu löschen, muss der entsprechende Vorgang gesucht und über das Detail-Icon [[Datei:GoInto.gif]] die Vorgangsdetails des Vorgangs aufgerufen werden.
+Danach muss die Funktion &quot;Vorgangsdetails bearbeiten&quot; ausgewählt werden.
+[[Datei:VorgangLöschen1.JPG]]&lt;br&gt;
+Hier gibt es nun die Möglichkeit nur den Inhalt (Content) oder den ganzen Vorgang zu löschen.
+[[Datei:VorgangLöschen2.JPG]]&lt;br&gt;
+Nachdem &quot;löschen&quot; gewählt wurde, wird noch einmal nachgefragt, ob der Vorgang wirklich gelöscht werden soll. Wird hier OK geklickt, ist der Vorgang endgültig gelöscht.
+
+
+
+
+''Anmerkung''
+
+Goobi ruft beim Datenabruf ausschließlich auf die Vorlageform des Hauptsachtitels zu (Kategorie 4000)- der Ansetzungssachtitel findet damit keinen eigenen Platz. Gründe für das Überschreiben des Goobi-Titelfeldes mit dem Ansetzungssachtitel aus 3220??? (u/v-Lautverschiebung?)
+
+
+
+Offene Organisationsfrage: Rückmeldung an Projektmanager zum Nachtragen der Kataloginfos nach Export
+
+
+[[Kategorie:Goobidokumentation]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Scanaufträge annehmen und ausführen</title>
+    <ns>0</ns>
+    <id>156</id>
+      <sha1>0r3algrmw8frqs63xmm0ffa8l1tzrq2</sha1>
+    <revision>
+      <id>3164</id>
+      <timestamp>2016-04-19T14:36:33Z</timestamp>
+      <contributor>
+        <username>Wendt</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="7960">==Anmeldung in Goobi==
+Unter der Webadresse https://goobi.sub.uni-hamburg.de/ce/newpages/Main.jsf ist das sog. Produktionssystem von Goobi erreichbar. Das Login erfolgt mit der Windows-Benutzerkennung, die dem Scanner zugeteilt wurde. Etwaige Passwortwechsel der Windows-Benutzerkennung werden automatisch in Goobi mit übernommen.
+
+==Meine Aufgaben==
+Nach Auswahl des Menu-Punktes '''Meine Aufgaben''' wird eine Übersicht der aktuellen Scanaufträge angeboten. Voreingestellt sind hier die Spalten für den aktuellen Aufgabenschritt, die Vorgangsbezeichnung, die Projektzugehörigkeit, den Status der Bearbeitung und die möglichen Aktionen.
+
+Bei der Anzeige des Status bedeutet die Farbe &quot;Orange&quot;, dass es sich um einen Auftrag handelt, dessen Bearbeitung noch aussteht. Die Farbe &quot;Gelb&quot; hingegen steht für Aufträge, die bereits angenommen wurden und aktuell bearbeitet werden.
+
+Aus der Spalte '''Aktionen''' wird anhand der Farbe des Zahnrades ersichtlich, ob der Vorgang von einem selbst oder einer anderen Person angenommen wurde. Hat man selbst den Vorgang angenommen, so wird dies durch ein gelbes Zahnrad [[Datei:Zahnrad_gelb.gif]] signalisiert. Ist der Vorgang von einer anderen Person angenommen worden, so wird das Zahnrad ausgegraut [[Datei:Zahnrad_grau.gif]] dargestellt.
+
+Wenn man mit dem Mauszeiger über die Zahnräder hovert, so sieht man wer den Vorgang aktuell bearbeitet.
+
+[[Datei:01_-_Meine_Aufgaben.png]]
+
+Zusätzlich lässt sich die Darstellung der Trefferliste durch die unten aufgeführten '''Mögliche Aktionen''' anpassen.
+
+Während die '''Filter-Anpassung''' die Trefferliste auf die nötigsten Fälle reduziert, z.B. nur ausstehende Vorgänge oder eigene, in Bearbeitung befindliche Vorgänge darzustellen, erweitert die '''Anzeige-Anpassung''' die Anzahl der dargestellten Spalten um die entsprechenden Abruffelder. Die ID (=Schlüsselnummer) und das Vorgangsdatum zählen hierbei zu den am häufigsten verwendeten und lassen sich ebenfalls auf- und absteigend sortieren.
+
+[[Datei:02_-_Filter_und_Anzeige_anpassen.png]]
+
+==Auswahl des richtigen Vorgangs==
+Alle Vorgänge in Goobi sind unter einer individuellen '''Vorgangsbezeichnung''' abgespeichert, die sich aus einer Buchstaben-Zahlenkombination zusammensetzt.
+
+Inhaltlich steckt dahinter eine Abkürzung von Autor und/oder Titel ('''ATS'''=Autor-Titel-Schlüssel, '''TSL'''=Titel-Schlüssel) in Verbindung mit der Titelsatznummer ('''PPN'''=PICA-ProduktionsNummer) aus dem Katalogsystem und ggf. einer Band- bzw. Jahrgangszählung.
+
+Im Normalfall liegt im gelieferten Buch ein Laufzettel mit der passenden Vorgangsbezeichnung bei. Sollte dies nicht der Fall sein, kann man die offenen (orangen) Vorgänge aufrufen, indem man auf dieses [[Datei:GoInto.gif]] Icon klickt und in den '''Vorgangsdetails''' die Titeldaten einsieht. Diese finden sich in den Angaben zur '''Physischen Vorlage'''
+
+[[Datei:07_-_Physische_Vorlagen.png]]
+
+==Annehmen des Scanauftrages==
+Der zum Medium gehörende Goobi-Vorgang wird durch Anklicken des [[Datei:Admin2a.gif]] Icons angenommen.
+
+Im Anschluss meldet Goobi in blauer Schrift zurück, dass ein Bildverzeichniss für die Digitalisate angelegt und bereitgestellt wurde. Dieses lässt sich nun auf dem dazugehörenden Netzlaufwerk finden.
+Desweiteren können im Nachrichtenbereich zusätzliche Kommentare anderer Mitarbeiter mitverfolgt oder eigene Kommentare verfasst werden.
+
+Sollte aus Versehen der verkehrte Vorgang angenommen worden sein, so kann mit der Aktion '''Die Bearbeitung der Aufgabe wieder abgeben''' der Vorgang wieder zurückgesetzt werden.
+
+[[Datei:08_-_Auftrag_angenommen.png]]
+
+==Auftrag in Goobi abschließen==
+Wenn der Auftrag fertig gescannt wurde und die Digitalisate in dem entsprechendem Verzeichnis abgelegt wurde, muß in Goobi in der Liste '''Meine Aufgaben''' der passende Vorgang wieder ausgewählt werden - per [[Datei:Admin1b.gif]] Icon. In der Aktionsliste ist der Punkt hinter dem grünen Haken zu wählen &quot;'''Die Bearbeitung dieser Aufgabe abschließen'''&quot;. Mit dieser Aktion wandert der Auftrag zum nächsten Aufgabenschritt Qualitätskontrolle Scannen, sowie danach zur Struktur- und Metadateneingabe.
+
+==Zusätzliche Scanner-spezifische Hinweise==
+
+==Scannen am Bookeye-Scanner==
+In der Medienwerkstatt muss vor dem Scannen in der bcs2-Software die Auftragsart (?) '''goobi''' ausgewählt werden. Weiter ist wichtig, dass im Menu 'Scanner' tif als Aufnahmemodus ausgewählt ist. Nach Beenden des Auftrags ist der Auftrag in der Auftragsliste auszuwählen und der Menupunkt 'Übertragen' anzuklicken. Nun wird das Zielverzeichnis abgefragt. Hier ist das '''Laufwerk Q''' zu wählen. Innerhalb des Laufwerks Q muss die passende Vorgangskennung ausgewählt werden und von dort in das Bildverzeichnis ''Vorgangskennung''_tif gewechselt werden.
+
+==Ermitteln der Auftragsnummer für bcs2 bei Reklamationen==
+Mit dem [[Datei:GoInto.gif]]Icon gelangt man in die Vorgangsdetails und kann durch das Anklicken des Pluszeichens beim Arbeitsschritt 'Scannen' in den Eigenschaften u.a. die hinterlegte Auftragsnummer aus bcs2 ermitteln.
+
+[[Datei:Annahme_scannen2.jpg]]
+
+==Reklamationen für den i2s-Scanner bei den Elbewerkstätten==
+Wenn der Scanauftrag mit konkretem Fehlerhinweis an die passende Scanstation zurückdelegiert wurde, erscheint dieser Scanauftrag noch einmal mit einem großen roten K in der Übersicht der offen Aufgaben. Wenn man in diesem Stadium diesen Vorgang erneut annimmt, wird das passende Bildverzeichnis im Laufwerk Q verlinkt und man wechselt in der Scansoftware ProScanBook in dieses Bildverzeichniss unterhalb von Laufwerk Q. In diesem Bildverzeichnis befindet sich am Ende eine kleine Datei mit der Endung &quot;.pr3&quot;. Mit dem Anklicken dieser Datei öffnet sich das passende Projekt innerhalb von ProScanBook und die jeweiligen Korrekturscans können dort vorgenommen werden. Am Ende dieser Korrekturarbeiten gibt man in Goobi den Vollzug der Korrektur der anfordernden Stelle mit einem kleinen Text bekannt - ''ergänzen um Abbildung''
+
+==Scannen am Zeutschelscanner==
+Zu allererst nimmt man den jeweiligen Scanauftrag in der Softwareumgebung von '''Goobi''' an - siehe oben. Mit dieser Annahme des Auftrages in Goobi wird im Laufwerk Q das zum Auftrag passende Bildverzeichnis zugreifbar (z.B. Q:\brancaro_PPN627341047__[148]\brancaro_PPN627341047_tif). Anschließende wird in der Scansoftware '''Omniscan 12''' die zur Vorlage passende Arbeitsumgebung (&quot;Jobtemplate&quot;) im Startbildschirm ausgewählt (z.B. im Projekt der Hamburg-Bücher die Vorlage HH_Buecher_grau). Im nächsten Schritt wird ein Name für den Scanauftrag abgefragt. Hier ist im Hinblick auf spätere Reklamationen der sog. Vorgangstitel aus Goobi einzutragen (im Beispiel: brancaro_PPN627341047)! Nach Abschluss der Scanarbeiten wird der Arbeitsschritt &quot;Job abschließen&quot; aufgerufen. Für diesen Schritt ist in der Konfiguration vorgegeben, dass die gescannten Bilder in ein frei zu wählendes Zielverzeichnis kopiert werden. Jetzt muss über die Ordnersuche das jeweils passende Bildverzeichnis auf '''Laufwerk Q''' ausgewählt werden. Das Herüberkopieren dauert ggf. ein wenig, wenn voreingestellte Bildbearbeitungsschritte bei jedem Scan durchgeführt werden.
+
+Hinweise:
+*'''Fortsetzen eines Jobs:''' Einen bereits begonnenen Auftrag findet man zum Fortsetzen an einem anderen Tag über den Menupunkt &quot;Datei/Öffnen&quot; in c:\user wieder. Man wählt den Job mit der passenden Vorgangskennung aus Goobi aus und öffnet in diesem Verzeichnis eine Datei mit der Endung &quot;.OJP&quot;. Gleiches gilt für Reklamationen.
+*'''Wechseln in einen abweichenden Farbmodus''':  Wenn ausnahmsweise einzelne Seiten in einem Vorgang anders als die allgemeine Vorgabe gescannt werden sollen - z.B. einzelne Farbseiten innerhalb von Graustufe führt der Weg über den Menupunkt 'Auswählen' (Farbe/Grau/Foto/Schwarz-weiß). Die gewählte Einstellung muß dann auf gleichem Wege wieder zurückgestellt werden.
+
+[[Kategorie:Goobidokumentation]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Struktur- und Metadatenerfassung</title>
+    <ns>0</ns>
+    <id>172</id>
+      <sha1>16j7micfc98ip14nwijd8fe272dbn74</sha1>
+    <revision>
+      <id>3165</id>
+      <timestamp>2016-04-19T14:37:07Z</timestamp>
+      <contributor>
+        <username>Wendt</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="7084">Für alle Arbeitsschritte ist wichtig: Das '''Speichern''' der Zwischenergebnisse nicht vergessen!
+
+
+==Paginierung bearbeiten==
+Nach dem Aufruf des Vorgangs im Metadateneditor ist es zwingend, als erstes die logische Paginierung festzulegen. Zur besseren Übersicht bei den Scans kann zunächst die Bildgröße für die Anzeige verändert werden. Mit dem Aufruf '''&quot;Paginierung anhand der Images einlesen&quot;''' werden alle vorhandenen Bilder hochgezählt:
+
+[[Datei:Paginierung1.jpg]]
+
+Folgende Funktionen stehen anschließend zur Verfügung:
+
+'''Auswahl der Seiten'''
+* links Nummer des Scans und rechts die gedruckte Zählung im Buch
+
+'''Paginierung festlegen'''
+* Auswahl der Art der Zählung (arabisch, römisch, unnummeriert)
+* Eingabezeile für Startzahl
+* Auswahl der Paginierungsart über Icons (Seitenzählung, Spaltenzählung, Blattzählung)
+
+'''Funktion &quot;Ab der markierten Stelle&quot;'''
+* Übernahme einer fortlaufenden Seitenzählung ab dem gewählten Scan
+
+'''Funktion &quot;Nur die markierten Seiten&quot;'''
+* Zuweisung von einzeln markierten Seiten zu einer Art der Zählung z.B. bei der Festlegung von unnummerierten Seiten am Anfang und Ende
+
+
+'''Hinweise:'''
+
+* Die Seitenzählung beginnt erst dann, wenn auch auf einer Buchseite das erste Mal eine Seitenzahl zu sehen ist (das kann auch Seitenzahl 5 sein), die Seiten davor bleiben uncounted. Es wird NICHT fingiert hochgezählt! 
+* erscheinen Seiten, auf denen keine Seitenzahl vermerkt ist und die Seitenzählung von diesen Seiten nicht unterbrochen wird, werden sie als uncounted definiert. 
+* erscheinen Seiten, auf denen keine Seitenzahl vermerkt ist, die Seitenzählung auf diesen Seiten aber logisch weiter gehen würde, wird die Seitenzahl in eckigen Klammern (fingiert) vermerkt.
+* Zu Beginn die erste gezählte Seite anhand der Scans ermitteln und Art der Zählung festlegen. Im Anschluss die letzten Seiten überprüfen, ob die Paginierung in Goobi noch mit der Realität übereinstimmt!
+* Verschiedene Zählungen innerhalb einer Vorlage werden nacheinander abgebildet. Über die Funktion &quot;Ab dem gewählten Image&quot; kann eine neue Zählung die vorher gewählte überschreiben.
+* Vor der Fortsetzung in der Bearbeitung das '''Speichern''' nicht vergessen
+
+==Strukturdaten bearbeiten==
+Nach der Paginierung werden die Seiten den sog. Strukturdaten zugewiesen. Nach Aufruf des Menupunktes 'Strukturdaten' bietet sich folgendes Bild. Im linken Fenster wird durch die Strukturierung der hierarchische Baum des Inhaltsverzeichnisses entstehen. Das übergeordnete Element wie z.B. Monographie wird automatisch erzeugt. Das '''aktuelle''' Strukturelement ist immer durch Fettdurck hervorgehoben. Im mittleren Bereich werden die Strukturelemente ausgewählt und in einem zweiten Schritt mit den paginierten Seiten verknüpft. Die in der Pulldown-Liste angezeigten Strukturelemente sind vorher in einem sog. Regelsatz erfasst worden und nicht frei erweiterbar. Im rechten Bereich werden Scans zum Blättern angeboten.
+
+'''Wichtig: Zur besseren Übersicht als erstes die Vergrößerungsstufe der Scans im rechten Bereich über die Lupenfunktion deutlich erhöhen! Sinnvoll ist ebenfalls die Funktion &quot;Bild verlinken&quot; oberhalb der Scans, um die angelegten Strukturdaten nach der Zuweisung der Seiten für Überblick und Kontrolle immer mit den passenden Scans anzuzeigen.'''
+
+[[Datei:Struktur1.jpg]]
+
+
+===Anordnen der Strukturelemente===
+1. hierarchische Zuordnung auswählen:
+*erstes Strukturelement: immer &quot;als erstes Subelement aktuellen Elements&quot;
+*weitere Strukturelemente entweder &quot;Hinter das '''aktuelle Element'''&quot; oder wenn es hierarchisch unterzuordnen ist, erneut als &quot;erstes Subelement des '''aktuellen''' Strukturelements&quot;
+
+[[Datei:Struktur2.jpg]]
+
+2. Typ des Strukturelements in der Auswahlliste auswählen 
+
+3. Seiten zuweisen, indem mit Hilfe des Pfeils die aktuell angezeigte Seite als erste bzw. letzte Seite des Strukturelements ausgewählt wird 
+
+[[Datei:Seitenzuweisen.jpg]]
+
+4. &quot;Strukturelement hinzufügen&quot; anklicken
+
+5. '''Wichtig:''' Hinzugefügtes Strukturelement anschließend als aktuelles Strukturelement durch Anklicken markieren
+
+6. Alternative erst jetzt die Seitenzuordnung vornehmen: Im Fenster &quot;Alle Seiten&quot; den passenden Block auswählen und mit dem Pfeil herüberschieben. Alternativ: Erste und letzte Seite aus Pulldownliste im farbigen Kasten mit dem Titel 'Seitenzuordnung' wählen und über den Button &quot;Seiten zuweisen&quot; verknüpfen.
+
+[[Datei:Struktur3.jpg]]
+
+7. Speichern
+
+'''Wichtig: Am Ende der Arbeiten an den Strukturdaten müssen alle Seiten zusätzlich dem obersten Strukturelement wie z.B. Monographie zugeordnet werden! Dazu die erste und letzte Seite in der Pulldownliste im mittleren farbigen Kasten 'Seitenzuordnung' auswählen und die Funktion &quot;Seiten von Unterelementen zuweisen&quot; anklicken.'''
+
+
+
+'''Hinweise:''' 
+*Das Strukturelement '''&quot;Sonstiges&quot;''' kann für Abschnitte eines Werkes verwendet werden, für die kein zutreffendes Strukturelement in der Auswahlliste vorliegt. Für dieses Strukturelement muss dann immer eine Titelangabe im Metadatenbereich erfasst werden.
+
+==Metadaten bearbeiten==
+Zu den Strukturdaten können weitere, beschreibende Metadaten erfasst werden. Dazu gehört z.B. der Titel eines Artikels oder Abschnitts oder bei Sammelwerken/Zeitschriften auch der Autor eines Beitrags. &lt;br&gt;
+Die Strukturelemente Titelblatt, Inhaltsverzeichnis etc. erhalten keine Metadaten. 
+&lt;br&gt;Die Strukturelemente Vorwort, Anhang, Verzeichnisse, Register etc. bekommen dann Metadaten, wenn die Überschriften einen inhaltlichen Mehrwert darstellen. Abschnitte, Abbildungen, Karten und Tabellen bekommen immer Metadaten wenn eine Über- oder Unterschrift vorhanden ist. Das Strukturelement &quot;Sonstiges&quot; muss immer Metadaten erhalten.
+
+Für die übergeordnete Ebene wie Monographie, Mehrbändiges Werk/Band bzw. Zeitschrift werden die bibliothekarischen Metadaten beim [[Anlegen von Vorgängen|Anlegen eines Vorgangs]] direkt aus dem Campuskatalog geladen.
+
+
+'''Metadatenerfassung'''
+*einzelnes Strukturdatenelement durch Anklicken aktivieren
+*Reiter &quot;Metadaten&quot; aufrufen
+*benötigte Felder ausfüllen - nicht benötigte Felder frei lassen!
+*weitere Felder über Funktion &quot;Neue Metadaten hinzufügen&quot; auswählen und mit Inhalt füllen
+*Speichern
+
+[[Datei:Metadaten1.jpg]]
+
+
+'''Hinweis:''' Für jedes Strukturelement werden zunächst die jeweils wichtigsten Felder zur Erfassung vorgeschlagen. Über die Funktion &quot;Neue Metadaten hinzufügen&quot; wird die Erfassung noch um die weiteren grundsätzlich möglichen Felder für genau dieses Strukturelement ergänzt. Im folgenden ein Beispiel aus den Zusatzfeldern für die Erfassung eines Zeitschriftenartikels.
+
+[[Datei:Metadaten2.jpg]]
+
+'''Abschluss der Struktur- und Metadatenerfassung'''
+*Aufrufen der Funktion &quot;Validieren&quot; und ggf. Beseitigen der angezeigten Fehler. In diesem Schritt wird die gesamte Erfassungsarbeit am Regelsatz geprüft, der dem jeweiligen Projekt zugeordnet ist. Fehlende Seitenzuordnungen werden ebenfalls moniert.
+*mit &quot;Speichern und zurück&quot; den Metadateneditor verlassen
+
+[[Kategorie:Goobidokumentation]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Hinweise für die Erfassung der Struktur- und Metadaten</title>
+    <ns>0</ns>
+    <id>288</id>
+      <sha1>8pdj0j2zqln858rgfi1gylrrgblpof3</sha1>
+    <revision>
+      <id>3166</id>
+      <timestamp>2016-04-19T14:37:34Z</timestamp>
+      <contributor>
+        <username>Wendt</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="5678">==allgemeine Hinweise==
+===Hierarchieebenen===
+
+Enthält das Werk ein Inhaltsverzeichnis, reicht es, die ersten zwei Hierarchiestufen des Inhaltsverzeichnisses anzulegen. Abbildungen, Karten und Tabellen, werden, wenn sie über eine Seite gehen, immer aufgenommen.
+
+===Vergabe von Metadaten===
+
+Die Strukturelemente, die eindeutig sind (z.B. Titelblatt, Inhaltsverzeichnis...), benötigen keine zusätzlichen Metadaten.&lt;br&gt;
+
+Die Strukturelemente Vorwort, Anhang, Verzeichnisse, Register etc. bekommen dann Metadaten, wenn die Überschriften einen inhaltlichen Mehrwert darstellen. &lt;br&gt;Abschnitte, Abbildungen, Karten und Tabellen bekommen immer Metadaten wenn eine Über- oder Unterschrift vorhanden ist.&lt;br&gt;
+
+Sollten Überschriften von Abschnitten von denen im Inhaltsverzeichnis abweichen, werden die Überschriften der Abschnitte in den Metadaten vermerkt.&lt;br&gt;
+
+===Strukturelement &quot;Sonstiges&quot;===
+
+Dem Strukturelement &quot;Sonstiges&quot; müssen immer Metadaten zugeordnet werden. Sollte es keine Überschrift geben, wird versucht dem vorliegende Element eine Überschrit zu gebe oder es zu umschreiben.
+
+Beispiel: 
+*Gedicht(e) ohne Überschrift -&gt; &quot;Gedicht(e)&quot; in die Metadaten
+*Handschriftliche Anmerkungen -&gt; &quot;Handschriftliche Anmerkungen&quot; in die Metadaten
+
+===Abbildungen===
+
+Ist eine Abbildung auf einer Seite von Text umgeben, wird sie nicht weiter erwähnt. &lt;br&gt;Ist die Abbildung aber über eine ganze Seite, egal ob gezählt oder ungezählt, wird sie dem entsprechenden Abschnitt untergeordnet.
+
+===Einleitung===
+
+Für Einleitungen existiert bei Monographien kein eigenes Strukturelement. &lt;br&gt;Einfach das Element „Abschnitt“ wählen und in den Metadaten den entsprechenden Titel vermerken.
+
+===Literaturverzeichnis===
+
+Ein Literaturverzeichnis ist '''keine''' Bibliographie! &lt;br&gt;Ein Literaturverzeichnis wird mit Hilfe des Strukturelements „Sonstiges“ bearbeitet und in den Metadaten wird der entsprechenden Titel vermerkt.
+
+===Seitenzählung===
+
+Die erste Seite, auf der eine Seitenzählung vermerkt ist (z.B. 3 oder III.), ist auch die erste, die bei der Paginierung die entsprechende Seitenzahl zugewiesen bekommt. Alle Seiten davor werden wie ungezählte Seiten behandelt. &lt;br&gt;Die Seiten nach Beginn der Seitenzählung, auf denen keine Seitenzahl vermerkt ist, aber eigentlich gezählt werden, bekommen eine fingierte Seitenzählung (z.B. [10] oder [XX]).
+
+===Titelblatt===
+
+Sollte mehr als ein Titelblatt vorhanden sein, so wird '''einmal''' das Strukturelement &quot;Titelblatt&quot; vergeben (und die vermutlich 4 Seiten diesem Element zugeordnet).&lt;br&gt;Ist zwischen den beiden Titelblättern ein anderes Strukturelement, wird zweimal das Strukturelement &quot;Titelblatt&quot; vergeben.
+
+
+
+===Kürzen von Überschriften===
+
+Sehr lange Überschriften eines Abschnitts können gekürzt werden. Auslassungen werden mit &quot;...&quot; gekennzeichnet.
+
+Beispiel:&lt;br&gt;
+
+Original Überschrift:&lt;br&gt;
+IV. Auszug des Verzeichnisses aller, in der von der Hamburgischen Gesellschaft zur &lt;br&gt;
+Beförderung der Künste und nützlichen Gewerbe, vom 12ten bis zum 24ten April d.J., in dem &lt;br&gt;
+großen Saal des Rahtskellers veranstalteten öffentlichen Ausstellungen, von den benannten &lt;br&gt;
+Künstlern und Handwerkern aufgestellt gewesenen Kustwerke, Arbeiten und nützlichen &lt;br&gt;
+Erfindungen
+&lt;br&gt;
+
+Überschrift nach Kürzung: &lt;br&gt;
+IV. Auszug des Verzeichnisses aller ... vom 12ten bis zum 24ten&lt;br&gt;
+April d.J., in dem großen Saal des Rahtskellers veranstalteten öffentlichen&lt;br&gt;
+Ausstellungen ...&lt;br&gt;
+&lt;br&gt;
+
+==Hinweise zur Berarbeitung von Zeitschriften==
+
+
+*Das Strukturelement &quot;Zeitschriftenteil&quot; wird für Themenblöcke und Rubriken (z.B. Leserbriefe, Rezensionen etc.) verwendet. &lt;br&gt; 
+*Wann die Zeitschrift mit Hilfe von Zeitschriftenteil, Zeitschriften-Artikel und Zeitschriftenheft strukturiert wird, kann der Excel-Tabelle [[Media:Hinweise_zur_Bearbeitung_der_Strukturdaten_bei_Zeitschriften.xls|Hinweise zur Bearbeitung der Strukturdaten bei Zeitschriften]] entnommen werden &lt;br&gt;
+*Mit dem Sturkturelemen &quot;Redaktionelle Seite&quot; werden Mitteilungen der Redaktion/Herausgeber/Vereins, die den Inhalt der Zeitschrift betreffen (z.B. Informationen zum Inhalt der vorliegenden Ausgabe, zum Erscheinungsverlauf...), definiert. 
+*Mit dem Strukturelment &quot;Mitteilung&quot; werden Mitteilungen der Redaktion/Herausgeber/Vereins an den Leser oder Vereinsmitglied definiert.
+*Kleinteilige Abschnitte, die nicht von inhalticher Bedeutung sind (z.B. Einladungen zu Versammlungen, Geburstage von Vereinsmitgliedern, Liste mit neuen Vereinmitgliedern)werden nicht mit aufgenommen, es sei denn, es geht über eine ganze Seite, da jede Seite einem Element zugeordnet sein muss!
+*Anhänge, Inhaltsverzeichnisse, Tabellen, Abbildung. etc. werden genau wie bei der Bearbeitung der Monographien aufgenommen.
+
+==Tipps und Tricks für die Struktur- und Metadatenbearbeitung==
+
+
+*drückt man zweimal nacheinander die tab-Taste und dann enter, kann man ohne die Maus von Strukturelement zu Strukturelement wandern&lt;br&gt;
+*oben rechts im Metadateneditor gibt es unter anderem die Möglichkeiten, das Bild zu fixieren oder sich die Hierarchiestufen anzeigen zu lassen
+[[Datei:bildfixieren.JPG]]
+*bei &quot;Meine Aufgaben&quot; gibt es unter &quot;Filter anpassen&quot; (unter der Liste mit den Aufgaben) die Möglichkeit, sich nur die offenen &lt;br&gt;
+oder nur die eigenen Aufgaben anzeigen zu lassen (nach der Auswahl der Filters auf &quot;Übernehmen&quot; klicken)&lt;br&gt;
+[[Datei:filteranpassen.JPG]]
+*mit der Tastenkombination strg.+shift und den Pfeilen nach oben bzw. unten lassen sich die Scans in 20er Schritten durchspringen&lt;br&gt;
+(hierfür müss mit der Maus erst einmal auf die rechte Hälfte des Metadateneditors geklickt werden)
+
+[[Kategorie:Goobidokumentation]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Suche nach Vorgängen über Filter</title>
+    <ns>0</ns>
+    <id>164</id>
+      <sha1>tl13yp3w8yrtd3733b76ftkdz2p2zzx</sha1>
+    <revision>
+      <id>3167</id>
+      <timestamp>2016-04-19T14:37:59Z</timestamp>
+      <contributor>
+        <username>Wendt</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve" bytes="1555">Um in der länger werdenden Liste der Vorgänge gezielt einzelne Vorgänge oder Teilprojekte wiederzufinden, bietet Goobi die Suche über Filter im Eingabefeld oben rechts an:
+
+[[Datei:Vorgang_filter.jpg]]
+
+
+
+Ein einfaches Filtern über einen beliebigen '''Teil des Vorgangstitels''' ist möglich, wenn ein Suchstring eingegeben wird ohne Trunkierungszeichen. Im folgenden Beispiel wird nach den &quot;Mitteilungen des Vereins für Hamburgische Geschichte&quot; gesucht. Der Suchstring steht nicht zwingend am Anfang.
+
+[[Datei:Filter1.jpg]]
+
+Wenn man die Liste der Vorgänge zu einem '''Projekt''' braucht, bietet sich eine Suche über ein definiertes Goobi-Projekt an mit dem Vorlauf &quot;projekt:&quot; an - siehe Beispiel mit dem Projekt Regionalzeitschriften:
+
+[[Datei:Filter2.jpg]]
+
+Dieser Filter läßt sich mit einem Filter zum Status der Bände kompinieren: projekt:reg step:1 (Bände im Regionalzeitschriften im Status &quot;Qualitätskontrolle Import&quot;)
+
+==Suche nach einem einzelnen Vorgang über Signatur==
+Es läßt sich auch nach Eigenschaften der Vorlage suchen - wie z.B. der Signatur. Da die Signatur Leerzeichen enthält, muss der gesamte Suchbegriff in Anführungszeichen gesetzt. Als Schlüsselwort ist 'vorlage:' einzugeben. (gesamte Eingabe im Beispiel: &quot;vorlage:SUB A/328645&quot;)
+
+[[Datei:Filter3.jpg]]
+
+==Suche nach Vorgängen in einem bestimmten Stadium==
+Bsp.: stepopen:Metadaten oder stepopen:Export im Menupunkt &quot;Aktuelle Vorgänge&quot;&lt;br&gt;
+oder mit Hilfe der Nummer des Workflows, Bsp.: step:7 (Vorgänge im Stadium Export)
+
+
+[[Kategorie:Goobidokumentation]]</text>
+    </revision>
+  </page>
+</mediawiki>

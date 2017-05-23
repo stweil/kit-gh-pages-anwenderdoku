@@ -1,0 +1,81 @@
+Proposal for an enhancement of the METS-Editor and all relating modules (MODS-Export, UGH-Library...)
+* to deal with corporate names in Kitodo
+* to extend the dataset for personal names according to the [http://www.zvdd.de/fileadmin/AGSDD-Redaktion/zvdd_MODS_Application_Profile_2.1.pdf "MODS-Anwendungsprofil für digitalisierte Drucke"]
+* to collect the GND-Reference
+
+
+{| style="border-spacing:0;"
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| [ http://www.gbv.de/bibliotheken/verbundbibliotheken/02Verbund/01Erschliessung/02Richtlinien/01KatRicht/30xx.pdf Titeldatensatz] bzw. [http://nbn-resolving.de/urn:nbn:de:101-2013101513 GND-Datensatz]
+
+'''Personen'''
+ (PICA+ Format; X als Platzhalter für mögliche Varianten 028A, 028B, 028C ff.)
+
+
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| MODSmods:name type=”personal”mods:namePart 
+
+|-
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| Bei Normdatenverlinkung GND-URI aus 003U $a 
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| <nowiki>valueURI innerhalb von <mods:name type=“...“ valueURI=“...“></nowiki>
+
+|-
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| 028X $a Nachname
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| type =”family”
+
+|-
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| 028X $d Vorname
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| type =”given”
+
+|-
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| 028X $P Persönlicher Name
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| 
+
+|-
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| 028X $c Präfix
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| type =”given” 
+
+|-
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| 028X $n Ordnungshilfen
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| type=“termsOfAddress“
+
+|-
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| 028X $l Beiname
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| type=“termsOfAddress“
+
+|-
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| Bei Normdatenverlinkung 060R in Verbindung mit $4datl (Lebensdaten)
+
+$a Beginn einer Zeitspanne und $b Ende einer Zeitspanne
+
+
+
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| type=”date” ($a - $b)
+
+|-
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| 
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| mods:displayForm
+
+(Vorschlag zum Editieren im Metadateneditor aus $a, $d $c, $n oder $P $l)
+
+|}
+
+{| style="border-spacing:0;"
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| [http://www.gbv.de/bibliotheken/verbundbibliotheken/02Verbund/01Erschliessung/02Richtlinien/01KatRicht/310x.pdf Titeldatensatz] bzw. [http://nbn-resolving.de/urn:nbn:de:101-2013101513 GND-Datensatz]
+
+'''Körperschaften'''
+
+
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| MODSmods:name type=”corporate” mods:namePart
+
+|-
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| Bei Normdatenverlinkung GND-URI aus 003U $a 
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| <nowiki>valueURI innerhalb von <mods:name type=“...“ valueURI=“...“></nowiki>
+
+|-
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| Hauptkörperschaft
+
+029A $a Bevorzugter Name
+
+029A $b Unterabteilung (falls vorhanden)
+| style="border:0.5pt solid #00000a;padding-top:0cm;padding-bottom:0cm;padding-left:0.199cm;padding-right:0.191cm;"| mods:name type=“corporate“ mods:namePart( in der Reihenfolge $a / $b)
+
+|}

@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<goobiProjects>
+    <project name="default">
+        <createNewProcess>
+            <itemlist>
+                <item from="werk"> Artist
+                    <select label="SLUB"> Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden, Germany </select>
+                </item>
+
+                <!-- Schrifttyp -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+                <item from="werk" isdoctype="periodical|multivolume" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+
+                <!-- Konvolut -->
+                <item from="werk" isdoctype="bundle" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+
+                <!-- Besitzer der Vorlage -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" ughbinding="true" metadata="slub_ownerOrig" docstruct="topstruct">Besitzer der Vorlage</item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" metadata="slub_ownerOrig" docstruct="firstchild">Besitzer der Vorlage</item>
+
+                <!-- Titel -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain"> Titel </item>
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMainShort"> Titel (Sortierung)</item>
+                <!-- Titel für Konvolut -->
+                <item from="vorlage" isdoctype="bundle" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain">Titel Konvolut</item>
+
+                <!-- Urheber -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="ListOfCreators"> Autoren </item>
+
+                <!-- Identifikator -->
+                <item from="werk" isnotdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">ATS</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">TSL</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog c-Satz </item>
+                <item from="werk" isdoctype="multivolume" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital c-Satz</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog a-Satz </item>
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital a-Satz</item>
+                <item from="vorlage" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog b-Satz </item>
+                <item from="werk" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital b-Satz</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" docstruct="topstruct" metadata="ISSN"> ISSN </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog Band </item>
+                <item from="werk" required="true" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital Band </item>
+                <item from="vorlage" isdoctype="bundle" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital">Identifikator Konvolut</item>
+                <item from="werk" isdoctype="bundle" required="true" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital">Identifikator Mappe</item>
+                <item from="vorlage" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="CatalogIDPeriodicalDB">ZDB-ID</item>
+
+                <!--Informationen für Bände -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="ListOfCreators"> Autoren (Band)</item>
+                <item from="vorlage" isdoctype="bundle" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain">Titel (Mappe)</item>
+                <item from="vorlage" isdoctype="bundle" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNo">Mappennummer</item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="firstchild" metadata="CurrentNo"> Bandnummer </item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|bundle|newspaper" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNoSorting"> Nummer (Sortierung) </item>
+                <item from="vorlage" isdoctype="multivolume|periodical"> Nummer (Benennung) </item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog f-Satz </item>
+                <item from="werk" required="true" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital f-Satz </item>
+
+                <!-- Sprache für Zeitungen -->
+                <item from="werk" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="DocLanguage">Sprache</item>
+
+                <!-- Erscheinungsjahr, Erscheinungsort und Verlag -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|newspaper|manuscript" ughbinding="true" docstruct="topstruct" metadata="PlaceOfPublication"> Erscheinungsort </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="periodical|newspaper|multivolume" ughbinding="true" docstruct="firstchild" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="PublisherName"> Verlag </item>
+                <item from="vorlage" isdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="topstruct" metadata="PublisherName"> Verlag </item>
+
+                <!-- Signatur -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+
+                <!-- Informationen für Konvolut -->
+                <item from="vorlage" isdoctype="bundle" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource">Signatur</item>
+                <item from="vorlage" isdoctype="bundle" ughbinding="true" docstruct="topstruct" metadata="slub_ownerOrig">Besitzende Institution (Vorlage)</item>
+                <item from="vorlage" isdoctype="bundle" ughbinding="true" docstruct="topstruct" metadata="slub_ownerDigi">Besitzende Institution (Digitalisat)</item>
+                <item from="werk" isdoctype="bundle" ughbinding="true" docstruct="firstchild" metadata="slub_ownerOrig">Besitzende Institution (Vorlage)</item>
+                <item from="werk" isdoctype="bundle" ughbinding="true" docstruct="firstchild" metadata="slub_ownerDigi">Besitzende Institution (Digitalisat)</item>
+
+                <!-- Vorgangstitel -->
+                <processtitle isdoctype="multivolume">ATS+TSL+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="monograph|manuscript">ATS+TSL+'_'+PPN digital a-Satz</processtitle>
+                <processtitle isdoctype="periodical">TSL+'_'+PPN digital Band+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="bundle">ATS+TSL+'_'+Identifikator Mappe+'_'+Mappennummer</processtitle>
+                <processtitle isdoctype="newspaper">TSL+'_'+PPN digital b-Satz+'-'+#YEAR+#MONTH+#DAY+'_'+#issu</processtitle>
+                <hide/>
+            </itemlist>
+            <opac use="true">
+                <catalogue>SWB</catalogue>
+            </opac>
+            <templates use="true"/>
+            <defaultdoctype>monograph</defaultdoctype>
+            <metadatageneration use="true"/>
+        </createNewProcess>
+        <tifheader>
+            <monograph>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</monograph>
+            <manuscript>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</manuscript>
+            <multivolume>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)+'|'</multivolume>
+            <periodical>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</periodical>
+            <newspaper>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</newspaper>
+            <bundle>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+Identifikator Mappe+'_'+Mappennummer+'|'</bundle>
+        </tifheader>
+        <dmsImport/>
+        <validate>
+            <metadata metadata="CreatorsAllOrigin" docstruct="all" createelementfrom="Author|Editor|IllustratorArtist|Photographer|Translator|Creator">CreatorsAllOrigin automatisch anlegen</metadata>
+        </validate>
+    </project>
+    <project name="Freiheitskampf">
+        <createNewProcess>
+            <itemlist>
+                <item from="werk"> Artist
+                    <select label="SLUB"> Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden, Germany </select>
+                </item>
+
+                <!-- Schrifttyp -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+                <item from="werk" isdoctype="periodical|multivolume" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+
+                <!-- Fußleiste -->
+                <item from="werk" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_footer">Fußleiste
+                    <select label="slubdfg">slubdfg</select>
+                </item>
+
+                <!-- Förderer -->
+                <item from="werk" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+
+                <!-- Besitzer der Vorlage -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" ughbinding="true" metadata="slub_ownerOrig" docstruct="topstruct">Besitzer der Vorlage</item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" metadata="slub_ownerOrig" docstruct="firstchild">Besitzer der Vorlage</item>
+
+                <!-- Titel -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain"> Titel </item>
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMainShort"> Titel (Sortierung)</item>
+
+                <!-- Urheber -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="ListOfCreators"> Autoren </item>
+
+                <!-- Identifikator -->
+                <item from="werk" isnotdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">ATS</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">TSL</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog c-Satz </item>
+                <item from="werk" isdoctype="multivolume" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital c-Satz</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog a-Satz </item>
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital a-Satz</item>
+                <item from="vorlage" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog b-Satz </item>
+                <item from="werk" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital b-Satz</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" docstruct="topstruct" metadata="ISSN"> ISSN </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog Band </item>
+                <item from="werk" required="true" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital Band </item>
+                <item from="vorlage" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="CatalogIDPeriodicalDB">ZDB-ID</item>
+
+                <!-- Informationen für Bände -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="ListOfCreators"> Autoren (Band)</item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="firstchild" metadata="CurrentNo"> Bandnummer </item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|newspaper" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNoSorting"> Nummer (Sortierung) </item>
+                <item from="vorlage" isdoctype="multivolume|periodical"> Nummer (Benennung) </item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog f-Satz </item>
+                <item from="werk" required="true" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital f-Satz </item>
+
+                <!-- Sprache für Zeitungen -->
+                <item from="werk" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="DocLanguage">Sprache</item>
+
+                <!-- Erscheinungsjahr, Erscheinungsort und Verlag -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|newspaper|manuscript" ughbinding="true" docstruct="topstruct" metadata="PlaceOfPublication"> Erscheinungsort </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="periodical|newspaper|multivolume" ughbinding="true" docstruct="firstchild" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="PublisherName"> Verlag </item>
+                <item from="vorlage" isdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="topstruct" metadata="PublisherName"> Verlag </item>
+
+                 <!-- Signatur -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+
+                <!-- Vorgangstitel -->
+                <processtitle isdoctype="multivolume">ATS+TSL+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="monograph|manuscript">ATS+TSL+'_'+PPN digital a-Satz</processtitle>
+                <processtitle isdoctype="periodical">TSL+'_'+PPN digital Band+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="newspaper">TSL+'_'+PPN digital b-Satz+'-'+#YEAR+#MONTH+#DAY+'_'+#issu</processtitle>
+                <hide/>
+            </itemlist>
+            <opac use="true">
+                <catalogue>SWB</catalogue>
+            </opac>
+            <templates use="true"/>
+            <defaultdoctype>newspaper</defaultdoctype>
+            <metadatageneration use="true"/>
+        </createNewProcess>
+        <tifheader>
+            <monograph>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</monograph>
+            <manuscript>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</manuscript>
+            <multivolume>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)+'|'</multivolume>
+            <periodical>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</periodical>
+            <newspaper>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</newspaper>
+        </tifheader>
+        <dmsImport/>
+        <validate>
+            <metadata metadata="CreatorsAllOrigin" docstruct="all" createelementfrom="Author|Editor|IllustratorArtist|Photographer|Translator|Creator">CreatorsAllOrigin automatisch anlegen</metadata>
+        </validate>
+    </project>
+    <project name="Hofkirche">
+        <createNewProcess>
+            <itemlist>
+                <item from="werk"> Artist
+                    <select label="SLUB"> Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden, Germany </select>
+                </item>
+
+                <!-- Schrifttyp -->
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+                <item from="werk" isdoctype="periodical|multivolume" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+
+                <!-- Fußleiste -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="slub_footer">Fußleiste
+                    <select label="slubdfg">slubdfg</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="slub_footer">Fußleiste
+                    <select label="slubdfg">slubdfg</select>
+                </item>
+
+                <!-- Förderer -->
+                <item from="werk" isdoctype="monograph|manuscript|multivolume|periodical" ughbinding="true" docstruct="topstruct" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+
+                <!-- Besitzer der Vorlage -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" metadata="slub_ownerOrig" docstruct="topstruct">Besitzer der Vorlage</item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" metadata="slub_ownerOrig" docstruct="firstchild">Besitzer der Vorlage</item>
+
+                <!-- Titel -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain"> Titel </item>
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMainShort"> Titel (Sortierung)</item>
+
+                <!-- Urheber -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="ListOfCreators"> Autoren </item>
+
+                <!-- Identifikator -->
+                <item from="werk" isnotdoctype="periodical" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">ATS</item>
+                <item from="werk" isdoctype="periodical" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">TSL</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog c-Satz </item>
+                <item from="werk" isdoctype="multivolume" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital c-Satz</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog a-Satz </item>
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital a-Satz</item>
+                <item from="vorlage" isdoctype="periodical" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog b-Satz </item>
+                <item from="werk" isdoctype="periodical" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital b-Satz</item>
+                <item from="werk" isdoctype="periodical" ughbinding="true" docstruct="topstruct" metadata="ISSN"> ISSN </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog Band </item>
+                <item from="werk" required="true" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital Band </item>
+
+                <!--Informationen für Bände-->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="ListOfCreators"> Autoren (Band)</item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript" ughbinding="true" docstruct="firstchild" metadata="CurrentNo"> Bandnummer </item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNoSorting"> Nummer (Sortierung) </item>
+                <item from="vorlage" isdoctype="multivolume|periodical"> Nummer (Benennung) </item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog f-Satz </item>
+                <item from="werk" required="true" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital f-Satz </item>
+
+                <!-- Erscheinungsjahr, Erscheinungsort und Verlag -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="PlaceOfPublication"> Erscheinungsort </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="periodical|multivolume" ughbinding="true" docstruct="firstchild" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="PublisherName"> Verlag </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublisherName"> Verlag </item>
+
+                <!-- Signatur -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+
+                <!-- Vorgangstitel -->
+                <processtitle isdoctype="multivolume">ATS+TSL+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="monograph|manuscript">ATS+TSL+'_'+PPN digital a-Satz</processtitle>
+                <processtitle isdoctype="periodical">TSL+'_'+PPN digital Band+'_'+Nummer (Benennung)</processtitle>
+                <hide/>
+            </itemlist>
+            <opac use="true">
+                <catalogue>SWB</catalogue>
+            </opac>
+            <templates use="true"/>
+            <defaultdoctype>manuscript</defaultdoctype>
+            <metadatageneration use="true"/>
+        </createNewProcess>
+        <tifheader>
+            <monograph>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</monograph>
+            <manuscript>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</manuscript>
+            <multivolume>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)+'|'</multivolume>
+            <periodical>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</periodical>
+        </tifheader>
+        <dmsImport/>
+        <validate>
+            <metadata metadata="CreatorsAllOrigin" docstruct="all" createelementfrom="Author|Editor|IllustratorArtist|Photographer|Translator|Creator">CreatorsAllOrigin automatisch anlegen</metadata>
+        </validate>
+    </project>
+    <project name="LDP_SLUB">
+        <createNewProcess>
+            <itemlist>
+                <item from="werk"> Artist
+                    <select label="SLUB"> Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden, Germany </select>
+                </item>
+
+                <!-- Schrifttyp -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+                <item from="werk" isdoctype="periodical|multivolume" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+
+                <!-- Fußleiste -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="slub_footer">Fußleiste</item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_footer">Fußleiste</item>
+
+                <!-- Förderer -->
+                <item from="werk" isdoctype="monograph|manuscript|multivolume|periodical|newspaper" ughbinding="true" docstruct="topstruct" metadata="slub_Finance">Förderer
+                    <select label="LDP Sachsen">LDP Sachsen</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_Finance">Förderer
+                    <select label="LDP Sachsen">LDP Sachsen</select>
+                </item>
+
+                <!-- Besitzer der Vorlage -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" ughbinding="true" metadata="slub_ownerOrig" docstruct="topstruct">Besitzer der Vorlage</item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" metadata="slub_ownerOrig" docstruct="firstchild">Besitzer der Vorlage</item>
+
+                <!-- Mit-Herausgeber des Digitalisats -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="slub_licensor">Mit-Herausgeber des Digitalisats</item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_licensor">Mit-Herausgeber des Digitalisats</item>
+
+                <!-- Titel -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain"> Titel </item>
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMainShort"> Titel (Sortierung)</item>
+
+                <!-- Urheber -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="ListOfCreators"> Autoren </item>
+
+                <!-- Identifikator -->
+                <item from="werk" isnotdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">ATS</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">TSL</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog c-Satz </item>
+                <item from="werk" isdoctype="multivolume" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital c-Satz</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog a-Satz </item>
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital a-Satz</item>
+                <item from="vorlage" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog b-Satz </item>
+                <item from="werk" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital b-Satz</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" docstruct="topstruct" metadata="ISSN"> ISSN </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog Band </item>
+                <item from="werk" required="true" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital Band </item>
+                <item from="vorlage" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="CatalogIDPeriodicalDB">ZDB-ID</item>
+
+                <!--Informationen für Bände-->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="ListOfCreators"> Autoren (Band)</item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="firstchild" metadata="CurrentNo"> Bandnummer </item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|newspaper" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNoSorting"> Nummer (Sortierung) </item>
+                <item from="vorlage" isdoctype="multivolume|periodical"> Nummer (Benennung) </item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog f-Satz </item>
+                <item from="werk" required="true" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital f-Satz </item>
+
+                <!-- Sprache für Zeitungen -->
+                <item from="werk" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="DocLanguage">Sprache</item>
+
+                <!-- Erscheinungsjahr, Erscheinungsort und Verlag -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|newspaper|manuscript" ughbinding="true" docstruct="topstruct" metadata="PlaceOfPublication"> Erscheinungsort </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="periodical|newspaper|multivolume" ughbinding="true" docstruct="firstchild" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="PublisherName"> Verlag </item>
+                <item from="vorlage" isdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="topstruct" metadata="PublisherName"> Verlag </item>
+
+                <!-- Signatur -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+
+                <!-- Vorgangstitel -->
+                <processtitle isdoctype="multivolume">ATS+TSL+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="monograph|manuscript">ATS+TSL+'_'+PPN digital a-Satz</processtitle>
+                <processtitle isdoctype="periodical">TSL+'_'+PPN digital Band+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="newspaper">TSL+'_'+PPN digital b-Satz+'-'+#YEAR+#MONTH+#DAY+'_'+#issu</processtitle>
+                <hide/>
+            </itemlist>
+            <opac use="true">
+                <catalogue>SWB</catalogue>
+            </opac>
+            <templates use="true"/>
+            <defaultdoctype>monograph</defaultdoctype>
+            <metadatageneration use="true"/>
+        </createNewProcess>
+        <tifheader>
+            <monograph>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</monograph>
+            <manuscript>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</manuscript>
+            <multivolume>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)+'|'</multivolume>
+            <periodical>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</periodical>
+            <newspaper>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</newspaper>
+        </tifheader>
+        <dmsImport/>
+        <validate>
+            <metadata metadata="CreatorsAllOrigin" docstruct="all" createelementfrom="Author|Editor|IllustratorArtist|Photographer|Translator|Creator">CreatorsAllOrigin automatisch anlegen</metadata>
+        </validate>
+    </project>
+    <project name="LDP_Vergriffene_Werke">
+        <createNewProcess>
+            <itemlist>
+                <item from="werk">Artist
+                    <select label="SLUB">Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden, Germany</select>
+                </item>
+
+                <!-- Schrifttyp -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+                <item from="werk" isdoctype="periodical|multivolume" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+
+                <!-- Fußleiste -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="slub_footer">Fußleiste</item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_footer">Fußleiste</item>
+
+                <!-- Förderer -->
+                <item from="werk" isdoctype="monograph|manuscript|multivolume|periodical|newspaper" ughbinding="true" docstruct="topstruct" metadata="slub_Finance">Förderer
+                    <select label="LDP Sachsen">LDP Sachsen</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_Finance">Förderer
+                    <select label="LDP Sachsen">LDP Sachsen</select>
+                </item>
+
+                <!-- Besitzer der Vorlage -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="topstruct" metadata="slub_ownerOrig">Besitzer der Vorlage</item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="slub_ownerOrig">Besitzer der Vorlage</item>
+
+                <!-- Mit-Herausgeber des Digitalisats -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="slub_licensor">Mit-Herausgeber des Digitalisats</item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_licensor">Mit-Herausgeber des Digitalisats</item>
+
+                <!-- Rechteinformation -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="slub_rightsinfo">Rechteinformation
+                    <select label="Wahrnehmung der Rechte durch die VG WORT (§ 13d UrhWahrnG)">Wahrnehmung der Rechte durch die VG WORT (§ 13d UrhWahrnG)</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_rightsinfo">Rechteinformation
+                    <select label="Wahrnehmung der Rechte durch die VG WORT (§ 13d UrhWahrnG)">Wahrnehmung der Rechte durch die VG WORT (§ 13d UrhWahrnG)</select>
+                </item>
+
+                <!-- Rechtestatus -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="slub_rightsstatus">Rechtestatus
+                    <select label="&#169; Rechte vorbehalten - Freier Zugang">&#169; Rechte vorbehalten - Freier Zugang</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_rightsstatus">Rechtestatus
+                    <select label="&#169; Rechte vorbehalten - Freier Zugang">&#169; Rechte vorbehalten - Freier Zugang</select>
+                </item>
+
+                <!-- Titel -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain">Titel</item>
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMainShort">Titel (Sortierung)</item>
+
+                <!-- Urheber -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="ListOfCreators">Autoren</item>
+
+                <!-- Identifikator -->
+                <item from="werk" isnotdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">ATS</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">TSL</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource">PPN analog c-Satz</item>
+                <item from="werk" isdoctype="multivolume" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital">PPN digital c-Satz</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource">PPN analog a-Satz</item>
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital">PPN digital a-Satz</item>
+                <item from="vorlage" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource">PPN analog b-Satz</item>
+                <item from="werk" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital">PPN digital b-Satz</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" docstruct="topstruct" metadata="ISSN">ISSN</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource">PPN analog Band</item>
+                <item from="werk" required="true" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital">PPN digital Band</item>
+                <item from="vorlage" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="CatalogIDPeriodicalDB">ZDB-ID</item>
+
+                <!-- Informationen für Bände -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain">Titel (Band)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort">Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain">Titel (Band)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort">Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="ListOfCreators">Autoren (Band)</item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="firstchild" metadata="CurrentNo">Bandnummer</item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|newspaper" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNoSorting">Nummer (Sortierung)</item>
+                <item from="vorlage" isdoctype="multivolume|periodical">Nummer (Benennung)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource">PPN analog f-Satz</item>
+                <item from="werk" required="true" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital">PPN digital f-Satz</item>
+
+                <!-- Sprache für Zeitungen -->
+                <item from="werk" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="DocLanguage">Sprache</item>
+
+                <!-- Erscheinungsjahr, Erscheinungsort und Verlag -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|newspaper|manuscript" ughbinding="true" docstruct="topstruct" metadata="PlaceOfPublication">Erscheinungsort</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublicationYear">Erscheinungsjahr</item>
+                <item from="vorlage" isdoctype="periodical|newspaper|multivolume" ughbinding="true" docstruct="firstchild" metadata="PublicationYear">Erscheinungsjahr</item>
+                <item from="vorlage" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="PublisherName">Verlag </item>
+                <item from="vorlage" isdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="topstruct" metadata="PublisherName">Verlag</item>
+
+                <!-- Signatur -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource">Signatur</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="shelfmarksource">Signatur</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource">Signatur</item>
+
+                <!-- Vorgangstitel -->
+                <processtitle isdoctype="multivolume">ATS+TSL+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="monograph|manuscript">ATS+TSL+'_'+PPN digital a-Satz</processtitle>
+                <processtitle isdoctype="periodical">TSL+'_'+PPN digital Band+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="newspaper">TSL+'_'+PPN digital b-Satz+'-'+#YEAR+#MONTH+#DAY+'_'+#issu</processtitle>
+                <hide/>
+            </itemlist>
+            <opac use="true">
+                <catalogue>SWB</catalogue>
+            </opac>
+            <templates use="true"/>
+            <defaultdoctype>monograph</defaultdoctype>
+            <metadatageneration use="true"/>
+        </createNewProcess>
+        <tifheader>
+            <monograph>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</monograph>
+            <manuscript>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</manuscript>
+            <multivolume>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)+'|'</multivolume>
+            <periodical>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</periodical>
+            <newspaper>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</newspaper>
+        </tifheader>
+        <dmsImport/>
+        <validate>
+            <metadata metadata="CreatorsAllOrigin" docstruct="all" createelementfrom="Author|Editor|IllustratorArtist|Photographer|Translator|Creator">CreatorsAllOrigin automatisch anlegen</metadata>
+        </validate>
+    </project>
+     <project name="Opernarchiv">
+        <createNewProcess>
+            <itemlist>
+                <item from="werk"> Artist
+                    <select label="SLUB"> Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden, Germany </select>
+                </item>
+
+                <!-- Schrifttyp -->
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+                <item from="werk" isdoctype="periodical|multivolume" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+
+                <!-- Fußleiste -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="slub_footer">Fußleiste
+                    <select label="slubdfg">slubdfgseop</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="slub_footer">Fußleiste
+                    <select label="slubdfg">slubdfgseop</select>
+                </item>
+
+                <!-- Förderer -->
+                <item from="werk" isdoctype="monograph|manuscript|multivolume|periodical" ughbinding="true" docstruct="topstruct" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+
+                <!-- Besitzer der Vorlage -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" metadata="slub_ownerOrig" docstruct="topstruct">Besitzer der Vorlage</item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" metadata="slub_ownerOrig" docstruct="firstchild">Besitzer der Vorlage</item>
+
+                <!-- Titel -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain"> Titel </item>
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMainShort"> Titel (Sortierung)</item>
+
+                <!-- Urheber -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="ListOfCreators"> Autoren </item>
+
+                <!-- Identifikator -->
+                <item from="werk" isnotdoctype="periodical" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">ATS</item>
+                <item from="werk" isdoctype="periodical" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">TSL</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog c-Satz </item>
+                <item from="werk" isdoctype="multivolume" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital c-Satz</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog a-Satz </item>
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital a-Satz</item>
+                <item from="vorlage" isdoctype="periodical" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog b-Satz </item>
+                <item from="werk" isdoctype="periodical" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital b-Satz</item>
+                <item from="werk" isdoctype="periodical" ughbinding="true" docstruct="topstruct" metadata="ISSN"> ISSN </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog Band </item>
+                <item from="werk" required="true" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital Band </item>
+
+                <!--Informationen für Bände-->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="ListOfCreators"> Autoren (Band)</item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript" ughbinding="true" docstruct="firstchild" metadata="CurrentNo"> Bandnummer </item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNoSorting"> Nummer (Sortierung) </item>
+                <item from="vorlage" isdoctype="multivolume|periodical"> Nummer (Benennung) </item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog f-Satz </item>
+                <item from="werk" required="true" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital f-Satz </item>
+
+                <!-- Erscheinungsjahr, Erscheinungsort und Verlag -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="PlaceOfPublication"> Erscheinungsort </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="periodical|multivolume" ughbinding="true" docstruct="firstchild" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="PublisherName"> Verlag </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublisherName"> Verlag </item>
+
+                <!-- Signatur -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+
+                <!-- Vorgangstitel -->
+                <processtitle isdoctype="multivolume">ATS+TSL+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="monograph|manuscript">ATS+TSL+'_'+PPN digital a-Satz</processtitle>
+                <processtitle isdoctype="periodical">TSL+'_'+PPN digital Band+'_'+Nummer (Benennung)</processtitle>
+                <hide/>
+            </itemlist>
+            <opac use="true">
+                <catalogue>SWB</catalogue>
+            </opac>
+            <templates use="true"/>
+            <defaultdoctype>monograph</defaultdoctype>
+            <metadatageneration use="true"/>
+        </createNewProcess>
+        <tifheader>
+            <monograph>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</monograph>
+            <manuscript>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</manuscript>
+            <multivolume>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)+'|'</multivolume>
+            <periodical>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</periodical>
+        </tifheader>
+        <dmsImport/>
+        <validate>
+            <metadata metadata="CreatorsAllOrigin" docstruct="all" createelementfrom="Author|Editor|IllustratorArtist|Photographer|Translator|Creator">CreatorsAllOrigin automatisch anlegen</metadata>
+        </validate>
+    </project>
+    <project name="Schlegel">
+        <createNewProcess>
+            <itemlist>
+                <item from="werk"> Artist
+                    <select label="SLUB"> Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden, Germany </select>
+                </item>
+
+                <!-- Schrifttyp -->
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+                <item from="werk" isdoctype="periodical|multivolume" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+                <item from="werk" isdoctype="bundle" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+
+                <!-- Fußleiste -->
+                <item from="werk" isdoctype="bundle" ughbinding="true" docstruct="firstchild" metadata="slub_footer">Fußleiste
+                    <select label="slubdfgkozemar">slubdfgkozemar</select>
+                </item>
+
+                <!-- Förderer -->
+                <item from="werk" isdoctype="bundle" ughbinding="true" docstruct="firstchild" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+
+                <!-- Besitzer der Vorlage -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" metadata="slub_ownerOrig" docstruct="topstruct">Besitzer der Vorlage</item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" metadata="slub_ownerOrig" docstruct="firstchild">Besitzer der Vorlage</item>
+
+                <!-- Titel -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain"> Titel </item>
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMainShort"> Titel (Sortierung)</item>
+                <item from="vorlage" isdoctype="bundle" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain">Titel Konvolut</item>
+
+                <!-- Urheber -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="ListOfCreators"> Autoren </item>
+
+                <!-- Identifikator -->
+                <item from="werk" isnotdoctype="periodical" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">ATS</item>
+                <item from="werk" isdoctype="periodical" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">TSL</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog c-Satz </item>
+                <item from="werk" isdoctype="multivolume" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital c-Satz</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog a-Satz </item>
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital a-Satz</item>
+                <item from="vorlage" isdoctype="periodical" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog b-Satz </item>
+                <item from="werk" isdoctype="periodical" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital b-Satz</item>
+                <item from="werk" isdoctype="periodical" ughbinding="true" docstruct="topstruct" metadata="ISSN"> ISSN </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog Band </item>
+                <item from="werk" required="true" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital Band </item>
+                <item from="vorlage" isdoctype="bundle" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital">Identifikator Konvolut</item>
+                <item from="werk" isdoctype="bundle" required="true" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital">Identifikator Mappe</item>
+
+                <!--Informationen für Bände -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="ListOfCreators"> Autoren (Band)</item>
+                <item from="vorlage" isdoctype="bundle" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain">Titel (Mappe)</item>
+                <item from="vorlage" isdoctype="bundle" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNo">Mappennummer</item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript" ughbinding="true" docstruct="firstchild" metadata="CurrentNo"> Bandnummer </item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|bundle" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNoSorting"> Nummer (Sortierung) </item>
+                <item from="vorlage" isdoctype="multivolume|periodical"> Nummer (Benennung) </item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog f-Satz </item>
+                <item from="werk" required="true" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital f-Satz </item>
+
+                <!-- Erscheinungsjahr, Erscheinungsort und Verlag -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="PlaceOfPublication"> Erscheinungsort </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="periodical|multivolume" ughbinding="true" docstruct="firstchild" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="PublisherName"> Verlag </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublisherName"> Verlag </item>
+
+                <!-- Signatur -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+
+                <!-- Informationen für Konvolut -->
+                <item from="vorlage" isdoctype="bundle" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource">Signatur</item>
+                <item from="vorlage" isdoctype="bundle" ughbinding="true" docstruct="topstruct" metadata="slub_ownerOrig">Besitzende Institution (Vorlage)</item>
+                <item from="vorlage" isdoctype="bundle" ughbinding="true" docstruct="topstruct" metadata="slub_ownerDigi">Besitzende Institution (Digitalisat)</item>
+                <item from="werk" isdoctype="bundle" ughbinding="true" docstruct="firstchild" metadata="slub_ownerOrig">Besitzende Institution (Vorlage)</item>
+                <item from="werk" isdoctype="bundle" ughbinding="true" docstruct="firstchild" metadata="slub_ownerDigi">Besitzende Institution (Digitalisat)</item>
+
+                <!-- Vorgangstitel -->
+                <processtitle isdoctype="multivolume">ATS+TSL+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="monograph|manuscript">ATS+TSL+'_'+PPN digital a-Satz</processtitle>
+                <processtitle isdoctype="periodical">TSL+'_'+PPN digital Band+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="bundle">ATS+TSL+'_'+Identifikator Mappe+'_'+Mappennummer</processtitle>
+                <hide/>
+            </itemlist>
+            <opac use="true">
+                <catalogue>SWB</catalogue>
+            </opac>
+            <templates use="true"/>
+            <defaultdoctype>monograph</defaultdoctype>
+            <metadatageneration use="true"/>
+        </createNewProcess>
+        <tifheader>
+            <monograph>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</monograph>
+            <manuscript>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</manuscript>
+            <multivolume>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)+'|'</multivolume>
+            <periodical>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</periodical>
+            <bundle>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+Identifikator Mappe+'_'+Mappennummer+'|'</bundle>
+        </tifheader>
+        <dmsImport/>
+        <validate>
+            <metadata metadata="CreatorsAllOrigin" docstruct="all" createelementfrom="Author|Editor|IllustratorArtist|Photographer|Translator|Creator">CreatorsAllOrigin automatisch anlegen</metadata>
+        </validate>
+    </project>
+    <project name="VD_17">
+        <createNewProcess>
+            <itemlist>
+                <item from="werk"> Artist
+                    <select label="SLUB"> Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden, Germany </select>
+                </item>
+
+                <!-- Schrifttyp -->
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+                <item from="werk" isdoctype="periodical|multivolume" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+
+                <!-- Fußleiste -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="slub_footer">Fußleiste
+                    <select label="slubdfg">slubdfg</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="slub_footer">Fußleiste
+                    <select label="slubdfg">slubdfg</select>
+                </item>
+
+                <!-- Förderer -->
+                <item from="werk" isdoctype="monograph|manuscript|multivolume|periodical" ughbinding="true" docstruct="topstruct" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+
+                <!-- Besitzer der Vorlage -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" metadata="slub_ownerOrig" docstruct="topstruct">Besitzer der Vorlage</item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" metadata="slub_ownerOrig" docstruct="firstchild">Besitzer der Vorlage</item>
+
+                <!-- Titel -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain"> Titel </item>
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMainShort"> Titel (Sortierung)</item>
+
+                <!-- Urheber -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="ListOfCreators"> Autoren </item>
+
+                <!-- Identifikator -->
+                <item from="werk" isnotdoctype="periodical" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">ATS</item>
+                <item from="werk" isdoctype="periodical" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">TSL</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog c-Satz </item>
+                <item from="werk" isdoctype="multivolume" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital c-Satz</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog a-Satz </item>
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital a-Satz</item>
+                <item from="vorlage" isdoctype="periodical" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog b-Satz </item>
+                <item from="werk" isdoctype="periodical" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital b-Satz</item>
+                <item from="werk" isdoctype="periodical" ughbinding="true" docstruct="topstruct" metadata="ISSN"> ISSN </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog Band </item>
+                <item from="werk" required="true" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital Band </item>
+
+                <!-- VD17 Nummer -->
+                <item from="werk" isdoctype="monograph|manuscript|periodical" ughbinding="true" docstruct="topstruct" metadata="VD17"> VD17-Nummer </item>
+                <item from="werk" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="VD17"> VD17-Nummer </item>
+
+                <!--Informationen für Bände-->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="ListOfCreators"> Autoren (Band)</item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript" ughbinding="true" docstruct="firstchild" metadata="CurrentNo"> Bandnummer </item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNoSorting"> Nummer (Sortierung) </item>
+                <item from="vorlage" isdoctype="multivolume|periodical"> Nummer (Benennung) </item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog f-Satz </item>
+                <item from="werk" required="true" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital f-Satz </item>
+
+                <!-- Erscheinungsjahr, Erscheinungsort und Verlag -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="PlaceOfPublication"> Erscheinungsort </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="periodical|multivolume" ughbinding="true" docstruct="firstchild" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="PublisherName"> Verlag </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublisherName"> Verlag </item>
+
+                <!-- Signatur -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+
+                <!-- Vorgangstitel -->
+                <processtitle isdoctype="multivolume">ATS+TSL+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="monograph|manuscript">ATS+TSL+'_'+PPN digital a-Satz</processtitle>
+                <processtitle isdoctype="periodical">TSL+'_'+PPN digital Band+'_'+Nummer (Benennung)</processtitle>
+                <hide/>
+            </itemlist>
+            <opac use="true">
+                <catalogue>SWB</catalogue>
+            </opac>
+            <templates use="true"/>
+            <defaultdoctype>monograph</defaultdoctype>
+            <metadatageneration use="true"/>
+        </createNewProcess>
+        <tifheader>
+            <monograph>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</monograph>
+            <manuscript>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</manuscript>
+            <multivolume>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)+'|'</multivolume>
+            <periodical>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</periodical>
+        </tifheader>
+        <dmsImport/>
+        <validate>
+            <metadata metadata="CreatorsAllOrigin" docstruct="all" createelementfrom="Author|Editor|IllustratorArtist|Photographer|Translator|Creator">CreatorsAllOrigin automatisch anlegen</metadata>
+        </validate>
+    </project>
+    <project name="VD_18">
+        <createNewProcess>
+            <itemlist>
+                <item from="werk"> Artist
+                    <select label="SLUB"> Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden, Germany </select>
+                </item>
+
+                <!-- Schrifttyp -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+                <item from="werk" isdoctype="periodical|multivolume" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+
+                <!-- Fußleiste -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="slub_footer">Fußleiste
+                    <select label="slubdfg">slubdfg</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_footer">Fußleiste
+                    <select label="slubdfg">slubdfg</select>
+                </item>
+
+                <!-- Förderer -->
+                <item from="werk" isdoctype="monograph|manuscript|multivolume|periodical|newspaper" ughbinding="true" docstruct="topstruct" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+
+                <!-- Besitzer der Vorlage -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" ughbinding="true" metadata="slub_ownerOrig" docstruct="topstruct">Besitzer der Vorlage</item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" metadata="slub_ownerOrig" docstruct="firstchild">Besitzer der Vorlage</item>
+
+                <!-- Titel -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain"> Titel </item>
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMainShort"> Titel (Sortierung)</item>
+
+                <!-- Urheber -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="ListOfCreators"> Autoren </item>
+
+                <!-- Identifikator -->
+                <item from="werk" isnotdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">ATS</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">TSL</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog c-Satz </item>
+                <item from="werk" isdoctype="multivolume" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital c-Satz</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog a-Satz </item>
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital a-Satz</item>
+                <item from="vorlage" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog b-Satz </item>
+                <item from="werk" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital b-Satz</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" docstruct="topstruct" metadata="ISSN"> ISSN </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog Band </item>
+                <item from="werk" required="true" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital Band </item>
+                <item from="vorlage" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="CatalogIDPeriodicalDB">ZDB-ID</item>
+
+                <!-- VD18 Nummer -->
+                <item from="werk" isdoctype="monograph|manuscript|periodical|newspaper" ughbinding="true" docstruct="topstruct" metadata="VD18"> VD18-Nummer </item>
+                <item from="werk" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="VD18"> VD18-Nummer </item>
+
+                <!--Informationen für Bände-->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="ListOfCreators"> Autoren (Band)</item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="firstchild" metadata="CurrentNo"> Bandnummer </item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|newspaper" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNoSorting"> Nummer (Sortierung) </item>
+                <item from="vorlage" isdoctype="multivolume|periodical"> Nummer (Benennung) </item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog f-Satz </item>
+                <item from="werk" required="true" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital f-Satz </item>
+
+                <!-- Sprache für Zeitungen -->
+                <item from="werk" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="DocLanguage">Sprache</item>
+
+                <!-- Erscheinungsjahr, Erscheinungsort und Verlag -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" ughbinding="true" docstruct="topstruct" metadata="PlaceOfPublication"> Erscheinungsort </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="periodical|multivolume|newspaper" ughbinding="true" docstruct="firstchild" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="PublisherName"> Verlag </item>
+                <item from="vorlage" isdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="topstruct" metadata="PublisherName"> Verlag </item>
+
+                <!-- Signatur -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+
+                <!-- Vorgangstitel -->
+                <processtitle isdoctype="multivolume">ATS+TSL+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="monograph|manuscript">ATS+TSL+'_'+PPN digital a-Satz</processtitle>
+                <processtitle isdoctype="periodical">TSL+'_'+PPN digital Band+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="newspaper">TSL+'_'+PPN digital b-Satz+'-'+#YEAR+#MONTH+#DAY+'_'+#issu</processtitle>
+                <hide/>
+            </itemlist>
+            <opac use="true">
+                <catalogue>SWB</catalogue>
+            </opac>
+            <templates use="true"/>
+            <defaultdoctype>monograph</defaultdoctype>
+            <metadatageneration use="true"/>
+        </createNewProcess>
+        <tifheader>
+            <monograph>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</monograph>
+            <manuscript>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</manuscript>
+            <multivolume>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)+'|'</multivolume>
+            <periodical>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</periodical>
+            <newspaper>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</newspaper>
+        </tifheader>
+        <dmsImport/>
+        <validate>
+            <metadata metadata="CreatorsAllOrigin" docstruct="all" createelementfrom="Author|Editor|IllustratorArtist|Photographer|Translator|Creator">CreatorsAllOrigin automatisch anlegen</metadata>
+        </validate>
+    </project>
+    <project name="Zeitungen_DFG">
+        <createNewProcess>
+            <itemlist>
+                <item from="werk"> Artist
+                    <select label="SLUB"> Sächsische Landesbibliothek - Staats- und Universitätsbibliothek Dresden, Germany </select>
+                </item>
+
+                <!-- Schrifttyp -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+                <item from="werk" isdoctype="periodical|multivolume" required="true" ughbinding="true" docstruct="firstchild" metadata="slub_script">Schrifttyp
+                    <select label="Antiqua">Antiqua</select>
+                    <select label="Fraktur">Fraktur</select>
+                    <select label="keine OCR">keine_OCR</select>
+                </item>
+
+                <!-- Fußleiste -->
+                <item from="werk" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="slub_footer">Fußleiste
+                    <select label="slubdfg">slubdfg</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_footer">Fußleiste
+                    <select label="slubdfg">slubdfg</select>
+                </item>
+
+                <!-- Förderer -->
+                <item from="werk" isdoctype="monograph|manuscript|multivolume|periodical|newspaper" ughbinding="true" docstruct="topstruct" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+                <item from="werk" isdoctype="multivolume|periodical|newspaper" ughbinding="true" docstruct="firstchild" metadata="slub_Finance">Förderer
+                    <select label="Deutsche Forschungsgemeinschaft">Deutsche Forschungsgemeinschaft</select>
+                </item>
+
+                <!-- Besitzer der Vorlage -->
+                <item from="werk" isdoctype="monograph|manuscript|newspaper" ughbinding="true" metadata="slub_ownerOrig" docstruct="topstruct">Besitzer der Vorlage</item>
+                <item from="werk" isdoctype="multivolume|periodical" ughbinding="true" metadata="slub_ownerOrig" docstruct="firstchild">Besitzer der Vorlage</item>
+
+                <!-- Titel -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMain"> Titel </item>
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="TitleDocMainShort"> Titel (Sortierung)</item>
+
+                <!-- Urheber -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|manuscript" ughbinding="true" docstruct="topstruct" metadata="ListOfCreators"> Autoren </item>
+
+                <!-- Identifikator -->
+                <item from="werk" isnotdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">ATS</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" metadata="TSL_ATS" docstruct="topstruct">TSL</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog c-Satz </item>
+                <item from="werk" isdoctype="multivolume" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital c-Satz</item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog a-Satz </item>
+                <item from="werk" isdoctype="monograph|manuscript" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital a-Satz</item>
+                <item from="vorlage" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDSource"> PPN analog b-Satz </item>
+                <item from="werk" isdoctype="periodical|newspaper" required="true" ughbinding="true" docstruct="topstruct" metadata="CatalogIDDigital"> PPN digital b-Satz</item>
+                <item from="werk" isdoctype="periodical|newspaper" ughbinding="true" docstruct="topstruct" metadata="ISSN"> ISSN </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog Band </item>
+                <item from="werk" required="true" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital Band </item>
+                <item from="vorlage" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="CatalogIDPeriodicalDB">ZDB-ID</item>
+
+                <!-- Informationen für Bände -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMain"> Titel (Band)</item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="TitleDocMainShort"> Titel (Band) (Sortierung)</item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="ListOfCreators"> Autoren (Band)</item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="firstchild" metadata="CurrentNo"> Bandnummer </item>
+                <item from="vorlage" isnotdoctype="monograph|manuscript|newspaper" required="true" ughbinding="true" docstruct="firstchild" metadata="CurrentNoSorting"> Nummer (Sortierung) </item>
+                <item from="vorlage" isdoctype="multivolume|periodical"> Nummer (Benennung) </item>
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDSource"> PPN analog f-Satz </item>
+                <item from="werk" required="true" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="CatalogIDDigital"> PPN digital f-Satz </item>
+
+                <!-- Sprache für Zeitungen -->
+                <item from="werk" isdoctype="newspaper" ughbinding="true" docstruct="topstruct" metadata="DocLanguage">Sprache</item>
+
+                <!-- Erscheinungsjahr, Erscheinungsort und Verlag -->
+                <item from="vorlage" isdoctype="monograph|multivolume|periodical|newspaper|manuscript" ughbinding="true" docstruct="topstruct" metadata="PlaceOfPublication"> Erscheinungsort </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="periodical|newspaper|multivolume" ughbinding="true" docstruct="firstchild" metadata="PublicationYear"> Erscheinungsjahr </item>
+                <item from="vorlage" isdoctype="multivolume|periodical" ughbinding="true" docstruct="firstchild" metadata="PublisherName"> Verlag </item>
+                <item from="vorlage" isdoctype="monograph|manuscript|newspaper" ughbinding="true" docstruct="topstruct" metadata="PublisherName"> Verlag </item>
+
+                <!-- Signatur -->
+                <item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="monograph|manuscript" ughbinding="true" docstruct="topstruct" metadata="shelfmarksource"> Signatur </item>
+                <item from="vorlage" isdoctype="periodical" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource"> Signatur </item>
+
+                <!-- Vorgangstitel -->
+                <processtitle isdoctype="multivolume">ATS+TSL+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="monograph|manuscript">ATS+TSL+'_'+PPN digital a-Satz</processtitle>
+                <processtitle isdoctype="periodical">TSL+'_'+PPN digital Band+'_'+Nummer (Benennung)</processtitle>
+                <processtitle isdoctype="newspaper">TSL+'_'+PPN digital b-Satz+'-'+#YEAR+#MONTH+#DAY+'_'+#issu</processtitle>
+                <hide/>
+            </itemlist>
+            <opac use="true">
+                <catalogue>SWB</catalogue>
+            </opac>
+            <templates use="true"/>
+            <defaultdoctype>newspaper</defaultdoctype>
+            <metadatageneration use="true"/>
+        </createNewProcess>
+        <tifheader>
+            <monograph>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</monograph>
+            <manuscript>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital a-Satz+'|'</manuscript>
+            <multivolume>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+ATS+'_'+PPN digital f-Satz+'_'+Nummer (Benennung)+'|'</multivolume>
+            <periodical>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</periodical>
+            <newspaper>'|[[DOC_TYPE]]'+$Doctype+'|[[HAUPTTITEL]]'+Titel+'|[[AUTOREN/HERAUSGEBER]]'+Autoren+'|[[JAHR]]'+Erscheinungsjahr+'|[[ERSCHEINUNGSORT]]'+Erscheinungsort+'|[[VERZ_STRCT]]'+TSL+'_'+PPN digital b-Satz+'_'+Nummer (Benennung)+'|'</newspaper>
+        </tifheader>
+        <dmsImport/>
+        <validate>
+            <metadata metadata="CreatorsAllOrigin" docstruct="all" createelementfrom="Author|Editor|IllustratorArtist|Photographer|Translator|Creator">CreatorsAllOrigin automatisch anlegen</metadata>
+        </validate>
+    </project>
+</goobiProjects>
