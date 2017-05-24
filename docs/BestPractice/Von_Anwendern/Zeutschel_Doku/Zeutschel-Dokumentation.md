@@ -2,7 +2,7 @@ Auf dieser Seite werden die Links zu den Zeutschel-Dokumentationen bereitgestell
 
 ### Goobi.Production 1.11 : Beauftragte Weiterentwicklungen
 
-[TS-1105_Weiterentwicklungen-GOOBI-WLB.pdf](Zeutschel_Doku/TS-1105_Weiterentwicklungen-GOOBI-WLB.pdf)
+[TS-1105_Weiterentwicklungen-GOOBI-WLB.pdf](TS-1105_Weiterentwicklungen-GOOBI-WLB.pdf)
 
 Diese Dokumentation enthält unter anderem:
 * Änderungen und Erweiterungen
@@ -17,7 +17,7 @@ Diese Dokumentation enthält unter anderem:
 
 ### Goobi.Production 1.11 - TS-1090
 
-[TS-1090_TechnInfo_Zeitungsdigital.pdf](Zeutschel_Doku/TS-1090_TechnInfo_Zeitungsdigital.pdf)
+[TS-1090_TechnInfo_Zeitungsdigital.pdf](TS-1090_TechnInfo_Zeitungsdigital.pdf)
 
 Diese Dokumentation enthält unter anderem:
 * Konfigurationseinstellungen
@@ -28,7 +28,7 @@ Diese Dokumentation enthält unter anderem:
 
 ### Kitodo.Production 2.1 - TS-1175
 
-[TS-1175_TechnInformation_RDA-Metadata_Kitodo-Production.pdf](Zeutschel_Doku/TS-1175_TechnInformation_RDA-Metadata_Kitodo-Production.pdf)
+[TS-1175_TechnInformation_RDA-Metadata_Kitodo-Production.pdf](TS-1175_TechnInformation_RDA-Metadata_Kitodo-Production.pdf)
 
 Diese Dokumentation enthält unter anderem:
 * Allgemeine Beschreibung

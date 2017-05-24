@@ -1,10 +1,6 @@
-site_name: Marshmallow Generator
+site_name: Marshmallow Generator1
+
+repo_url: https://github.com/Ishiido/kit-gh-pages-anwenderdoku
 
 pages:
-- Home: 'index.md'
-- Aus dem alten Wiki: 
-    - Anwenderdokumentation: 'AusWiki/Home.md'
-- Getting Started:
-    - Installing:
-        - Installation Kitodo.Production 3.x: 'GettingStarted/installing/Installationsanleitung-für-Kitodo.Production-3.x.md'
 
