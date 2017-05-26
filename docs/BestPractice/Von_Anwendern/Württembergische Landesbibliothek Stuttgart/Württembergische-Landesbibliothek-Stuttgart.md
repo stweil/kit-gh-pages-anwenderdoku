@@ -1,3 +1,5 @@
+# Anwenderdokumentation der Württembergischen Landesbibliothek Stuttgart (WLB)
+
 In der Anwenderdokumentation der Württembergischen Landesbibliothek Stuttgart (WLB) wird der Workflow von Digitalisierungsprojekten beschrieben. Sie wird Mitarbeitern zur Verfügung gestellt, die zum ersten Mal mit Kitodo.Production arbeiten. 
 
 ---
@@ -13,7 +15,7 @@ In der Anwenderdokumentation der Württembergischen Landesbibliothek Stuttgart (
 
 ---
 
-##### _[Bearbeitung von Digitalisaten in Kitodo (PDF)](WLB_Doku/goobi_bearbeitung_2016_08.pdf)_
+##### _[Bearbeitung von Digitalisaten in Kitodo (PDF)](goobi_bearbeitung_2016_08.pdf)_
 
 In diesem Dokument wird die Bearbeitung von Digitalisaten in Kitodo.Production in der WLB beschrieben. 
 

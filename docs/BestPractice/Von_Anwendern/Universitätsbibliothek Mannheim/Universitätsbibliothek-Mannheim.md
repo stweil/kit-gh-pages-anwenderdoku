@@ -1,3 +1,5 @@
+# Universitätsbibliothek Mannheim
+
 Seit 2014 verwendet die Universitätsbibliothek Mannheim Kitodo (ehemals Goobi) für alle Digitalisierungsprojekte:
 
 > Anfang 2012 begann die Universitätsbibliothek Mannheim damit, ihre Alten Drucke und weitere Digitalisate mit Hilfe einer speziellen Software zu erschließen und im Internet zu veröffentlichen. Dabei setzte sie zunächst 
@@ -17,12 +19,12 @@ auf ein kommerzielles Produkt, die Software Visual Library von semantics Kommuni
 ##### _[Anwenderdokumentation](https://digi.bib.uni-mannheim.de/kitodo/AnwenderdokuKitodoProduction_160713.pdf)_
 
 Dies ist die intern erstellte und genutzte Dokumentation unserer Medienbearbeitung.
-
+ 
 ##### _Entwicklungsaktivitäten_
 
 Wir unterstützen den Community-Ansatz von Kitodo, indem wir uns aktiv an der Weiterentwicklung beteiligen. Aktuell pflegen wir beispielsweise die [Docker-Installation von Kitodo.Production](https://hub.docker.com/r/kitodo/production/).
 
 ##### _Laufzettel_
 
-Institutionsspezifische Angaben zum Laufzettel finden sich unter [Laufzettel / UB Mannheim](https://github.com/kitodo/kitodo-production/wiki/Laufzettel#ub-mannheim). 
+Institutionsspezifische Angaben zum Laufzettel finden sich unter [Laufzettel / UB Mannheim](../../../AusWiki//Laufzettel.md). 
 

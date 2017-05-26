@@ -1,3 +1,5 @@
+# Anwenderdokumentation der _Sächsischen Landesbibliothek – Staats- und Universitätsbibliothek Dresden_
+
 In der Anwenderdokumentation der _Sächsischen Landesbibliothek – Staats- und Universitätsbibliothek Dresden_ wird auf Wiki-Seiten verlinkt, die institutionsspezifische Informationen zur Bearbeitung der Digitalisate enthalten.
 
 Der Workflow entspricht zum Großteil der [[Anwenderdokumentation Kitodo.Production 1.11]] und wird nicht gesondert erläutert. 
@@ -23,7 +25,7 @@ Siehe auch: [Bearbeitung Aufgabe](https://github.com/kitodo/kitodo-production/wi
 
 ---
 
-##### _[Aufgaben Einstellungen](https://github.com/kitodo/kitodo-production/wiki/Aufgaben-Einstellungen)_
+##### _[Aufgaben Einstellungen](Aufgaben-Einstellungen)_
 
 Auf dieser Seite werden die konkreten Einstellungen der Aufgaben in einer Tabelle aufgelistet, wie sie in der SLUB angewendet werden. 
 
@@ -31,7 +33,7 @@ Siehe auch: [Aufgaben](https://github.com/kitodo/kitodo-production/wiki/Aufgaben
 
 ---
 
-##### _[Beispiel Checkliste (XLS)](https://github.com/kitodo/kitodo-production/wiki/images/Checkliste_leer-neu.xls)_
+##### _[Beispiel Checkliste (XLS)](Checkliste_leer-neu.xls)_
 
 Auf dieser Seite wird eine Checkliste angeboten, die Eigenschaften und Aufgaben enthält, die vor Beginn eines Projekts geklärt/definiert werden sollten. Dies soll aufwändige Nacharbeiten vermeiden. 
 Nicht alle Schritte müssen beachtet werden! Es bietet eine gute Übersicht, was bedacht werden muss/kann/soll. Die Varietät der Projekte erschwert es, ein allgemeingültiges und übersichtliches Dokument zu erstellen. 
@@ -53,37 +55,37 @@ Institutionsspezifische Angaben zum Laufzettel finden sich unter [Laufzettel / S
 
 ---
 
-##### _[LZA Validierung](https://github.com/kitodo/kitodo-production/wiki/LZA-Validierung)_
+##### _LZA Validierung_
 
 Auf dieser Seite wird beschrieben, wie die LZA Validierung in der SLUB durchgeführt wird. 
 
-Siehe auch: [Kitodo.Production und Langzeitarchivierung](https://github.com/kitodo/kitodo-production/wiki/Kitodo.Production-und-Langzeitarchivierung)
+Siehe auch: [Kitodo.Production und Langzeitarchivierung](../../../AusWiki/LZA-Validierung )
 
 ---
 
-##### _[OCR in Kitodo](https://github.com/kitodo/kitodo-production/wiki/OCR)_
+##### _OCR in Kitodo_
 
 Auf dieser Seite werden die OCR-Einstellungen in der SLUB beschrieben. 
 
-Siehe auch: [OCR](https://github.com/kitodo/kitodo-production/wiki/OCR)
+Siehe auch: [OCR](../../../AusWiki/OCR)
 
 ---
 
-##### _[Struktur- und Metadatenvergabe in der SLUB (PDF)](SLUB_Doku/SLUB_Erfassung.pdf)_
+##### _[Struktur- und Metadatenvergabe in der SLUB (PDF)](SLUB_Erfassung.pdf)_
 
 In diesem Dokument werden Leitlinien zur Struktur- und Metadatenvergabe in der SLUB erläutert. 
 
-Siehe auch: [Metadaten bearbeiten](https://github.com/kitodo/kitodo-production/wiki/Metadaten-bearbeiten), [Strukturdaten bearbeiten](https://github.com/kitodo/kitodo-production/wiki/Strukturdaten-bearbeiten)
+Siehe auch: [Metadaten bearbeiten](../../../AusWiki/Metadaten-bearbeiten), [Strukturdaten bearbeiten](../../../AusWiki/Strukturdaten-bearbeiten)
 
 ---
 
-##### _[Umbenennung von Images in der SLUB](https://github.com/kitodo/kitodo-production/wiki/Umbenennung-von-Images-in-der-SLUB)_
+##### _[Umbenennung von Images in der SLUB](Umbenennung-von-Images-in-der-SLUB)_
 
 Siehe auch: [Korrekturmeldungen](https://github.com/kitodo/kitodo-production/wiki/Korrekturmeldungen)
 
 ---
 
-##### _[Zeitungsdigitalisierung in der SLUB](https://github.com/kitodo/kitodo-production/wiki/Zeitungsdigitalisierung-in-der-SLUB)_
+##### _[Zeitungsdigitalisierung in der SLUB](Zeitungsdigitalisierung-in-der-SLUB)_
 
 Auf dieser Seite wird skizziert, wie Zeitungen in der SLUB bearbeitet werden. 
 

@@ -1,4 +1,5 @@
-# Einleitung
+# Umbennen von Images an der SLUB 
+## Einleitung
 
 In der SLUB werden die Images eines Vorgangs nach einem bestimmten Muster benannt (acht Stellen, jeweils um eine Stelle erhöht und tif klein geschrieben): 
 
@@ -11,8 +12,8 @@ In der SLUB werden die Images eines Vorgangs nach einem bestimmten Muster benann
 Auch nach Korrekturen muss diese Regel eingehalten werden. In der SLUB wird für das Batch-Umbenennen die Software IrfanView genutzt. Auf dieser Seite wird beschrieben, wie sie angewendet wird und welche Voreinstellungen vorgenommen werden müssen. 
 
 
-# Umbenennen von Images in einem Ordner mit IrfanView
-## Voreinstellungen
+## Umbenennen von Images in einem Ordner mit IrfanView
+### Voreinstellungen
 
 Zuerst wird die Batch-Funktion von IrfanView aufgerufen: 
 
@@ -53,7 +54,7 @@ Hier wird definiert, wie die Dateien sortiert werden. Es muss darauf geachtet we
 
 Zudem wird der Haken bei *Automatisch sortieren nach Einfügen* gesetzt, um ein manuelles Einstellen der Sortierung zu vermeiden. 
 
-## Ablauf
+### Ablauf
 
 Zunächst wird die Batch-Funktion von IrfanView aufgerufen. Es wird das zuvor beschriebene Fenster angezeigt. 
 
@@ -69,7 +70,7 @@ Danach kann auch der IrfanView beendet werden.
 ![](images/Batch_Umbenennen06.jpg)
 
 
-# Umbenennen von Images in mehreren Ordnern mit Advanced Renamer
+## Umbenennen von Images in mehreren Ordnern mit Advanced Renamer
 
 Wenn Images in mehreren Ordnern gleichzeitig jeweils ab 00000001.tif, 00000002.tif, ... benannt werden sollen, bietet sich der Advanced Renamer an. Der Befehl `<IncNrDir>` unter _Methode hinzufügen_ / _Neuer Name_ ermöglicht es, Nummern pro Ordner hochzuzählen. 
 

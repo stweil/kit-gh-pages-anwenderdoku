@@ -1,3 +1,5 @@
+# Anwenderdokumentation der _Staats- und Universitätsbibliothek Hamburg Carl von Ossietzky_ 
+
 In der Anwenderdokumentation der _Staats- und Universitätsbibliothek Hamburg Carl von Ossietzky_ wird der Workflow von Digitalisierungsprojekten beschrieben. Sie wird für interne Schulungen von Mitarbeitern genutzt. 
 
 ---
@@ -13,7 +15,7 @@ In der Anwenderdokumentation der _Staats- und Universitätsbibliothek Hamburg Ca
 
 ---
 
-##### _[Allgemeines zum Workflow (PDF)](SUBHH_Doku/Allgemeines_zum_Workflow_Medienwerkstatt.pdf)_
+##### _[Allgemeines zum Workflow (PDF)](Allgemeines_zum_Workflow_Medienwerkstatt.pdf)_
 
 In diesem Dokument wird beschrieben, wie Workflows definiert werden und welche Benutzergruppen verwendet werden. 
 
@@ -21,7 +23,7 @@ Siehe auch: [Produktionsvorlage](https://github.com/kitodo/kitodo-production/wik
 
 ---
 
-##### _[Anlegen von Vorgängen (PDF)](SUBHH_Doku/Anlegen_von_Vorgaengen_Medienwerkstatt.pdf)_
+##### _[Anlegen von Vorgängen (PDF)](Anlegen_von_Vorgaengen_Medienwerkstatt.pdf)_
 
 In diesem Dokument wird beschrieben, wie Vorgänge (Monografien, mehrbändige Werke, Zeitschriften) in Kitodo.Production angelegt werden und wie Vorgänge gelöscht werden. 
 
@@ -29,7 +31,7 @@ Siehe auch: [Neuen Vorgang anlegen](https://github.com/kitodo/kitodo-production/
 
 ---
 
-##### _[Scanaufträge annehmen und ausführen (PDF)](SUBHH_Doku/Scanauftraege_annehmen_und_ausfuehren_Medienwerkstatt.pdf)_
+##### _[Scanaufträge annehmen und ausführen (PDF)](Scanauftraege_annehmen_und_ausfuehren_Medienwerkstatt.pdf)_
 
 In diesem Dokument wird beschrieben, wie die Scan-Aufgabe übernommen und abgeschlossen wird. Zudem enthält es Scanner-spezifische Hinweise. 
 
@@ -37,7 +39,7 @@ Siehe auch: [Scannen oder Images einfügen](https://github.com/kitodo/kitodo-pro
 
 ---
 
-##### _[Struktur- und Metadatenerfassung (PDF)](SUBHH_Doku/Struktur_und_Metadatenerfassung_Medienwerkstatt.pdf)_
+##### _[Struktur- und Metadatenerfassung (PDF)](Struktur_und_Metadatenerfassung_Medienwerkstatt.pdf)_
 
 In diesem Dokument werden die Arbeitsschritte Paginierung, sowie Struktur- und Metadatenvergabe beschrieben. Neben der Funktionsbeschreibung enthält das Dokument auch Hinweise zur praktischen Anwendung (zum Beispiel fingierte Zählung: ja oder nein). 
 
@@ -45,7 +47,7 @@ Siehe auch: [Paginieren](https://github.com/kitodo/kitodo-production/wiki/Pagini
 
 ---
 
-##### _[Suche nach Vorgängen über Filter (PDF)](SUBHH_Doku/Suche_nach_Vorgaengen_ueber_Filter_Medienwerkstatt.pdf)_
+##### _[Suche nach Vorgängen über Filter (PDF)](Suche_nach_Vorgaengen_ueber_Filter_Medienwerkstatt.pdf)_
 
 In diesem Dokument wird die Suche über Filter beschrieben. 
 
@@ -53,7 +55,7 @@ Siehe auch: [Suche und Filtern](https://github.com/kitodo/kitodo-production/wiki
 
 ---
 
-##### _[Hinweise für die Erfassung der Struktur- und Metadaten (PDF)](SUBHH_Doku/Hinweise_fuer_die_Erfassung_der_Struktur_und_Metadaten_Medienwerkstatt.pdf)_
+##### _[Hinweise für die Erfassung der Struktur- und Metadaten (PDF)](Hinweise_fuer_die_Erfassung_der_Struktur_und_Metadaten_Medienwerkstatt.pdf)_
 
 Dieses Dokument beschreibt die Erfassung der Meta- und Strukturdaten und enthält Tipps und Tricks für die praktische Anwendung.
 

@@ -1,3 +1,5 @@
+# Anwenderdokumentation der _Staatsbibliothek zu Berlin - Preußischer Kulturbesitz_ 
+
 In der Anwenderdokumentation der _Staatsbibliothek zu Berlin - Preußischer Kulturbesitz_ wird die Anwendung von Projekten, Produktionsvorlagen und Regelsätzen beschrieben. Zusätzlich werden einzelne Funktionen des Metadateneditors erläutert und Konfigurationsdateien annotiert. 
 
 
@@ -13,7 +15,7 @@ In der Anwenderdokumentation der _Staatsbibliothek zu Berlin - Preußischer Kult
 
 ---
 
-##### _[Anhängende Werke (PDF)](STABI_Doku/goobi-anhaengende-werke.pdf)_
+##### _[Anhängende Werke (PDF)](goobi-anhaengende-werke.pdf)_
 
 In diesem Dokument wird beschrieben, wie anhängende Werke über den Befehl _Strukturelemente aus Opac hinzufügen_ die Struktur- und Metadaten einer anderen Publikation in einen Vorgang eingefügt werden können. 
 
@@ -21,7 +23,7 @@ Siehe auch: [Strukturdaten bearbeiten](https://github.com/kitodo/kitodo-producti
 
 ---
 
-##### _[Konfigurations-Dateien (PPT)](STABI_Doku/goobi_Konfigdateien.ppt)_
+##### _[Konfigurations-Dateien (PPT)](goobi_Konfigdateien.ppt)_
 
 In diesem Dokument werden die Konfigurationsdateien von Kitodo.Production skizziert. Dieses Dokument eignet sich hervorragend, um Artikel für die Dateien im Wiki zu erstellen und um diese mit der Installationsanleitung, beziehungsweise den Beispiel-Dateien zu verknüpfen.   
 

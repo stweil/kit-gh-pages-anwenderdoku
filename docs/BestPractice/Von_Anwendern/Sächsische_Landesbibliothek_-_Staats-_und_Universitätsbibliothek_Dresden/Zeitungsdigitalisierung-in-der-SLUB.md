@@ -1,3 +1,5 @@
+# Zeitungsdigitalisierung in der SLUB
+
 Im Folgenden wird die Zeitungsdigitalisierung in der SLUB skizziert: 
 
 _Vorbedingungen_ 
