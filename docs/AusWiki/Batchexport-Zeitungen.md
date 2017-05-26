@@ -24,12 +24,12 @@ Erst im Nachhinein werden alle Ausgaben, oder eine zuvor definierte Anzahl von A
 Wenn alle oder eine bestimme Menge an Ausgaben exportiert wurden, kann der Batch-Export durchgeführt werden:
 
 1. Zunächst wird eine der beiden folgenden Funktionen ausgeführt . Dies hängt davon ab, ob schon ein Batch existiert oder nicht.
-	- *[Neuen Batch aus den gewählten Vorgängen erzeugen](https://github.com/kitodo/kitodo-production/wiki/Batches#neuen-batch-aus-den-gew%C3%A4hlten-vorg%C3%A4ngen-erzeugen)*
-	- *[Selektierte Vorgänge zu ausgewähltem Batch hinzufügen](https://github.com/kitodo/kitodo-production/wiki/Batches#selektierte-vorg%C3%A4nge-zu-ausgew%C3%A4hltem-batch-hinzuf%C3%BCgen)*
+	- *[Neuen Batch aus den gewählten Vorgängen erzeugen](Batches#neuen-batch-aus-den-gew%C3%A4hlten-vorg%C3%A4ngen-erzeugen)*
+	- *[Selektierte Vorgänge zu ausgewähltem Batch hinzufügen](Batches#selektierte-vorg%C3%A4nge-zu-ausgew%C3%A4hltem-batch-hinzuf%C3%BCgen)*
 2. Dann wird der Typ des Batchs geändert zu Zeitung
-	- *[Typ setzen: Logistik, Zeitung, fortlaufendes Sammelwerk](https://github.com/kitodo/kitodo-production/wiki/Batches#typ-setzen-logistik-zeitung-fortlaufendes-sammelwerk)*
+	- *[Typ setzen: Logistik, Zeitung, fortlaufendes Sammelwerk](Batches#typ-setzen-logistik-zeitung-fortlaufendes-sammelwerk)*
 3. Dann wird der Batch mit allen Ausgaben exportiert
-	- *[Gesamten Batch ins DMS exportieren](https://github.com/kitodo/kitodo-production/wiki/Batches#gesamten-batch-ins-dms-exportieren)*
+	- *[Gesamten Batch ins DMS exportieren](Batches#gesamten-batch-ins-dms-exportieren)*
 
 **ACHTUNG**: In dem Batch-Modul lassen sich die Vorgänge nicht nach Bearbeitungsstand filtern. Es muss also zuvor ermittelt werden, welche Vorgänge eines Titels schon exportiert wurden. Nur diese Vorgänge dürfen dann in einem Batch zusammengefasst und exportiert werden. 
 

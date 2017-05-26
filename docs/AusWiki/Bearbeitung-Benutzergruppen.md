@@ -4,6 +4,6 @@ Die Einstiegsseite bietet eine Übersicht über bereits vorhandene Benutzergrupp
 
 *Neue Benutzergruppe anlegen*
 
-Zum Anlegen einer neuen Benutzergruppe ist ihr Titel das heißt die Benennung dieser Gruppe einzutragen. Der Titel einer Benutzergruppe ist  von jedem Anwender frei wählbar, sollte aber innerhalb eines Systems einheitlich verwendet werden. Jeder Benutzergruppe ist aus dem Dropdown Menü eine Berechtigungsstufe zuzuweisen. Diese Stufen werden vom System bereit gestellt, siehe Kapitel [Berechtigungsstufen](https://github.com/kitodo/kitodo-production/wiki/Berechtigungsstufen).
+Zum Anlegen einer neuen Benutzergruppe ist ihr Titel das heißt die Benennung dieser Gruppe einzutragen. Der Titel einer Benutzergruppe ist  von jedem Anwender frei wählbar, sollte aber innerhalb eines Systems einheitlich verwendet werden. Jeder Benutzergruppe ist aus dem Dropdown Menü eine Berechtigungsstufe zuzuweisen. Diese Stufen werden vom System bereit gestellt, siehe Kapitel [Berechtigungsstufen](Berechtigungsstufen).
 
 ![](images/Benutzergruppe12.PNG)

@@ -81,7 +81,7 @@ Folgende Szenarien stehen zur Verfügung:
 
 Dies sind erste Überlegungen, die gerne verbessert und ergänzt werden dürfen. 
 
-Im Zuge der RDA-Umstellung sollte unbedingt auch der generelle Wunsch nach einem verbessertem Personen- und Körperschaften-Metadaten-Import beachtet werden. Zum Beispiel: [New features for METS Editor](https://github.com/kitodo/kitodo-production/wiki/New-features-for-METS-Editor). 
+Im Zuge der RDA-Umstellung sollte unbedingt auch der generelle Wunsch nach einem verbessertem Personen- und Körperschaften-Metadaten-Import beachtet werden. Zum Beispiel: [New features for METS Editor](New-features-for-METS-Editor). 
 
 ## Felder 4110, 4119, 4120
 
@@ -94,7 +94,7 @@ Das Feld 3210 (022A) bleibt zwar erhalten. Jedoch werden die Inhalte in Unterfel
 
 Erste Versuche haben ergebn, dass die Inhalte mehrerer Unterfelder in PICA in ein Metadatumfeld in Kitodo.Production gemappt werden können. Problematisch sind wiederholbare Unterfelder wie im SWB zum Beispiel $m (Besetzungsangaben) oder $n (Zählung eines Musikwerks). Diese werden überschrieben, so dass letztendlich nur der letzte Wert übernommen wird. 
 
-Auf der Seite [Zeutschel Dokumentation](https://github.com/kitodo/kitodo-production/wiki/Zeutschel-Dokumentation) finden Sie einen Link auf das Dokument [Goobi.Production 1.11 : Beauftragte Weiterentwicklungen](http://www.goobi.org/fileadmin/groups/goobi/dokumentation/TS-1105_Weiterentwicklungen-GOOBI-WLB.pdf). Dieses enthält mehrere Beschreibungen zum Import und Mappen von Datenfeldern. 
+Auf der Seite [Zeutschel Dokumentation](Zeutschel-Dokumentation) finden Sie einen Link auf das Dokument [Goobi.Production 1.11 : Beauftragte Weiterentwicklungen](http://www.goobi.org/fileadmin/groups/goobi/dokumentation/TS-1105_Weiterentwicklungen-GOOBI-WLB.pdf). Dieses enthält mehrere Beschreibungen zum Import und Mappen von Datenfeldern. 
 
 
 ## Quellen 

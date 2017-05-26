@@ -1,8 +1,8 @@
 # Einleitung
 
-Batches wurden ursprünglich dafür genutzt, um Laufzettel von mehreren Vorgängen gleichzeitig drucken zu können. Eine Weiterentwicklung ermöglicht jetzt den Export von Zeitungen, so dass in den METS-Dateien mehr Referenzierungen zu einander enthalten sind, die die Präsentation erleichtern. Weitere Informationen zur Batches-Funktion finden Sie in der Zeutschel-Dokumentation Goobi.Production 1.11 - TS-1090 (siehe https://github.com/kitodo/kitodo-production/wiki/Zeutschel-Dokumentation) unter *4.6 Erweiterung des Batches-Moduls*. 
+Batches wurden ursprünglich dafür genutzt, um Laufzettel von mehreren Vorgängen gleichzeitig drucken zu können. Eine Weiterentwicklung ermöglicht jetzt den Export von Zeitungen, so dass in den METS-Dateien mehr Referenzierungen zu einander enthalten sind, die die Präsentation erleichtern. Weitere Informationen zur Batches-Funktion finden Sie in der Zeutschel-Dokumentation Goobi.Production 1.11 - TS-1090 (siehe Zeutschel-Dokumentation) unter *4.6 Erweiterung des Batches-Moduls*. 
 
-Im Gegensatz zu [GoobiScripten](https://github.com/kitodo/kitodo-production/wiki/GoobiScript) lassen sich Batches auch ohne administrative Rechte auslösen. Auf dieser Seite wird beschrieben, wie die Benutzeroberfläche der Batches-Seite aufgebaut ist und welche Funktionen verfügbar sind. 
+Im Gegensatz zu [GoobiScripten](GoobiScript) lassen sich Batches auch ohne administrative Rechte auslösen. Auf dieser Seite wird beschrieben, wie die Benutzeroberfläche der Batches-Seite aufgebaut ist und welche Funktionen verfügbar sind. 
 
 # Benutzeroberfläche
 
@@ -48,7 +48,7 @@ angezeigt. Vorgänge können nach allen Bestandteilen des Vorgangstitels gefilte
 **ACHTUNG**: Unter Vorgänge werden höchstens 500 Vorgänge angezeigt. Wenn eine PPN gesucht wird, die in mehr als 500 Vorgängen enthalten ist (zum Beispiel Zeitungsausgaben), kann KEIN vollständiger Batch erzeugt werden! Es gibt zwei Lösungen: 
 
 - Erstellen von Batches jahrgangs- oder monatsweise 
-- Erstellen von Batches über [Batches](https://github.com/kitodo/kitodo-production/wiki/Batches#batches): Filtern nach TSL oder ATS - alle Batches markieren - [Vorgänge des/der ausgewählten Batches laden](https://github.com/kitodo/kitodo-production/wiki/Batches#vorg%C3%A4nge-desder-ausgew%C3%A4hlten-batches-laden) ausführen.  
+- Erstellen von Batches über [Batches](Batches#batches): Filtern nach TSL oder ATS - alle Batches markieren - [Vorgänge des/der ausgewählten Batches laden](Batches#vorg%C3%A4nge-desder-ausgew%C3%A4hlten-batches-laden) ausführen.  
 
 ## Funktionen
 

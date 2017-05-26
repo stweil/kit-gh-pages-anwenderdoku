@@ -1,4 +1,4 @@
-Mit einer Produktionsvorlage werden in Kitodo.Production bibliografische Metadaten eines Titels den [Aufgaben](https://github.com/kitodo/kitodo-production/wiki/Aufgaben) zugewiesen, die benötigt werden, um das Digitalisat zu erstellen. Dieses Konstrukt wird Vorgang genannt. 
+Mit einer Produktionsvorlage werden in Kitodo.Production bibliografische Metadaten eines Titels den [Aufgaben](Aufgaben) zugewiesen, die benötigt werden, um das Digitalisat zu erstellen. Dieses Konstrukt wird Vorgang genannt. 
 
 In einen Vorgang können unter anderem folgende Daten integriert werden:
 

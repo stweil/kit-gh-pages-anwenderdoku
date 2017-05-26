@@ -39,11 +39,11 @@ Nach betätigen des Links erscheint eine Eingabemaske mit mehreren Eingabemögli
 ![](images/Produktionsvorlagen2.jpg)
 
 * *Vorgangstitel*: Hier muss ein aussagekräftiger Titel für die Vorlage eingegeben werden.
-* *Projekt*: Hier muss ein [Projekt](https://github.com/kitodo/kitodo-production/wiki/Projekt) ausgewählt werden.
-* *Regelsatz*: Hier muss der [Regelsatz](https://github.com/kitodo/kitodo-production/wiki/Regelsatz) für die betreffende Einrichtung ausgewählt werden
-* *Laufzettel*: Hier muss der entsprechende [Laufzettel](https://github.com/kitodo/kitodo-production/wiki/Regelsatz) ausgewählt werden.
+* *Projekt*: Hier muss ein [Projekt](Projekt) ausgewählt werden.
+* *Regelsatz*: Hier muss der [Regelsatz](Regelsatz) für die betreffende Einrichtung ausgewählt werden
+* *Laufzettel*: Hier muss der entsprechende [Laufzettel](Regelsatz) ausgewählt werden.
 * *In Auswahlliste anzeigen*: Über die Auswirkung dieses Felds gibt es keine gesicherten Erkenntnisse.
-* *Ist eine Vorlage*: Erst mit der Bestätigung dieses Feldes wird ein Vorgang als [Produktionsvorlage](https://github.com/kitodo/kitodo-production/wiki/Produktionsvorlage) definiert und entsprechend bereitgestellt.
+* *Ist eine Vorlage*: Erst mit der Bestätigung dieses Feldes wird ein Vorgang als [Produktionsvorlage](Produktionsvorlage) definiert und entsprechend bereitgestellt.
 
  
 ## 2 Abfolge der Aufgabe und Eigenschaften hinzufügen
@@ -51,11 +51,11 @@ Der vorige Schritt erstellt zwar eine Produktionsvorlage, jedoch müsen dieser a
 
 ![](images/Produktionsvorlagen3.jpg)
 
-Wenn *Aufgabe hinzufügen* ausgewählt wird, erscheint eine Eingabemaske, in der Angaben zur Aufgabe eingetragen werden müssen. Eine ausführliche Anleitung dazu findet sich unter [Bearbeitung Aufgabe](https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Aufgabe). Beispiele zu bestimmten Einstellungen der Aufgaben finden sich unter [Aufgaben Einstellungen](https://github.com/kitodo/kitodo-production/wiki/Aufgaben-Einstellungen).
+Wenn *Aufgabe hinzufügen* ausgewählt wird, erscheint eine Eingabemaske, in der Angaben zur Aufgabe eingetragen werden müssen. Eine ausführliche Anleitung dazu findet sich unter [Bearbeitung Aufgabe](Bearbeitung-Aufgabe). Beispiele zu bestimmten Einstellungen der Aufgaben finden sich unter [Aufgaben Einstellungen](Aufgaben-Einstellungen).
 
 ![](images/Produktionsvorlagen4.jpg)
 
-Es muss daran gedacht werden, dass jeder Aufgabe auch die entsprechende [Benutzergruppe](https://github.com/kitodo/kitodo-production/wiki/Benutzergruppen) zugeordnet wird. Ansonsten finden die Benutzer der Benutzergruppe die Aufgabe nicht unter Meine Aufgaben.
+Es muss daran gedacht werden, dass jeder Aufgabe auch die entsprechende [Benutzergruppe](Benutzergruppen) zugeordnet wird. Ansonsten finden die Benutzer der Benutzergruppe die Aufgabe nicht unter Meine Aufgaben.
 
 Dies muss für jede Aufgabe (Scannen, Metadaten, ...) wiederholt werden.
 

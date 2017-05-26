@@ -1,22 +1,22 @@
 **Willkommen auf dem Kitodo.Production-Wiki. Es beinhaltet unter anderem:** 
 
-[Anwenderdokumentation Kitodo.Production 1.11](https://github.com/kitodo/kitodo-production/wiki/Anwenderdokumentation-Kitodo.Production-1.11): 
+[Anwenderdokumentation Kitodo.Production 1.11](Anwenderdokumentation-Kitodo.Production-1.11): 
 
 Diese Seite enthält Informationen für Benutzer, die in Kitodo.Production Digitalisate erstellen und bearbeiten wollen. 
 
-[Dokumentationen der Anwenderbibliotheken](https://github.com/kitodo/kitodo-production/wiki/Dokumentationen-der-Anwenderbibliotheken): 
+[Dokumentationen der Anwenderbibliotheken](Dokumentationen-der-Anwenderbibliotheken): 
 
 Diese Seite enthält Links zu den Anwenderdokumentationen einzelner Bibliotheken. 
 
-[Installationsanleitung](https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung): 
+[Installationsanleitung](Installationsanleitung): 
 
 Diese Seite enthält Informationen für Benutzer, die Kitodo.Production installieren wollen. 
 
-[Anwendungsfälle und weitere Themen](https://github.com/kitodo/kitodo-production/wiki/Anwendungsfälle-und-weitere-Themen): 
+[Anwendungsfälle und weitere Themen](Anwendungsfälle-und-weitere-Themen): 
 
 Diese Seite enthält Links zu Anwenderthemen. 
 
-[Entwicklungswünsche](https://github.com/kitodo/kitodo-production/wiki/Entwicklungswünsche): 
+[Entwicklungswünsche](Entwicklungswünsche): 
 
 Diese Seite enthält Links zu Seiten mit Entwicklungswünschen und Verbesserungsvorschlägen. 
 

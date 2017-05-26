@@ -54,12 +54,12 @@ Zudem kann der Export bei Trefferlisten in der Verwaltung (Nach einem Vorgang su
 
 Bei der Anwendung von *Metadaten für DMS exportieren* ist unbedingt darauf zu achten, dass sich der Befehl auf die Trefferliste bezieht! Über das Symbol DMS ![](images/Icon_Export_in_das_DMS.png) lässt sich ein einzelner Vorgang exportieren.
 
-**ACHTUNG**: Wenn der Benutzer nicht für den Export in das DMS eingerichtet ist, wird der Vorgang nur in das [Homeverzeichnis](https://github.com/kitodo/kitodo-production/wiki/Homeverzeichnis) des Nutzers exportiert. Dieser Weg sollte nur in Ausnahmefällen gewählt werden!
+**ACHTUNG**: Wenn der Benutzer nicht für den Export in das DMS eingerichtet ist, wird der Vorgang nur in das [Homeverzeichnis](Homeverzeichnis) des Nutzers exportiert. Dieser Weg sollte nur in Ausnahmefällen gewählt werden!
 
 
 # Administrativer Export / Export ohne Images
 
-Es gibt noch eine weitere Möglichkeit, einen Export durchzuführen, nämlich über das [GoobiScript](https://github.com/kitodo/kitodo-production/wiki/GoobiScript) *exportDms*.
+Es gibt noch eine weitere Möglichkeit, einen Export durchzuführen, nämlich über das [GoobiScript](GoobiScript) *exportDms*.
 
 ![](images/export2.jpg)
 

@@ -1,5 +1,5 @@
 # Einleitung 
-In Kitodo.Production werden Projekteinstellungen in der Datei "goobi_projects.xml" Im KonfigurationVerzeichnis gespeichert. in der [Installationsanleitung](https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung) gibt es Erläuterungen zu den einzelnen Feldern.
+In Kitodo.Production werden Projekteinstellungen in der Datei "goobi_projects.xml" Im KonfigurationVerzeichnis gespeichert. in der [Installationsanleitung](Installationsanleitung) gibt es Erläuterungen zu den einzelnen Feldern.
 
 Im Allgemeinen dient die Datei dazu:
 - die Metadatenfelder zu definieren, die beim Anlegen eines Vorgangs angezeigt werden sollen, beziehungsweise die ausgeblendet werden sollen
@@ -171,12 +171,12 @@ beinhaltet Informationen darüber, welche Felder (Titel, Autor, Signatur, ...) b
 	<item from="vorlage" isdoctype="multivolume" ughbinding="true" docstruct="firstchild" metadata="shelfmarksource">Signatur</item> 
 
 
-- **from**: legt den Ursprung fest. Mögliche Werte sind *werk* für [Werkstückseigenschaften](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails---Werkst%C3%BCckeigenschaft) oder *vorlage* als [Vorlageneigenschaft](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails---Physische-Vorlagen). 
+- **from**: legt den Ursprung fest. Mögliche Werte sind *werk* für [Werkstückseigenschaften](Vorgangsdetails---Werkst%C3%BCckeigenschaft) oder *vorlage* als [Vorlageneigenschaft](Vorgangsdetails---Physische-Vorlagen). 
 - **isdoctype / isnotdocptype**: damit kann die Anzeige eines Metadatum für bestimmte Dokumenttypen konfiguriert werden. Zum Beispiel: isdoctype="multivolume" → gilt nur für mehrbändige Werke.
 - **ughbindung**: legt fest, ob der Wert in der Datenbank als Werkstück- oder Vorlageneigenschaft gespeichert wird.
-- **metadata**: bestimmt das Metadatum aus den [Regelsatz](https://github.com/kitodo/kitodo-production/wiki/Regelsatz-XML-Datei).
+- **metadata**: bestimmt das Metadatum aus den [Regelsatz](Regelsatz-XML-Datei).
 - **docstruct**: über die möglichen Werte *topstruct* und *firstchild*, wird bestimmt, ob der Wert in das Topelement (Zum Beispiel *Zeitschrift*) oder erste Kindelement (Zum Beispiel *Zeitschriften-Band*) der Struktur gespeichert wird
-- **Wert des item Tags**: dient als Anzeigename in der Eingabemaske beim [Anlegen der Vorgänge](https://github.com/kitodo/kitodo-production/wiki/Neuen-Vorgang-anlegen). In diesem Beispiel: Signatur.
+- **Wert des item Tags**: dient als Anzeigename in der Eingabemaske beim [Anlegen der Vorgänge](Neuen-Vorgang-anlegen). In diesem Beispiel: Signatur.
 
 Weitere Hinweise:
 

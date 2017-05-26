@@ -1,21 +1,21 @@
 [Home](https://github.com/kitodo/kitodo-production/wiki)
 
-[Anwenderdokumentation Kitodo.Production 1.11](https://github.com/kitodo/kitodo-production/wiki/Anwenderdokumentation-Kitodo.Production-1.11)
+[Anwenderdokumentation Kitodo.Production 1.11](Anwenderdokumentation-Kitodo.Production-1.11)
 
-[Dokumentationen der Anwenderbibliotheken](https://github.com/kitodo/kitodo-production/wiki/Dokumentationen-der-Anwenderbibliotheken)
+[Dokumentationen der Anwenderbibliotheken](Dokumentationen-der-Anwenderbibliotheken)
 
-[Installationsanleitung](https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung)
+[Installationsanleitung](Installationsanleitung)
 
-[Hinweise für Aktualisierungen](https://github.com/kitodo/kitodo-production/wiki/Aktualisierungshinweise)
+[Hinweise für Aktualisierungen](Aktualisierungshinweise)
 
-[Anwendungsfälle und weitere Themen](https://github.com/kitodo/kitodo-production/wiki/Anwendungsfälle-und-weitere-Themen)
+[Anwendungsfälle und weitere Themen](Anwendungsfälle-und-weitere-Themen)
 
-[Entwicklungswünsche](https://github.com/kitodo/kitodo-production/wiki/Entwicklungswünsche)
+[Entwicklungswünsche](Entwicklungswünsche)
 
-[Hinweise für Entwickler](https://github.com/kitodo/kitodo-production/wiki/Hinweise-f%C3%BCr-Entwickler)
+[Hinweise für Entwickler](Hinweise-f%C3%BCr-Entwickler)
 
 [effective webwork Dokumentation](effective-webwork-Dokumentation)
 
-[Zeutschel Dokumentation](https://github.com/kitodo/kitodo-production/wiki/Zeutschel-Dokumentation)
+[Zeutschel Dokumentation](Zeutschel-Dokumentation)
 
-[FAQs](https://github.com/kitodo/kitodo-production/wiki/FAQs)
+[FAQs](FAQs)

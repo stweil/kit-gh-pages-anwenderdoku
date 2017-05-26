@@ -1,8 +1,8 @@
 # Einleitung 
-Ein Thema, das die Anwender von Kitodo schon länger beschäftigt und im Zuge der [RAK-RDA-Umstellung](https://github.com/kitodo/kitodo-production/wiki/RAK-RDA-Umstellung) noch dringlicher wurde, ist der Import von Personen- und Körperschafts-Metadaten. 
+Ein Thema, das die Anwender von Kitodo schon länger beschäftigt und im Zuge der [RAK-RDA-Umstellung](RAK-RDA-Umstellung) noch dringlicher wurde, ist der Import von Personen- und Körperschafts-Metadaten. 
 
 In GitHub ist dieses Thema schon an zwei Stellen teilweise beschrieben worden: 
-- [New features for METS Editor](https://github.com/kitodo/kitodo-production/wiki/New-features-for-METS-Editor)
+- [New features for METS Editor](New-features-for-METS-Editor)
 - [Import of personal and corporate names / missing identifier #195 ](https://github.com/kitodo/kitodo-production/issues/195)
 
 In der Mailing-Liste wurde unter dem Thread „_[Goobi] RDA-Umstellung_“ ein [Dokument](images/Personenimport_GOOBI_Anforderungen_2016_ver4_FDHohmann.pdf) zur Diskussion gestellt, in dem die grundlegenden Wünsche beschrieben wurden. Auf dessen Grundlage sollten die Anforderungen der unterschiedlichen Anwender und der Entwickler zusammengebracht werden, um zu einer guten und transparenten Lösung zu gelangen. 

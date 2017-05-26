@@ -1,6 +1,6 @@
 # Allgemeines
 
-Die [Strukturelemente](https://github.com/kitodo/kitodo-production/wiki/Strukturdaten-bearbeiten) eines Werkes werden in der Präsentation des digitalisierten Werkes angezeigt und können durch die Zuweisung der zugehörigen Images direkt aufgerufen werden. Zu jedem Strukturelement können weitere, beschreibende Metadaten erfasst werden. Dazu gehören der aussagekräftige Titel des Strukturelements (zum Beispiel Kapitelüberschriften) und speziell zu diesem Strukturelement gehörige Personen.
+Die [Strukturelemente](Strukturdaten-bearbeiten) eines Werkes werden in der Präsentation des digitalisierten Werkes angezeigt und können durch die Zuweisung der zugehörigen Images direkt aufgerufen werden. Zu jedem Strukturelement können weitere, beschreibende Metadaten erfasst werden. Dazu gehören der aussagekräftige Titel des Strukturelements (zum Beispiel Kapitelüberschriften) und speziell zu diesem Strukturelement gehörige Personen.
 
 Für die übergeordneten Strukturelemente Monographie, Mehrbändiges Werk/Band bzw. Handschrift werden in der SLUB die bibliothekarischen Metadaten beim Anlegen eines Vorganges direkt aus dem SWB importiert. Es können hier auch andere Quellen ausgewählt werden, bzw. können die Metadaten auch manuell eingegeben/ergänzt werden.
 

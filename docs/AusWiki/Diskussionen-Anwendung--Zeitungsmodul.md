@@ -5,7 +5,7 @@ In diesem Wiki sind folgende Informationen zum Zeitungsmodul vorhanden:
 
 _Anlegen von Vorgängen mit dem Zeitungsmodul auf Ausgabenebene_: 
 
-https://github.com/kitodo/kitodo-production/wiki/Neuen-Vorgang-anlegen-I-Zeitungen 
+Neuen-Vorgang-anlegen-I-Zeitungen 
 
 _Zeutschel-Dokumentation des Zeitungsmoduls_: 
 

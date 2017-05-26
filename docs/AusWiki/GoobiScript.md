@@ -4,7 +4,7 @@ GoobiScripte dienen dazu, eine Aktion an mehreren Vorgängen durchzuführen, ans
 
 # Schritt 1: Vorgänge suchen
 
-Führen Sie zunächst eine [Suche](https://github.com/kitodo/kitodo-production/wiki/Suche-in-GoobiProduction) durch, die genau die Vorgänge als Treffer anzeigen wird, die bearbeitet werden sollen. Wenn es nicht möglich ist, die Treffermenge durch die Suche exakt zu beschränken, kann Schritt 2 durchgeführt werden. 
+Führen Sie zunächst eine [Suche](Suche-in-GoobiProduction) durch, die genau die Vorgänge als Treffer anzeigen wird, die bearbeitet werden sollen. Wenn es nicht möglich ist, die Treffermenge durch die Suche exakt zu beschränken, kann Schritt 2 durchgeführt werden. 
 
 # Schritt 2: Vorgänge selektieren
 

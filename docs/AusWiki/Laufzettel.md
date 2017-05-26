@@ -1,8 +1,8 @@
 # Einleitung
-In Kitodo.Production besteht die Möglichkeit, nach dem Anlegen eines [Vorgangs](https://github.com/kitodo/kitodo-production/wiki/Vorgang) einen Laufzettel zu erstellen, der die wichtigsten Informationen eines Vorgangs (Vorgangstitel, Signatur, ...) beinhaltet.
+In Kitodo.Production besteht die Möglichkeit, nach dem Anlegen eines [Vorgangs](Vorgang) einen Laufzettel zu erstellen, der die wichtigsten Informationen eines Vorgangs (Vorgangstitel, Signatur, ...) beinhaltet.
 
 # Laufzettel drucken 
-Es gibt zwei Möglichkeiten, den Druck von Laufzetteln in Kitodo.Production auszulösen. Zum einen nach dem Anlegen eines Vorgangs (siehe: [Weiteren Vorgang anlegen](https://github.com/kitodo/kitodo-production/wiki/Neuen-Vorgang-anlegen#weiteren-vorgang-anlegen)). Zum anderen kann in der Trefferliste von _Vorgang suchen_ unter _Aktionen_ ein Laufzettel jedes angezeigten Vorgangs aufgerufen werden. 
+Es gibt zwei Möglichkeiten, den Druck von Laufzetteln in Kitodo.Production auszulösen. Zum einen nach dem Anlegen eines Vorgangs (siehe: [Weiteren Vorgang anlegen](Neuen-Vorgang-anlegen#weiteren-vorgang-anlegen)). Zum anderen kann in der Trefferliste von _Vorgang suchen_ unter _Aktionen_ ein Laufzettel jedes angezeigten Vorgangs aufgerufen werden. 
 
 ![](images/Laufzettel3.jpg)
 
@@ -12,9 +12,9 @@ Das Layout oder die Inhalte des Laufzettels kann in Kitodo.Production jedoch nic
 
 ![](images/Laufzettel1.jpg)
 
-Beim Anlegen eines neuen Laufzettels kann in Kitodo.Production nur dessen Benennung gewählt werden. In das zweite Feld wird der Name der Datei des Laufzettels (docket.xsl) eingetragen, die in einem bestimmten Ordner im Kitodo-Verzeichnis liegen muss. Änderungen am Aufbau und Aussehen des Laufzettels müssen in dieser Datei durchgeführt werden. Unter [Anpassungen in der docket.xsl](https://github.com/kitodo/kitodo-production/wiki/Anpassungen-in-der-docket.xsl) wurde eine Anleitung erstellt, welche Daten aus Kitodo genutzt werden können und wie diese konfiguriert werden. 
+Beim Anlegen eines neuen Laufzettels kann in Kitodo.Production nur dessen Benennung gewählt werden. In das zweite Feld wird der Name der Datei des Laufzettels (docket.xsl) eingetragen, die in einem bestimmten Ordner im Kitodo-Verzeichnis liegen muss. Änderungen am Aufbau und Aussehen des Laufzettels müssen in dieser Datei durchgeführt werden. Unter [Anpassungen in der docket.xsl](Anpassungen-in-der-docket.xsl) wurde eine Anleitung erstellt, welche Daten aus Kitodo genutzt werden können und wie diese konfiguriert werden. 
 
-Nach der [Installationsanleitung](https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung-f%C3%BCr-Kitodo.Production-1.10) befindet sich die Datei (oder die Dateien) in dem in *goobi_config.properties* angegebene *xsltFolder*. 
+Nach der [Installationsanleitung](Installationsanleitung-f%C3%BCr-Kitodo.Production-1.10) befindet sich die Datei (oder die Dateien) in dem in *goobi_config.properties* angegebene *xsltFolder*. 
 Eine Beispiel-Datei findet sich unter: [https://github.com/kitodo/kitodo-production/blob/1.11.x/Goobi/config/docket.xsl](https://github.com/kitodo/kitodo-production/blob/1.11.x/Goobi/config/docket.xsl). 
 
 ![](images/Laufzettel2.jpg)
@@ -27,7 +27,7 @@ Die folgenden Informationen wurden dem folgenden Listen-Thread entnommen:
 https://maillist.slub-dresden.de/pipermail/kitodo-community/2017-January/subject.html#23 
 
 ##SLUB 
-In der SLUB werden folgende Felder aus den [Vorlageneigenschaften](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails---Physische-Vorlagen) genutzt: 
+In der SLUB werden folgende Felder aus den [Vorlageneigenschaften](Vorgangsdetails---Physische-Vorlagen) genutzt: 
 
 * Projekt 
 * PPN digital 
@@ -81,7 +81,7 @@ Siehe: https://maillist.slub-dresden.de/pipermail/kitodo-community/2017-January/
 
 
 ##UB Leipzig
-In der UB Leipzig werden folgende Felder aus den [Vorlageneigenschaften](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails---Physische-Vorlagen) genutzt: 
+In der UB Leipzig werden folgende Felder aus den [Vorlageneigenschaften](Vorgangsdetails---Physische-Vorlagen) genutzt: 
 
 * Projekt
 * PPN analog

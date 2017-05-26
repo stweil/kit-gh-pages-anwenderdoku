@@ -50,7 +50,7 @@ Beispiel:
 ```
 
 ###Metadaten der Strukturelemente
-In diesem Element werden die deskriptiven Metadaten (Monografie, Zeitschriften-Band, ...) gespeichert, die im [Metadateneditor](https://github.com/kitodo/kitodo-production/wiki/Metadateneditor---Allgemeines) eingegeben wurden. 
+In diesem Element werden die deskriptiven Metadaten (Monografie, Zeitschriften-Band, ...) gespeichert, die im [Metadateneditor](Metadateneditor---Allgemeines) eingegeben wurden. 
 
 Das Element ist als `DMDLOG_0002`, `DMDLOG_0003`, `DMDLOG_0004`, ... bezeichnet. 
 
@@ -212,8 +212,8 @@ Beispiel:
 #Zulässige Änderungen 
 Wenn Strukturelemente und deren Metadaten kopiert werden sollen, werden Änderungen an zwei Stellen vorgenommen: 
 
-- [Metadaten der Strukturelemente](https://github.com/kitodo/kitodo-production/wiki/Kopieren-von-Strukturelmenten-und-Metadaten-in-einer-meta.xml-Datei#metadaten-der-strukturelemente) `DMDLOG_0002`, `DMDLOG_0003`, `DMDLOG_0004`, ... 
-- [Strukturelemente](https://github.com/kitodo/kitodo-production/wiki/Kopieren-von-Strukturelmenten-und-Metadaten-in-einer-meta.xml-Datei#strukturelemente-structmap--typelogical)
+- [Metadaten der Strukturelemente](Kopieren-von-Strukturelmenten-und-Metadaten-in-einer-meta.xml-Datei#metadaten-der-strukturelemente) `DMDLOG_0002`, `DMDLOG_0003`, `DMDLOG_0004`, ... 
+- [Strukturelemente](Kopieren-von-Strukturelmenten-und-Metadaten-in-einer-meta.xml-Datei#strukturelemente-structmap--typelogical)
  `<structMap> / LOGICAL` 
 
 Alle anderen Elemente (Paginierung, ...) sollten **nicht** verändert werden, da diese in der Regel in jedem Band voneinader abweichen. 

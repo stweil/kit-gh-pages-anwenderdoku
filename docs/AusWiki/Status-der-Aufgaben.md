@@ -1,4 +1,4 @@
-Um eine Arbeit mit vielen [Benutzern](https://github.com/kitodo/kitodo-production/wiki/Benutzer) zu ermöglichen, ist es wichtig, dass Aufgaben einen Status annehmen können die anzeigen, in welchem Bearbeitungsstand sich eine [Aufgabe](https://github.com/kitodo/kitodo-production/wiki/Aufgaben) befindet.
+Um eine Arbeit mit vielen [Benutzern](Benutzer) zu ermöglichen, ist es wichtig, dass Aufgaben einen Status annehmen können die anzeigen, in welchem Bearbeitungsstand sich eine [Aufgabe](Aufgaben) befindet.
 Dadurch lässt sich vermeiden, dass Aufgaben „vergessen“ werden, mehrere Benutzer gleichzeitig eine Aufgabe übernehmen und es wird sichergestellt, dass die vorgesehene Reihenfolge der Aufgaben eingehalten wird. 
 
 In Kitodo.Production gibt es für jede Aufgabe vier Status der Bearbeitung. Diese sind:

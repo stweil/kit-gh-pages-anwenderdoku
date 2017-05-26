@@ -15,91 +15,91 @@ Beiden Gruppen dürften die beiden ersten Abschnitte dabei helfen, den grundsät
 # 1. Grundlegende Eigenschaften
 Kitodo.Production dient der Workflowgestaltung und -steuerung von Digitalisierungsprozessen und der Nutzeradministration aller beteiligten registrierten Anwender. Bevor in späteren Abschnitten die Arbeitsabläufe und administrative Aufgaben erläutert werden, sollen in diesem Abschnitt einige grundlegende Bestandteile und Benennungen erläutert werden.
 
-[Aktionen](https://github.com/kitodo/kitodo-production/wiki/Aktionen)
+[Aktionen](Aktionen)
 
-[Aufgaben](https://github.com/kitodo/kitodo-production/wiki/Aufgaben)
+[Aufgaben](Aufgaben)
 
-[Batches](https://github.com/kitodo/kitodo-production/wiki/Batches)
+[Batches](Batches)
 
-[Benutzergruppen](https://github.com/kitodo/kitodo-production/wiki/Benutzergruppen)
+[Benutzergruppen](Benutzergruppen)
 
-[Berechtigungsstufen](https://github.com/kitodo/kitodo-production/wiki/Berechtigungsstufen)
+[Berechtigungsstufen](Berechtigungsstufen)
 
-[Benutzer](https://github.com/kitodo/kitodo-production/wiki/Benutzer)
+[Benutzer](Benutzer)
 
-[Digitale Kollektionen](https://github.com/kitodo/kitodo-production/wiki/Digitale-Kollektionen)
+[Digitale Kollektionen](Digitale-Kollektionen)
 
-[Hauptmenüleiste](https://github.com/kitodo/kitodo-production/wiki/Hauptmenüleiste)
+[Hauptmenüleiste](Hauptmenüleiste)
 
-[Homeverzeichnis](https://github.com/kitodo/kitodo-production/wiki/Homeverzeichnis)
+[Homeverzeichnis](Homeverzeichnis)
 
-[Laufzettel](https://github.com/kitodo/kitodo-production/wiki/Laufzettel)
+[Laufzettel](Laufzettel)
 
-[Produktionsvorlage](https://github.com/kitodo/kitodo-production/wiki/Produktionsvorlage)
+[Produktionsvorlage](Produktionsvorlage)
 
-[Projekt](https://github.com/kitodo/kitodo-production/wiki/Projekt)
+[Projekt](Projekt)
 
-[Status der Aufgaben](https://github.com/kitodo/kitodo-production/wiki/Status-der-Aufgaben)
+[Status der Aufgaben](Status-der-Aufgaben)
 
-[Suche und Filtern](https://github.com/kitodo/kitodo-production/wiki/Suche-und-Filtern)
+[Suche und Filtern](Suche-und-Filtern)
 
-[Vorgang](https://github.com/kitodo/kitodo-production/wiki/Vorgang)
+[Vorgang](Vorgang)
 
-[Vorgangsdetails](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails)
+[Vorgangsdetails](Vorgangsdetails)
 
-[Vorgangsdetails Physische Vorlagen](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails---Physische-Vorlagen)
+[Vorgangsdetails Physische Vorlagen](Vorgangsdetails---Physische-Vorlagen)
 
-[Vorgangsdetails Werkstückeigenschaft](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails---Werkst%C3%BCckeigenschaft)
+[Vorgangsdetails Werkstückeigenschaft](Vorgangsdetails---Werkst%C3%BCckeigenschaft)
 
 # 2. Projektorganisation
 Bevor die produktive Arbeit in Kitodo.Production beginnt, müssen einige grundsätzliche Entscheidungen getroffen werden, um die Aufgaben und Benutzer zu organisieren. Dies sollte gut überlegt werden, da nachträgliche Änderungen in Kitodo.Production in der Regel nur unter hohem Aufwand möglich sind. Im Folgenden werden die wichtigsten Bestandteile erläutert, die hier bedacht werden müssen. 
 
-[Projektorganisation](https://github.com/kitodo/kitodo-production/wiki/Projektorganisation)
+[Projektorganisation](Projektorganisation)
 
 # 3. Anleitung
 Diese Anleitung beschreibt die Abläufe in Kitodo.Production, die durchgeführt werden müssen, um ein Digitalisat zu erstellen. Die einzelnen Bestandteile werden hier in der Reihenfolge ihrer Bearbeitung benannt. Durch die flexible Gestaltung von Arbeitsabläufen können nicht alle möglichen Schritte benannt und erläutert werden. Es werden hier nur die grundlegenden Schritte beschrieben. Administrative Aufgaben werden im nächsten Abschnitt beschrieben. 
 
 [Neuen Vorgang anlegen](Neuen-Vorgang-anlegen)
 
-[Scannen oder Images einfügen](https://github.com/kitodo/kitodo-production/wiki/Scannen-oder-Images-einf%C3%BCgen)
+[Scannen oder Images einfügen](Scannen-oder-Images-einf%C3%BCgen)
 
-[LZA Validierung](https://github.com/kitodo/kitodo-production/wiki/LZA-Validierung)
+[LZA Validierung](LZA-Validierung)
 
-[Erfassen der Meta und Strukturdaten](https://github.com/kitodo/kitodo-production/wiki/Erfassen-der-Meta--und-Strukturdaten)
+[Erfassen der Meta und Strukturdaten](Erfassen-der-Meta--und-Strukturdaten)
 
-* [Metadateneditor Allgemeines](https://github.com/kitodo/kitodo-production/wiki/Metadateneditor---Allgemeines)
+* [Metadateneditor Allgemeines](Metadateneditor---Allgemeines)
 
-* [Paginieren](https://github.com/kitodo/kitodo-production/wiki/Paginieren)
+* [Paginieren](Paginieren)
 
-* [Strukturdaten bearbeiten](https://github.com/kitodo/kitodo-production/wiki/Strukturdaten-bearbeiten)
+* [Strukturdaten bearbeiten](Strukturdaten-bearbeiten)
 
-* [Metadaten bearbeiten](https://github.com/kitodo/kitodo-production/wiki/Metadaten-bearbeiten)
+* [Metadaten bearbeiten](Metadaten-bearbeiten)
 
-[OCR](https://github.com/kitodo/kitodo-production/wiki/OCR)
+[OCR](OCR)
 
-[Export](https://github.com/kitodo/kitodo-production/wiki/Export)
+[Export](Export)
 
-[Korrekturmeldungen](https://github.com/kitodo/kitodo-production/wiki/Korrekturmeldungen)
+[Korrekturmeldungen](Korrekturmeldungen)
 
 # 4. Administrative Aufgaben
 In diesem Abschnitt werden Informationen zu administrativen Aufgaben verzeichnet. Dies betrifft Funktionen, die über die reinen Anwenderfunktionen wie das Anlegen der Vorgänge und das Bearbeiten der Metadaten hinausgehen, jedoch nicht unbedingt von der IT betreut werden müssen. Es kann sogar von Vorteil sein, wenn eine Person aus dem Anwenderbereich einige dieser Aufgaben übernimmt. Dazu zählen zum Beispiel die Nutzeradministration und das Ausführen einiger Scripte. Die Aufgabenzuweisung obliegt natürlich jeder Einrichtung. Hier werden auch Hinweise aufgeführt, die durch die praktische Arbeit mit Kitodo.Production entstanden sind.
 
-[Bearbeitung Aufgabe](https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Aufgabe)
+[Bearbeitung Aufgabe](Bearbeitung-Aufgabe)
 
-[Bearbeitung Benutzer](https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Benutzer)
+[Bearbeitung Benutzer](Bearbeitung-Benutzer)
 
-[Bearbeitung Benutzergruppen](https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Benutzergruppen)
+[Bearbeitung Benutzergruppen](Bearbeitung-Benutzergruppen)
 
-[Bearbeitung Produktionsvorlage](https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Produktionsvorlage)
+[Bearbeitung Produktionsvorlage](Bearbeitung-Produktionsvorlage)
 
-[Bearbeitung Projekte](https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Projekte)
+[Bearbeitung Projekte](Bearbeitung-Projekte)
 
-[Benutzerkonfiguration](https://github.com/kitodo/kitodo-production/wiki/Benutzerkonfiguration)
+[Benutzerkonfiguration](Benutzerkonfiguration)
 
-[GoobiScript](https://github.com/kitodo/kitodo-production/wiki/GoobiScript)
+[GoobiScript](GoobiScript)
 
-[Löschen von Vorgängen](https://github.com/kitodo/kitodo-production/wiki/L%C3%B6schen-von-Vorg%C3%A4ngen)
+[Löschen von Vorgängen](L%C3%B6schen-von-Vorg%C3%A4ngen)
 
-[Regelsatz](https://github.com/kitodo/kitodo-production/wiki/Regelsatz)
+[Regelsatz](Regelsatz)
 
-[Scriptschritte](https://github.com/kitodo/kitodo-production/wiki/Scriptschritte)
+[Scriptschritte](Scriptschritte)

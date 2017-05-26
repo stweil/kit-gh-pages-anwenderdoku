@@ -1,4 +1,4 @@
-Berechtigungsstufen dienen der Organisation der Berechtigungen von Nutzern. Wie in fast allen Programmen, gibt es Zugänge mit unterschiedlichen Berechtigungen, wie zum Beispiel der Zugang mit administrativen Rechten. Dieser Zugang erlaubt dem [Benutzer](https://github.com/kitodo/kitodo-production/wiki/Benutzer) umfassende Funktionen. Dieser Zugang sollte nur an bestimmte Nutzer vergeben werden. 
+Berechtigungsstufen dienen der Organisation der Berechtigungen von Nutzern. Wie in fast allen Programmen, gibt es Zugänge mit unterschiedlichen Berechtigungen, wie zum Beispiel der Zugang mit administrativen Rechten. Dieser Zugang erlaubt dem [Benutzer](Benutzer) umfassende Funktionen. Dieser Zugang sollte nur an bestimmte Nutzer vergeben werden. 
 
 Neben Administratoren gibt es zwei weitere Berechtigungsstufen: 
 

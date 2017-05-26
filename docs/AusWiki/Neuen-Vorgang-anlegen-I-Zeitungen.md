@@ -1,8 +1,8 @@
-Zum Anlegen von Zeitungen wurde in Kitodo.Production ein neues Modul implementiert, das automatisch [Vorgänge](https://github.com/kitodo/kitodo-production/wiki/Vorgang) auf Ausgabeebene anlegt. Auf dieser Seite wird beschrieben, wie die Vorgänge angelegt werden. Am Ende der Seiten werden Besonderheiten erläutert. 
+Zum Anlegen von Zeitungen wurde in Kitodo.Production ein neues Modul implementiert, das automatisch [Vorgänge](Vorgang) auf Ausgabeebene anlegt. Auf dieser Seite wird beschrieben, wie die Vorgänge angelegt werden. Am Ende der Seiten werden Besonderheiten erläutert. 
 
 ![](images/Anlegen_Vorgang_Zeitung_01.jpg)
 
-Durch *Neuen Vorgang anlegen* auswählen, erhält man eine Übersicht der [Produktionsvorlagen](https://github.com/kitodo/kitodo-production/wiki/Produktionsvorlage).
+Durch *Neuen Vorgang anlegen* auswählen, erhält man eine Übersicht der [Produktionsvorlagen](Produktionsvorlage).
 
 ![](images/Anlegen_Vorgang_Zeitung_02.jpg)
 

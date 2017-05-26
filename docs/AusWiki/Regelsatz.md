@@ -23,13 +23,13 @@ Die Regelsatz-Datei der SLUB beinhaltet drei Hauptbereiche mit weiteren die in w
 * PicaPlus 
 * ZVDD METS/MODS Format
 
-Ausführliche Informationen zur Regelsatz-Datei finden sich auf der Seite [Regelsatz XML-Datei](https://github.com/kitodo/kitodo-production/wiki/Regelsatz-XML-Datei). 
+Ausführliche Informationen zur Regelsatz-Datei finden sich auf der Seite [Regelsatz XML-Datei](Regelsatz-XML-Datei). 
 
 # Bearbeitung der Regelsatz-Datei
 
 Ähnlich wie bei den Laufzetteln werden die Namen der Regelsatzdateien in Kitodo.Production zwar angezeigt, jedoch sind die Dateien im Dateiverzeichnis abgelegt. Somit kann in Kitodo.Production der Inhalt weder angesehen, noch geändert werden. 
 
-Der Pfad für die Regelsätze lautet: /usr/local/goobi/rulesets/ (siehe [Installationsanleitung](https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung-f%C3%BCr-Goobi.Production-CE-1.10))
+Der Pfad für die Regelsätze lautet: /usr/local/goobi/rulesets/ (siehe [Installationsanleitung](Installationsanleitung-f%C3%BCr-Goobi.Production-CE-1.10))
 
 ![](images/Regelsatz.jpg)
 

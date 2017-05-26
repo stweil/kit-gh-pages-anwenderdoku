@@ -1,4 +1,4 @@
-Die Generierung des Laufzettels erfolgt mittels einer .xsl Datei. In unserem Beispiel nennen wir diese docket.xsl. Die docket.xsl beschreibt, wie der generierte [Laufzettel](https://github.com/kitodo/kitodo-production/wiki/Laufzettel) aussieht.
+Die Generierung des Laufzettels erfolgt mittels einer .xsl Datei. In unserem Beispiel nennen wir diese docket.xsl. Die docket.xsl beschreibt, wie der generierte [Laufzettel](Laufzettel) aussieht.
 ## Kerninformationen
 Dies sind alle Eigenschaften des Vorgangs, die unter Vorgangsdetails-Vorgang im Frontend zu finden sind. Hier die vollständige Liste:
 
@@ -70,7 +70,7 @@ Ein weiteres Beispiel, für das Auslesen einer Information aus der Tabelle Werks
      […]
 
 Mit dem Test „@propertyIdentifier =‘DocType‘“ wähle ich das anzuzeigende Element aus. „docType“ ist hierbei der Wert in der Spalte „title“ der Tabelle, der dazugehörige Wert (Spalte „value“) wird mit @value angesprochen.
-Die Inhalte der Tabelle können über die Projekt-XML Datei konfiguriert werden. Eine Erklärung dazu gibt es hier[ https://github.com/kitodo/kitodo-production/wiki/Projekt-XML-Datei#erkl%C3%A4rung-zu-den-item-tags].
+Die Inhalte der Tabelle können über die Projekt-XML Datei konfiguriert werden. Eine Erklärung dazu gibt es hier[ Projekt-XML-Datei#erkl%C3%A4rung-zu-den-item-tags].
 Die Tabelle „Vorgangseigenschaften“ benötigt kein spezielles Schlüsselwort. Hier kann die äußere for-each Schleife (Zeile 1 + 7) weggelassen werden. Ein Beispiel:
 
     […] 

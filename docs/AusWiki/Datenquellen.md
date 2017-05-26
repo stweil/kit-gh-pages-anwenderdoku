@@ -10,7 +10,7 @@ Bisher konnten folgende Fälle identifiziert werden:
 | GBV | Pica+ |  |  |
 
 
-Zusätzlich sollten Informationen darüber gesammelt werden, welche Felder importiert und verarbeitet werden. Eine Sammlung der jeweiligen [Regelsätze](https://github.com/kitodo/kitodo-production/wiki/Regelsatz) wäre  in diesem Zusammenhang hilfreich.  
+Zusätzlich sollten Informationen darüber gesammelt werden, welche Felder importiert und verarbeitet werden. Eine Sammlung der jeweiligen [Regelsätze](Regelsatz) wäre  in diesem Zusammenhang hilfreich.  
 
 
 # Informationsquellen

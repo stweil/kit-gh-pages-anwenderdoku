@@ -21,35 +21,35 @@ In diesem Abschnitt werden die Aktionen beschrieben die unter *Vorgang suchen* f
 
 ![](images/Icon_Vorgang_bearbeiten.gif) Vorgang bearbeiten
 
-Mit dieser Aktion lassen sich die [Vorgangsdetails](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails) aufrufen und bearbeiten. 
+Mit dieser Aktion lassen sich die [Vorgangsdetails](Vorgangsdetails) aufrufen und bearbeiten. 
 
 
 ![](images/Icon_Metadaten_bearbeiten.gif) Metadaten bearbeiten
 
-Mit dieser Aktion lässt sich der [Metadateneditor](https://github.com/kitodo/kitodo-production/wiki/Metadateneditor---Allgemeines) aufrufen um die Metadaten zu bearbeiten.
+Mit dieser Aktion lässt sich der [Metadateneditor](Metadateneditor---Allgemeines) aufrufen um die Metadaten zu bearbeiten.
 **ACHTUNG!**: Dieser Weg sollte nur in Ausnahmefällen gewählt werden. Der Metadateneditor sollte normalerweise über  Meine Aufgaben geöffnet werden, um Meta- und Strukturdaten zu bearbeiten. 
 
 
 ![](images/Icon_Im_Homeverzeichnis_verlinken.gif) Im Homeverzeichnis verlinken
 
-Mit dieser Aktion werden die Ordner mit den Images in das [Homeverzeichnis](https://github.com/kitodo/kitodo-production/wiki/Homeverzeichnis) des Benutzers verlinkt, wo Images bearbeitet (Umbenennung, Löschen, Hinzufügen,...) werden können.
+Mit dieser Aktion werden die Ordner mit den Images in das [Homeverzeichnis](Homeverzeichnis) des Benutzers verlinkt, wo Images bearbeitet (Umbenennung, Löschen, Hinzufügen,...) werden können.
 
 
 ![](images/Icon_Verlinkung_aus_dem_Homeverzeichnis_entfernen.gif) Verlinkung aus dem Homeverzeichnis entfernen
 
-Mit dieser Aktion wird die Verlinkung aus dem [Homeverzeichnis](https://github.com/kitodo/kitodo-production/wiki/Homeverzeichnis) wieder entfernt.
+Mit dieser Aktion wird die Verlinkung aus dem [Homeverzeichnis](Homeverzeichnis) wieder entfernt.
 
 ![](images/Icon_Export_des_Logfiles_in_das_Homeverzeichnis.gif) Export des Logfiles in das Homeverzeichnis
 
-Mit dieser Aktion werden die Logfiles in das [Homeverzeichnis](https://github.com/kitodo/kitodo-production/wiki/Homeverzeichnis) exportiert.
+Mit dieser Aktion werden die Logfiles in das [Homeverzeichnis](Homeverzeichnis) exportiert.
 
 ![](images/Icon_Laufzettel_drucken.png) Laufzettel drucken
 
-Mit dieser Aktion kann ein [Laufzettel](https://github.com/kitodo/kitodo-production/wiki/Laufzettel) auf Basis der docket.xls geöffnet und ausgedruckt werden.
+Mit dieser Aktion kann ein [Laufzettel](Laufzettel) auf Basis der docket.xls geöffnet und ausgedruckt werden.
 
 ![](images/Icon_Export_der_Metadaten_als_METS-Datei_in_das_Homeverzeichnis.png) Export der Metadaten als METS-Datei in das Homeverzeichnis
 
-Mit dieser Aktion wird eine METS-Datei in das [Homeverzeichnis](https://github.com/kitodo/kitodo-production/wiki/Homeverzeichnis) exportiert. Es handelt sich hierbei nicht um die meta.xml Datei, die die Metadaten und Strukturdaten enthält, sondern um eine Datei, die Informationen zu Strukturen der unterschiedlichen Imageversionen (thumb, klein, PDF,...) in der Präsentation enthält.
+Mit dieser Aktion wird eine METS-Datei in das [Homeverzeichnis](Homeverzeichnis) exportiert. Es handelt sich hierbei nicht um die meta.xml Datei, die die Metadaten und Strukturdaten enthält, sondern um eine Datei, die Informationen zu Strukturen der unterschiedlichen Imageversionen (thumb, klein, PDF,...) in der Präsentation enthält.
 
 ![](images/Icon_Export_der_Metadaten_als_METS-Datei_in_das_Homeverzeichnis_grau.png) Export der Metadaten als METS-Datei in das Homeverzeichnis 
 
@@ -57,7 +57,7 @@ Wenn das Symbol ausgegraut ist, bedeutet es, dass noch keine Images in dem Vorga
 
 ![](images/Icon_Export_der_Images_zusammen_mit_den_Metadaten_als_PDF-Datei_in_das_Homeverzeichnis.png) Export der Images zusammen mit den Metadaten als PDF-Datei in das Homeverzeichnis
 
-Mit dieser Aktion werden die Images mit den Metadaten als PDF-Datei in das [Homeverzeichnis](https://github.com/kitodo/kitodo-production/wiki/Homeverzeichnis) exportiert.
+Mit dieser Aktion werden die Images mit den Metadaten als PDF-Datei in das [Homeverzeichnis](Homeverzeichnis) exportiert.
 
 ![](images/Icon_Export_der_Images_zusammen_mit_den_Metadaten_als_PDF-Datei_in_das_Homeverzeichnis_grau.png) Export der Images zusammen mit den Metadaten als PDF-Datei in das Homeverzeichnis
 
@@ -93,7 +93,7 @@ Deshalb muss unbedingt darauf geachtet werden, dass nur die Vorgänge angezeigt 
 
 ![](images/Icon_Korrekturmeldung_an_vorherige_Station_senden.gif)Bearbeitungsstatus runtersetzen
 
-Mit dieser Aktion kann der [Status](https://github.com/kitodo/kitodo-production/wiki/Status-der-Aufgaben) einer Aufgabe administrativ herunter gesetzt werden, bis alle Aufgaben abgeschlossen sind. Es jeweils angewendet auf:
+Mit dieser Aktion kann der [Status](Status-der-Aufgaben) einer Aufgabe administrativ herunter gesetzt werden, bis alle Aufgaben abgeschlossen sind. Es jeweils angewendet auf:
 
 * Treffer dieser Seite 
 * Gesamtes Trefferset
@@ -103,7 +103,7 @@ Deshalb muss unbedingt darauf geachtet werden, dass nur die Vorgänge angezeigt 
 
 ![](images/Icon_GoobiScript_ausführen.gif) GoobiScript ausführen
 
-Hier werden unterschiedliche [Skripte](https://github.com/kitodo/kitodo-production/wiki/GoobiScript) angeboten. Sie können angewendet werden auf:
+Hier werden unterschiedliche [Skripte](GoobiScript) angeboten. Sie können angewendet werden auf:
 
 * Treffer dieser Seite 
 * Gesamtes Trefferset
