@@ -47,12 +47,33 @@ Die WAR-Datei findet man auf https://github.com/kitodo/kitodo-production/release
   - `hibernate.connection.password`
 
 ## 6. Elasticsearch starten
- - Einen ElasticSearch-server starten.(mind. Version 5.x, am besten [https://www.elastic.co/downloads/past-releases/elasticsearch-5-1-1](5.1.1))
+ - Einen ElasticSearch-server starten.(mind. Version 5.x, am besten [5.4.3](https://www.elastic.co/downloads/past-releases/elasticsearch-5-4-3))
  - Die Konfiguration des Servers erfolgt in der Datei kitodo_config.properties
    - elasticsearch.host
    - elasticsearch.protocol
    - elasticsearch.port
    - elasticsearch.index
+   - elasticsearch.useAuthentication
+   - elasticsearch.user
+   - elasticsearch.password
+
+## 6.1 ElasticSearch für Authentifizierung konfiguieren
+
+Möchte man ElasticSearch mit Authentifizierung betreiben `elasticsearch.useAuthentication = true` in der `kitodo_config.properties`, dann sind die folgenden Schritte notwendig:
+- Installation des X-Packs für ElasticSearch nach der [Anleitung für die genutzte Version](https://www.elastic.co/guide/en/x-pack/5.4/installing-xpack.html)
+- Hinzufügen einer administrativen Rolle für den Zugriff auf den genutzten Index (bspw. kitodo):
+```
+curl -XPOST -u elastic 'localhost:9200/_xpack/security/role/kitodo_admin' -H "Content-Type: application/json" -d '{ "indices" : [{ "names" : [ "kitodo*" ],"privileges" : [ "all" ]}]}'
+```
+- Hinzufügen einer einfachen Rolle auf das Monitoring des Clusters:
+```
+curl -XPOST -u elastic 'localhost:9200/_xpack/security/role/kitodo_cluster_monitor' -H "Content-Type: application/json" -d '{ "cluster" : [ "monitor" ]}'
+```
+- Hinzufügen des Benutzers:
+```
+curl -XPOST -u elastic 'localhost:9200/_xpack/security/user/kitodoAdmin' -H "Content-Type: application/json" -d '{  "password" : "kitodo",  "full_name" : "Kitodo Admin",  "email" : "kitodo@example.org",  "roles" : [ "kitodo_admin,kitodo_cluster_monitor" ]}'
+```
+ - der genutzte Benutzer `kitodoAdmin` und das dazu passende Passwort muss mit denen in der `kitodo_config.properties` übereinstimmen.
 
 # Grundkonfiguration
 
@@ -106,9 +127,9 @@ Die WAR-Datei findet man auf https://github.com/kitodo/kitodo-production/release
   - `ImagePrefix=\\d{8}` (Namenskonvention für Image-Dateien)
   - `ImageSorting=number` (Numerische oder alphanumerische Sortierung)
 
-## 4. `WEB-INF/classes/log4j.properties` anpassen:
+## 4. `WEB-INF/classes/log4j2.properties` anpassen:
 
-- `log4j.appender.rolling.File=/usr/local/kitodo/logs/kitodo.log`
+- `property.filename=/usr/local/kitodo/logs/kitodo.log`
 
 ## 5. Schritt:
 - Alle `kitodo_*.xml` und `modules.xml` aus `Kitodo/src/main/resources/` in das in `kitodo_config.properties` angegebene `KonfigurationVerzeichnis` kopieren 

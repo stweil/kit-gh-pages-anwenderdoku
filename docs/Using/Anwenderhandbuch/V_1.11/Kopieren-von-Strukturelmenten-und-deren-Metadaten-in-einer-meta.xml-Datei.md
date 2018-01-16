@@ -1,9 +1,9 @@
-#Einleitung 
+# Einleitung 
 Es ist in Kitodo.Production möglich, Meta- und Strukturdaten direkt in der XML-Datei zu bearbeiten. Ein Anwendungsfall ist das Kopieren der Struktur-und Metadaten von Vorgängen gleichen oder ähnlichen Inhalts. Wenn Digitalisate eine ähnliche und umfangreiche Struktur aufweisen, ist es sehr zeitintensiv, die Strukturen anzulegen und diese mit Metadaten auszuzeichnen. Eine Möglichkeit, das manuelle Anlegen zu umgehen, ist das Kopieren der Inhalte direkt in der meta.xml-Datei. 
 
 Diese Manipulation muss äußerst sorgfältig durchgeführt werden, da die Datei bei fehlerhaftem Kopieren invalide und somit unbrauchbar wird. Um Fehler zu vermeiden, wird zunächst die Struktur der Datei erläutert, danach werden die Bereiche benannt, die kopiert werden. 
 
-#Struktur der meta.xml-Datei
+# Struktur der meta.xml-Datei
 Die Datei entspricht dem METS-Standard, jedoch handelt sich um ein Kitodo-internes Format und nicht um die Datei, die nach dem Export erstellt und archiviert wird. 
 
 Bevor die meta.xml-Datei manipuliert wird, muss deren Struktur klar worden sein. Sie besteht aus folgenden Teilen: 
@@ -17,10 +17,10 @@ Bevor die meta.xml-Datei manipuliert wird, muss deren Struktur klar worden sein.
 - Paginierung
 - Links 
 
-##Deskriptive Metadaten `<dmdSec>`
+## Deskriptive Metadaten `<dmdSec>`
 Weitere Informationen zur `<dmdSec>` finden sich unter: http://www.loc.gov/standards/mets/METSOverview.v2.html#filegrp
 
-###Titel-Metadaten
+### Titel-Metadaten
 
 In diesem Bereich werden die deskriptiven Titelmetadaten der Vorlage (Monografie, Zeitschriften-Band, ...) gespeichert. Das Element ist als `DMDLOG_0001` bezeichnet. 
 
@@ -49,8 +49,8 @@ Beispiel:
 </mets:dmdSec>
 ```
 
-###Metadaten der Strukturelemente
-In diesem Element werden die deskriptiven Metadaten (Monografie, Zeitschriften-Band, ...) gespeichert, die im [Metadateneditor](Metadateneditor---Allgemeines) eingegeben wurden. 
+### Metadaten der Strukturelemente
+In diesem Element werden die deskriptiven Metadaten (Monografie, Zeitschriften-Band, ...) gespeichert, die im [Metadateneditor](https://github.com/kitodo/kitodo-production/wiki/Metadateneditor---Allgemeines) eingegeben wurden. 
 
 Das Element ist als `DMDLOG_0002`, `DMDLOG_0003`, `DMDLOG_0004`, ... bezeichnet. 
 
@@ -89,7 +89,7 @@ Beispiel:
 </mets:dmdSec> 
 ```
 
-###Path Image Files
+### Path Image Files
 Dieser Bereich enthält den Pfad zu dem Speicherort der Images.
 
 Das Element ist als `DMDPHYS_0000` bezeichnet. 
@@ -114,7 +114,7 @@ Beispiel:
 </mets:dmdSec>
 ```
 
-##Links zu den tif-Dateien `<fileSec>`
+## Links zu den tif-Dateien `<fileSec>`
 Dieser Bereich enthält die Pfade zu den einzelnen Images. 
 
 Weitere Informationen zur `<fileSec>` finden sich unter: http://www.loc.gov/standards/mets/METSOverview.v2.html#filegrp
@@ -135,7 +135,7 @@ Beispiel:
 </mets:fileSec>
 ```
 
-##Strukturelemente `<structMap> / TYPE=LOGICAL`
+## Strukturelemente `<structMap> / TYPE=LOGICAL`
 Dieser Bereich enthält die erstellten Strukturelemente des Vorgangs. Sie werden in einer Baumstruktur dargestellt, so dass Kindelemente "geschachtelt" werden.  
 
 Weitere Informationen zur `<structMap>` finden sich unter: http://www.loc.gov/standards/mets/METSOverview.v2.html#structmap
@@ -160,7 +160,7 @@ Beispiel:
 </mets:structMap>
 ```
 
-##Paginierung `<structMap> / TYPE=PHYSICAL`
+## Paginierung `<structMap> / TYPE=PHYSICAL`
 Dieser Bereich enthält die Informationen zur Paginierung der einzelnen Images. 
 
 Weitere Informationen zur `<structMap>` finden sich unter: http://www.loc.gov/standards/mets/METSOverview.v2.html#structmap
@@ -192,7 +192,7 @@ Beispiel:
 </mets:structMap>
 ```
 
-##Links `<structLink>`
+## Links `<structLink>`
 
 Dieser Bereich enthält die Informationen darüber, welche Images zu welchen Strukturelementen gehören. 
 
@@ -209,11 +209,11 @@ Beispiel:
 </mets:structLink>
 ```
 
-#Zulässige Änderungen 
+# Zulässige Änderungen 
 Wenn Strukturelemente und deren Metadaten kopiert werden sollen, werden Änderungen an zwei Stellen vorgenommen: 
 
-- [Metadaten der Strukturelemente](Kopieren-von-Strukturelmenten-und-Metadaten-in-einer-meta.xml-Datei#metadaten-der-strukturelemente) `DMDLOG_0002`, `DMDLOG_0003`, `DMDLOG_0004`, ... 
-- [Strukturelemente](Kopieren-von-Strukturelmenten-und-Metadaten-in-einer-meta.xml-Datei#strukturelemente-structmap--typelogical)
+- [Metadaten der Strukturelemente](https://github.com/kitodo/kitodo-production/wiki/Kopieren-von-Strukturelmenten-und-Metadaten-in-einer-meta.xml-Datei#metadaten-der-strukturelemente) `DMDLOG_0002`, `DMDLOG_0003`, `DMDLOG_0004`, ... 
+- [Strukturelemente](https://github.com/kitodo/kitodo-production/wiki/Kopieren-von-Strukturelmenten-und-Metadaten-in-einer-meta.xml-Datei#strukturelemente-structmap--typelogical)
  `<structMap> / LOGICAL` 
 
 Alle anderen Elemente (Paginierung, ...) sollten **nicht** verändert werden, da diese in der Regel in jedem Band voneinader abweichen. 

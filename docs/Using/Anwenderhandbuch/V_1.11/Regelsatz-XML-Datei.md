@@ -2,7 +2,7 @@
 
 Auf dieser Seite wird die Struktur der Regelsatz-Datei der SLUB erläutert. 
 
-Die Datei besteht aus den drei Bereichen: 
+Die Datei besteht aus den Bereichen: 
 
 * Metadaten-Bereich
 * Strukturelemente-Bereich
@@ -266,7 +266,7 @@ Zu beachten ist, dass ein internes Feld im MODS-Mapping mehrfach vorkommen darf 
 
 ### METS
 
-Beim METS-Mapping handelt es sich nicht um METS im strengen Sinne. Eigentlich werden hier nur die internen Bezeichnungen für Strukturelemente in standardisierte Begriffe übertragen (z.B. entsprechend des DFG-Viewer-Strukturdatensets). Diese Begriffe werden dann innterhalb der METS-Struktur als "type" der Strukturelemente verwendet.
+Beim METS-Mapping handelt es sich nicht um METS im strengen Sinne. Eigentlich werden hier nur die internen Bezeichnungen für Strukturelemente in standardisierte Begriffe übertragen (z.B. entsprechend des DFG-Viewer-Strukturdatensets). Diese Begriffe werden dann innerhalb der METS-Struktur als "type" der Strukturelemente verwendet.
 
 `<InternalName>`: Dieses Feld beinhaltet die Kitodo.Production-interne Bezeichnung des Feldes.
 
@@ -280,3 +280,7 @@ Beim METS-Mapping handelt es sich nicht um METS im strengen Sinne. Eigentlich we
 		<MetsType>chapter</MetsType>
 	</DocStruct>
 ---
+
+# XML Schema
+
+[RelaxNG-Grammatik](https://github.com/dmj/kitodo-schema/blob/master/src/ruleset.rnc)
