@@ -40,9 +40,9 @@ In der Installationsanleitung finden sich Informationen zu diesem Thema an zwei 
 
 
 
-[1] https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung-f%C3%BCr-Goobi.Production-CE-1.10#3-web-infclassesgoobi_configproperties-anpassen
+[1] (https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung-f%C3%BCr-Goobi.Production-CE-1.10#3-web-infclassesgoobi_configproperties-anpassen)
 
-[2] https://github.com/kitodo/kitodo-production/tree/master/Kitodo/scripts
+[2](https://github.com/kitodo/kitodo-production/tree/master/Kitodo/scripts "https://github.com/kitodo/kitodo-production/tree/master/Kitodo/scripts")
 
 ---
 
@@ -62,11 +62,11 @@ Im Wiki finden sich an Informationen an mehreren Stellen:
 
 [1] https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung-f%C3%BCr-Goobi.Production-CE-1.10#1-verzeichnisse-anlegen-pfade-nach-bedarf-anpassen
 
-[2] https://github.com/kitodo/kitodo-production/wiki/Regelsatz-XML-Datei
+[2](../Using/Anwenderhandbuch/V_1.11/Regelsatz-XML-Datei.md "Regelsatz-XML-Datei")
 
-[3] https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Produktionsvorlage#1-festlegen-der-details-f%C3%BCr-einen-vorgang-produktionsvorlage
+[3](../Using/Anwenderhandbuch/V_1.11/Bearbeitung-Produktionsvorlage.md#1-festlegen-der-details-f%C3%BCr-einen-vorgang-produktionsvorlage "Bearbeitung-Produktionsvorlage")
 
-[4] https://github.com/kitodo/kitodo-production/wiki/Staatsbibliothek-zu-Berlin---Preu%C3%9Fischer-Kulturbesitz#regels%C3%A4tze
+[4](Von_Anwendern/SBB/Staatsbibliothek-zu-Berlin---Preußischer-Kulturbesitz.md#Regelsätze "Regelsätze")
 
 ---
 
@@ -99,7 +99,7 @@ Zum Beispiel:
 
 [1] https://github.com/kitodo/kitodo-production/blob/master/Goobi/config/goobi_opac.xml
 
-[2] https://github.com/kitodo/kitodo-production/wiki/Neuen-Vorgang-anlegen
+[2](../Using/Anwenderhandbuch/V_1.11/Neuen-Vorgang-anlegen.md "Neuen Vorgang anlegen")
 
 ---
 
@@ -135,9 +135,9 @@ Zum Beispiel kann das Digitalisat einer Handschrift durch die Inhalte der beiden
 ```
 
 
-[1] http://www.goobi.org/fileadmin/groups/goobi/dokumentation/TS-1105_Weiterentwicklungen-GOOBI-WLB.pdf
+[1](http://www.goobi.org/fileadmin/groups/goobi/dokumentation/TS-1105_Weiterentwicklungen-GOOBI-WLB.pdf "TS-1105_Weiterentwicklungen-GOOBI-WLB.pdf")
 
-[2] https://github.com/kitodo/kitodo-production/blob/master/Goobi/config/goobi_opac.xml
+[2](https://github.com/kitodo/kitodo-production/blob/master/Goobi/config/goobi_opac.xml "")
 
 ---
 
@@ -152,9 +152,9 @@ Dazu muss in den folgenden Feldern der Pfad angepasst werden:
 
  
 
-[1] https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Projekte
+[1](../Using/Anwenderhandbuch/V_1.11/Bearbeitung-Projekte.md "Bearbeitung Projekte")
 
-[2] https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Projekte#technische-daten
+[2](../Using/Anwenderhandbuch/V_1.11/Bearbeitung-Projekte.md#technische-daten "Bearbeitung Projekte")
 
 ---
 
@@ -162,9 +162,9 @@ Dazu muss in den folgenden Feldern der Pfad angepasst werden:
 
 Wenn in einer Titelaufnahme wiederholbare Metadatenfelder, wie zum Beispiel die Fußnote 4201 (037A) enthalten sind, muss im Regelsatz [1, 2] dieses Feld als _num="*"_ definiert sein. Ansonsten kann das Feld nicht mehrfach nach Kitodo übernommen werden. 
 
-[1] https://github.com/kitodo/kitodo-production/wiki/Regelsatz
+[1](../Using/Anwenderhandbuch/V_1.11/Regelsatz.md "Regelsatz")
 
-[2] https://github.com/kitodo/kitodo-production/wiki/Regelsatz-XML-Datei
+[2](../Using/Anwenderhandbuch/V_1.11/Regelsatz-XML-Datei.md "")
 
 --- 
 
@@ -172,7 +172,7 @@ Wenn in einer Titelaufnahme wiederholbare Metadatenfelder, wie zum Beispiel die 
 
 Mit Hilfe dieser Datei kann ein Perl-Skript die, einem Image seitens der Scan-Software im Tiff-Header hinterlegten Daten überschreiben, beziehungsweise erst erzeugen. [1]
 
-[1] https://github.com/kitodo/kitodo-production/wiki/Verwendung-der-tiffwriterconf-Datei
+[1](../BestPractice/Anwendungshinweise_und_Weiteres/Verwendung%20der%20tiffwriterconf-Datei.md "")
 
 --- 
 
@@ -180,7 +180,7 @@ Mit Hilfe dieser Datei kann ein Perl-Skript die, einem Image seitens der Scan-So
 
 Wenn die Strukturelemente und deren Metadaten gleicher oder ähnlicher Vorgänge nicht jeweils im Metadateneditor manuell eingegeben werden sollen, ist es möglich, die Daten direkt in der meta.xml-Datei zu kopieren [1]. Dies muss sehr sorgfältig durchgeführt werden! 
 
-[1] https://github.com/kitodo/kitodo-production/wiki/Kopieren-von-Strukturelmenten-und-deren-Metadaten-in-einer-meta.xml-Datei
+[1](../Using/Anwenderhandbuch/V_1.11/Kopieren-von-Strukturelmenten-und-deren-Metadaten-in-einer-meta.xml-Datei.md "")
 
 --- 
 
@@ -188,7 +188,7 @@ Wenn die Strukturelemente und deren Metadaten gleicher oder ähnlicher Vorgänge
 
 Kitodo.Production unterstützt UTF-8 und es können Sonderzeichen wie das sorbische Ṕ, ṕ, Ẃ, ẃ oder auch nicht-lateinische Schriftzeichen [1] verarbeitet werden. Die Eingabe im Metadateneditor wird jedoch nicht unterstützt. Daher müssen Sonderzeichen, die nicht auf der Tastatur vorhanden sind, aus anderen Systemen kopiert und eingefügt oder mit Tastenkombinationen eingegeben werden. 
 
-[1] https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-von-Titeln-in-nicht-lateinischer-Sprache
+[1](../BestPractice/Anwendungshinweise_und_Weiteres/Bearbeitung-von-Titeln-in-nicht-lateinischer-Sprache.md "")
 
 --- 
 
@@ -196,8 +196,8 @@ Kitodo.Production unterstützt UTF-8 und es können Sonderzeichen wie das sorbis
 
 In Kitodo.Production kann ein Laufzettel [1] erstellt werden, der Angaben wie Signatur, Projektname, Identifier oder andere Angaben aus Werkstück- und Vorlageneigenschaften enthält. Die Angaben können in einer Konfigurationsdatei angepasst werden. Eine Anleitung dazu findet sich unter [2]. 
 
-[1] https://github.com/kitodo/kitodo-production/wiki/Laufzettel
+[1](../Using/Anwenderhandbuch/V_1.11/Laufzettel.md "Laufzettel")
 
-[2] https://github.com/kitodo/kitodo-production/wiki/Anpassungen-in-der-docket.xsl 
+[2](../Using/Anwenderhandbuch/V_1.11/Anpassungen-in-der-docket.xsl.md "") 
 
 --- 
