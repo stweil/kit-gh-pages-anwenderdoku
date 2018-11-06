@@ -1,6 +1,6 @@
 # Einleitung
 
-[Projekte](Projekt) dienen der Verwaltung von Digitalisierungsprojekten. Um dies zu ermöglichen, sind mehrere Einstellungen notwendig. Darunter unter anderem die Speicherorte für die Metadaten und Images, die Bildung der PURL, die URL des Rechteinhabers, und weitere. Diese werden in den folgenden Abschnitten erläutert. 
+[Projekte](https://github.com/kitodo/kitodo-production/wiki/Projekt) dienen der Verwaltung von Digitalisierungsprojekten. Um dies zu ermöglichen, sind mehrere Einstellungen notwendig. Darunter unter anderem die Speicherorte für die Metadaten und Images, die Bildung der PURL, die URL des Rechteinhabers, und weitere. Diese werden in den folgenden Abschnitten erläutert. 
 
 Die Einstiegsseite unter dem Menüpunkt *Projekte* bietet eine Übersicht über bereits vorhandene Projekte. Diese lassen sich in der Spalte *Aktionen* über den Button Bearbeiten ![](images/Icon_Benutzer_bearbeiten.gif) editieren. Über den Link *Neues Projekt anlegen* öffnet sich die Tabelle zur Definition eines neuen Projektes.
 
@@ -15,10 +15,10 @@ Die Angaben für ein neues Projekt sind auf mehrere Menüpunkte aufgeteilt, die 
 * Mets Parameter
 * Statistik
 
-Bei den meisten Feldern empfiehlt es sich, sich an bestehenden Projekten (falls vorhanden) zu orientieren. Zudem muss beachtet werden, dass in der Konfigurationsdatei _goobi_digitalCollections.xml_ die Projekte eingetragen müssen (siehe [Installationsanleitung](Installationsanleitung)). Wenn dies nicht gemacht wird, werden keine Digitale Kollektionen beim Anlegen eines Vorgangs angezeigt. Da zumindest eine Kollektion gewählt werden muss, wäre das Anlegen des Vorgangs somit nicht möglich. 
+Bei den meisten Feldern empfiehlt es sich, sich an bestehenden Projekten (falls vorhanden) zu orientieren. Zudem muss beachtet werden, dass in der Konfigurationsdatei _goobi_digitalCollections.xml_ die Projekte eingetragen müssen (siehe [Installationsanleitung](https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung)). Wenn dies nicht gemacht wird, werden keine Digitale Kollektionen beim Anlegen eines Vorgangs angezeigt. Da zumindest eine Kollektion gewählt werden muss, wäre das Anlegen des Vorgangs somit nicht möglich. 
 Eine Beispiel _goobi_digitalCollections.xml_-Datei findet sich unter [https://github.com/kitodo/kitodo-production/tree/1.11.x/Goobi/config](https://github.com/kitodo/kitodo-production/tree/1.11.x/Goobi/config). 
 
-Einige Angaben müssen in der sogenannten goobi_projects.xml-Datei hinterlegt sein und können nicht über das Frontend eingegeben werden. Erläuterungen zu der goobi_projects.xml-Datei finden sich unter [Projekt XML Datei](Projekt-XML-Datei). 
+Einige Angaben müssen in der sogenannten goobi_projects.xml-Datei hinterlegt sein und können nicht über das Frontend eingegeben werden. Erläuterungen zu der goobi_projects.xml-Datei finden sich unter [Projekt XML Datei](https://github.com/kitodo/kitodo-production/wiki/Projekt-XML-Datei). 
 
 Es ist nicht möglich, allgemein gültige Feldbelegungen zu nennen. Diese hängen von den Bedingungen in den jeweiligen Institutionen ab. In dieser Dokumentation können Inhalte nur **beispielhaft** genannt werden.   
 
@@ -79,7 +79,7 @@ Wenn die Vorgänge dieses Projekts automatisch exportiert werden sollen, muss
 * bei *DMS-Export-Ordner für XML-Datei* der entsprechende Pfad eingetragen werden
 * bei *DMS-Export-Images-Ordner* der entsprechende Pfad eingetragen werden
 
-Siehe auch: [Export](Export).
+Siehe auch: [Export](https://github.com/kitodo/kitodo-production/wiki/Export).
 
 ## METS Parameter
 
@@ -132,11 +132,27 @@ In der SLUB wird dieser Pfad zusammengesetzt wie derjenige in _METS Digiprov Pr�
 
 _METS Pointer Pfad_
 
-Dazu liegen keine gesicherten Erkenntnisse vor. 
+Hier wird der Pfad eingegeben, der in der meta.xml-Datei eines Bandes in dem Element `<mets:mptr>` in `<mets:structMap TYPE="LOGICAL">` eingetragen wird. Dies muss der Pfad zur meta_anchor.xml sein, um die Verknüpfung zur meta_anchor.xml-Datei herzustellen. 
+
+Der Pfad wird zusammengesetzt aus einem Prefix (zum Beispiel: http://digital.slub-dresden.de/fileadmin/data/), einer Variablen, die automatisch durch den eindeutigen Identifier (zum Beispiel: _meta.CatalogIDDigital_) ersetzt werden kann und einem Suffix (_anchor).
+
+Beispiel SLUB: 
+
+`http://digital.slub-dresden.de/fileadmin/data/20050662Z/20050662Z_anchor.xml"/`
+
+Je nach Institution wird dieser Link unterschiedlich gebildet. 
 
 _METS Pointer Pfad (Anker)_
 
-Dazu liegen keine gesicherten Erkenntnisse vor. 
+Hier wird der Pfad eingegeben, der in der meta_anchor.xml-Datei eines Bandes in dem Element `<mets:mptr>` in `<mets:structMap TYPE="LOGICAL">` eingetragen wird. Dies muss der Pfad zur meta.xml sein, um die Verknüpfung zur jeweiligen meta.xml-Datei herzustellen. 
+
+Der Pfad wird zusammengesetzt aus einem Prefix (zum Beispiel: http://digital.slub-dresden.de/fileadmin/data/) und einer Variablen, die automatisch durch den eindeutigen Identifier (zum Beispiel: _meta.CatalogIDDigital_) ersetzt werden kann.
+
+Beispiel SLUB: 
+
+`http://digital.slub-dresden.de/fileadmin/data/20050662Z/20050662Z.xml"/`
+
+Je nach Institution wird dieser Link unterschiedlich gebildet. 
 
 _METS PURL (logische Struktur)_
 
@@ -145,7 +161,6 @@ Hier wird die Struktur der PURL der Digitalisate festgelegt. Diese besteht aus e
 _METS ContentIDs (physische Struktur)_
 
 Dazu liegen keine gesicherten Erkenntnisse vor. 
-
 
 **Beispiel**: Hier zum Beispiel in dem Bereich Rechte (RIGHTS): 
 
@@ -280,7 +295,7 @@ RDF
 Beim RDF-Format handelt es sich um ein älteres proprietäres XML-Format, das sämtliche Struktur- und Metadaten sowie die Paginierungen weitestgehend abbilden kann. Problematisch ist dieses Format lediglich im Hinblick auf spezielle Paginierungssequenzen. Insbesondere bei der Blatt- und Spaltenzählung können die besonderen Zählweisen nicht durch dieses Format gespeichert werden, so dass die Paginierungssequenzen verloren gehen. Die Speicherung von der verbreiteten Seitenzählung ist jedoch vollkommen unproblematisch durch RDF.
 
 Update Februar 2016: Dies ist obsolet und soll sollte nicht genutzt werden. Er diente früher dem Export von AgoraXML. 
-Siehe auch [Regelsatz XML Datei](Regelsatz-XML-Datei)
+Siehe auch [Regelsatz XML Datei](https://github.com/kitodo/kitodo-production/wiki/Regelsatz-XML-Datei)
 
 xStream
 
@@ -289,3 +304,6 @@ Das Format xStream ist xml Serialisierung von kompletten Java-Objekten. Bei dies
 METS
 
 Das METS-Format wurde mit Goobi 1.5.1 erstmals vollständig sowohl für den DMS-Import als auch für die interne Speicherung eingeführt. Dieses verbreitete Format ermöglicht die maximale Nachnutzbarkeit in anderen Systemen. Darüber hinaus können sämtliche Informationen der Struktur- und Metadaten sowie der Paginierungssequenzen inklusive der FileGroups durch dieses Format abgebildet werden. Es ist das für den DMS-Import am besten geeignete Format. Auch für eine interne Speicherung in Goobi wird die Nutzung des METS-Formates empfohlen.
+
+# Weitere Informationen
+Tutorial: [Projekt anlegen](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/02_projekt-anlegen.md)

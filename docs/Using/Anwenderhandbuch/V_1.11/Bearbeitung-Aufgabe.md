@@ -1,6 +1,6 @@
 # Einleitung
 
-Unter den [Vorgangsdetails](Vorgangsdetails) einer [Produktionsvorlage](Vorgangsdetails) ist als zweiter Schritt die Abfolge der [Aufgaben](Aufgaben) (Workflow) festzulegen. Das Beispiel zeigt unter _Abfolge der Aufgaben_ einen bereits definierten Workflow mit folgenden Angaben:
+Unter den [Vorgangsdetails](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails) einer [Produktionsvorlage](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails) ist als zweiter Schritt die Abfolge der [Aufgaben](https://github.com/kitodo/kitodo-production/wiki/Aufgaben) (Workflow) festzulegen. Das Beispiel zeigt unter _Abfolge der Aufgaben_ einen bereits definierten Workflow mit folgenden Angaben:
 
 * Nummer, die die Reihenfolge des Arbeitsschrittes ausweist;
 * Titel (Benennung) des Arbeitsschrittes - verbale Formulierung frei wählbar, sollte jedoch innerhalb eines Anwendersystems für ein und denselben Sachverhalt konstant verwendet werden;
@@ -10,11 +10,9 @@ Unter den [Vorgangsdetails](Vorgangsdetails) einer [Produktionsvorlage](Vorgangs
 
 Über den Link _Aufgabe hinzufügen_ im unteren Bereich der Übersicht öffnet sich das entsprechende Formular (Funktionsbeschreibung siehe unten).
 
-
 Beispiel:
 
 ![](images/Aufgaben1.jpg)
-
 
 # Aufgabe hinzufügen
 
@@ -26,7 +24,7 @@ Angaben zu _Details_ der Aufgabe ist verbindlich. Das Hinzufügen der Benutzergr
 
 ## 1 Details einer Aufgabe festlegen
 
-Siehe hier als Beispiel [Aufgaben Einstellungen](Aufgaben-Einstellungen)
+Siehe hier als Beispiel [Aufgaben Einstellungen](https://github.com/kitodo/kitodo-production/wiki/Aufgaben-Einstellungen)
 
 Allgemeine Beschreibung der Details:
 
@@ -44,7 +42,7 @@ Empfehlung: Vergabe für alle Aufgaben, die mit Scannen/Imagebearbeitung zu tun 
 | Export DMS | Letztendlich werden die fertigen Dateien (Bilder, Metadaten) in das Benutzerverzeichnis des Benutzers kopiert, der die Aufgabe angenommen hat. |
 | Aufgabe beim Annehmen abschließen | Sorgt dafür, dass die Aufgabe schon bei der Annahme auch automatisch abgeschlossen werden soll. Das ist hilfreich für automatische Schritte. |
 | Automatische Aufgabe | Wenn hier ein Haken gesetzt wird, wird die jeweilige Aufgabe automatisch bearbeitet. Natürlich müssen dazu alle technischen Voraussetzungen vorhanden sein. Ein Beispiel für diese Funktion ist der automatische Export. |
-| Script Schritt | Beim Bestätigen dieses Feldes öffnet sich ein weiteres Fenster. Scripte dienen dazu, automatische Aufgaben außerhalb von Kitodo:production auszulösen. Eine detailliertere Beschreibung findet sich unter [Scriptschritte](Scriptschritte). |
+| Script Schritt | Beim Bestätigen dieses Feldes öffnet sich ein weiteres Fenster. Scripte dienen dazu, automatische Aufgaben außerhalb von Kitodo:production auszulösen. Eine detailliertere Beschreibung findet sich unter [Scriptschritte](https://github.com/kitodo/kitodo-production/wiki/Scriptschritte). |
 | Status | Eine Aufgabe kann bzgl. des Status der Bearbeitung vier verschiedene Stufen erreichen. - Empfehlung: Da die erste Aufgabe keinen Vorgänger besitzt, sollte sie von Anbeginn auf den Status ‚abgeschlossen' gesetzt werden, die zweite Aufgabe auf den Status 'offen' und alle weiteren auf 'gesperrt'. |
 | Batch Schritt | ??? |
 | stepPlugin | ??? |
@@ -72,3 +70,6 @@ Per Mausklick auf den Link öffnet sich ein Fenster mit den aktuell verfügbaren
 Beispiel:
 
 ![](images/Aufgaben5.jpg)
+
+# Weitere Informationen
+* Tutorial: [Produktionsvorlage anlegen und Workflow definieren](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/04_produktionsvorlage-anlegen-und-workflow-definieren.md)

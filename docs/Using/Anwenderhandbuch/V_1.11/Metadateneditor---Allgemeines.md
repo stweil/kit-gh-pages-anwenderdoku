@@ -179,3 +179,5 @@ Nach Abschluss der Arbeiten im Metadateneditor über *Speichern und zurück* ode
 
 Ist die Aufgabe vollständig bearbeitet, kann sie abgeschlossen werden, wodurch der nächste Arbeitsschritt auf offen gesetzt wird. Soll sie später weiter im Metadateneditor bearbeitet werden, darf sie nur abgegeben werden.
 
+# Weitere Informationen
+Tutorial: [Paginierung definieren](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/07_paginierung-definieren.md)

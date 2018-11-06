@@ -74,7 +74,7 @@ In diesem Feld stehen sechs Funktionen zur Verfügung, mit denen Korrekturen an 
 * Strukturelement nach unten schieben
 * Strukturelement an andere Stelle schieben
 * Typ des Strukturelements ändern
-* Strukturelemente aus Opac hinzufügen (siehe: [Staatsbibliothek zu Berlin Preußischer Kulturbesitz](Staatsbibliothek-zu-Berlin---Preu%C3%9Fischer-Kulturbesitz#anh%C3%A4ngende-werke-pdf))
+* Strukturelemente aus Opac hinzufügen (siehe: [Staatsbibliothek zu Berlin Preußischer Kulturbesitz](https://github.com/kitodo/kitodo-production/wiki/Staatsbibliothek-zu-Berlin---Preu%C3%9Fischer-Kulturbesitz#anh%C3%A4ngende-werke-pdf))
 * Strukturelement löschen
 
 ## Seitenzuordnung
@@ -108,3 +108,6 @@ In der Box *Neues Strukturelement* können in den Feldern *Erste Seite* und *Let
 6 *Speichern*
 
 Diese Abfolge wird für jedes Strukturelement wiederholt.
+
+# Weitere Informationen
+Tutorial: [Strukturdaten bearbeiten](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/08_strukturdaten-bearbeiten.md)

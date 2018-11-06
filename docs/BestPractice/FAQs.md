@@ -1,22 +1,22 @@
-[Was macht man mit Kitodo.Production?](FAQs#was-macht-man-mit-kitodoproduction)
+[Was macht man mit Kitodo.Production?](https://github.com/kitodo/kitodo-production/wiki/FAQs#was-macht-man-mit-kitodoproduction)
 
-[Wie können die Scan Verzeichnisse hinzugefügt, entfernt oder umbenannt werden?](FAQs#wie-k%C3%B6nnen-die-scan-verzeichnisse-hinzugef%C3%BCgt-entfernt-oder-umbenannt-werden)
+[Wie können die Scan Verzeichnisse hinzugefügt, entfernt oder umbenannt werden?](https://github.com/kitodo/kitodo-production/wiki/FAQs#wie-k%C3%B6nnen-die-scan-verzeichnisse-hinzugef%C3%BCgt-entfernt-oder-umbenannt-werden)
 
-[Ist es möglich, mehrere Regelsätze in Kitodo.Production zu nutzen?](FAQs#ist-es-m%C3%B6glich-mehrere-regels%C3%A4tze-in-kitodoproduction-zu-nutzen)
+[Ist es möglich, mehrere Regelsätze in Kitodo.Production zu nutzen?](https://github.com/kitodo/kitodo-production/wiki/FAQs#ist-es-m%C3%B6glich-mehrere-regels%C3%A4tze-in-kitodoproduction-zu-nutzen)
 
-[Wie werden die Metadaten aus Datenquellen importiert?](FAQs#wie-werden-die-metadaten-aus-datenquellen-importiert) 
+[Wie werden die Metadaten aus Datenquellen importiert?](https://github.com/kitodo/kitodo-production/wiki/FAQs#wie-werden-die-metadaten-aus-datenquellen-importiert) 
 
-[Was kann mit dem OPAC Beautifier geändert werden?](FAQs#was-kann-mit-dem-opac-beautifier-ge%C3%A4ndert-werden)
+[Was kann mit dem OPAC Beautifier geändert werden?](https://github.com/kitodo/kitodo-production/wiki/FAQs#was-kann-mit-dem-opac-beautifier-ge%C3%A4ndert-werden)
 
-[Wie können mehrere gleiche Metadatenfelder mit unterschiedlichen Inhalten nach Kitodo.Production geladen werden?](FAQs#wie-k%C3%B6nnen-mehrere-gleiche-metadatenfelder-mit-unterschiedlichen-inhalten-nach-kitodoproduction-geladen-werden)
+[Wie können mehrere gleiche Metadatenfelder mit unterschiedlichen Inhalten nach Kitodo.Production geladen werden?](https://github.com/kitodo/kitodo-production/wiki/FAQs#wie-k%C3%B6nnen-mehrere-gleiche-metadatenfelder-mit-unterschiedlichen-inhalten-nach-kitodoproduction-geladen-werden)
 
-[Wozu dient die tiffwriter.conf-Datei?](FAQs#wozu-dient-die-tiffwriterconf-datei)
+[Wozu dient die tiffwriter.conf-Datei?](https://github.com/kitodo/kitodo-production/wiki/FAQs#wozu-dient-die-tiffwriterconf-datei)
 
-[Können Strukturelemente und deren Metadaten in der XML-Datei kopiert werden?](FAQs#k%C3%B6nnen-strukturelemente-und-deren-metadaten-in-der-xml-datei-kopiert-werden)
+[Können Strukturelemente und deren Metadaten in der XML-Datei kopiert werden?](https://github.com/kitodo/kitodo-production/wiki/FAQs#k%C3%B6nnen-strukturelemente-und-deren-metadaten-in-der-xml-datei-kopiert-werden)
 
-[Unterstützt Kitodo.Production UTF-8?](FAQs#unterst%C3%BCtzt-kitodoproduction-utf-8)
+[Unterstützt Kitodo.Production UTF-8?](https://github.com/kitodo/kitodo-production/wiki/FAQs#unterst%C3%BCtzt-kitodoproduction-utf-8)
 
-[Wie kann der Laufzettel in Kitodo.Production angepasst werden?](FAQs#wie-kann-der-laufzettel-in-kitodoproduction-angepasst-werden)
+[Wie kann der Laufzettel in Kitodo.Production angepasst werden?](https://github.com/kitodo/kitodo-production/wiki/FAQs#wie-kann-der-laufzettel-in-kitodoproduction-angepasst-werden)
 
 ---
 
@@ -40,9 +40,9 @@ In der Installationsanleitung finden sich Informationen zu diesem Thema an zwei 
 
 
 
-[1] Installationsanleitung-f%C3%BCr-Goobi.Production-CE-1.10#3-web-infclassesgoobi_configproperties-anpassen
+[1] https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung-f%C3%BCr-Goobi.Production-CE-1.10#3-web-infclassesgoobi_configproperties-anpassen
 
-[2] https://github.com/kitodo/kitodo-production/tree/master/Goobi/scripts
+[2] https://github.com/kitodo/kitodo-production/tree/master/Kitodo/scripts
 
 ---
 
@@ -60,13 +60,13 @@ Im Wiki finden sich an Informationen an mehreren Stellen:
 * Beispiel SBB-PK [4]
 
 
-[1] Installationsanleitung-f%C3%BCr-Goobi.Production-CE-1.10#1-verzeichnisse-anlegen-pfade-nach-bedarf-anpassen
+[1] https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung-f%C3%BCr-Goobi.Production-CE-1.10#1-verzeichnisse-anlegen-pfade-nach-bedarf-anpassen
 
-[2] Regelsatz-XML-Datei
+[2] https://github.com/kitodo/kitodo-production/wiki/Regelsatz-XML-Datei
 
-[3] Bearbeitung-Produktionsvorlage#1-festlegen-der-details-f%C3%BCr-einen-vorgang-produktionsvorlage
+[3] https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Produktionsvorlage#1-festlegen-der-details-f%C3%BCr-einen-vorgang-produktionsvorlage
 
-[4] Staatsbibliothek-zu-Berlin---Preu%C3%9Fischer-Kulturbesitz#regels%C3%A4tze
+[4] https://github.com/kitodo/kitodo-production/wiki/Staatsbibliothek-zu-Berlin---Preu%C3%9Fischer-Kulturbesitz#regels%C3%A4tze
 
 ---
 
@@ -99,7 +99,7 @@ Zum Beispiel:
 
 [1] https://github.com/kitodo/kitodo-production/blob/master/Goobi/config/goobi_opac.xml
 
-[2] Neuen-Vorgang-anlegen
+[2] https://github.com/kitodo/kitodo-production/wiki/Neuen-Vorgang-anlegen
 
 ---
 
@@ -152,9 +152,9 @@ Dazu muss in den folgenden Feldern der Pfad angepasst werden:
 
  
 
-[1] Bearbeitung-Projekte
+[1] https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Projekte
 
-[2] Bearbeitung-Projekte#technische-daten
+[2] https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Projekte#technische-daten
 
 ---
 
@@ -162,9 +162,9 @@ Dazu muss in den folgenden Feldern der Pfad angepasst werden:
 
 Wenn in einer Titelaufnahme wiederholbare Metadatenfelder, wie zum Beispiel die Fußnote 4201 (037A) enthalten sind, muss im Regelsatz [1, 2] dieses Feld als _num="*"_ definiert sein. Ansonsten kann das Feld nicht mehrfach nach Kitodo übernommen werden. 
 
-[1] Regelsatz
+[1] https://github.com/kitodo/kitodo-production/wiki/Regelsatz
 
-[2] Regelsatz-XML-Datei
+[2] https://github.com/kitodo/kitodo-production/wiki/Regelsatz-XML-Datei
 
 --- 
 
@@ -172,7 +172,7 @@ Wenn in einer Titelaufnahme wiederholbare Metadatenfelder, wie zum Beispiel die 
 
 Mit Hilfe dieser Datei kann ein Perl-Skript die, einem Image seitens der Scan-Software im Tiff-Header hinterlegten Daten überschreiben, beziehungsweise erst erzeugen. [1]
 
-[1] Verwendung-der-tiffwriterconf-Datei
+[1] https://github.com/kitodo/kitodo-production/wiki/Verwendung-der-tiffwriterconf-Datei
 
 --- 
 
@@ -180,7 +180,7 @@ Mit Hilfe dieser Datei kann ein Perl-Skript die, einem Image seitens der Scan-So
 
 Wenn die Strukturelemente und deren Metadaten gleicher oder ähnlicher Vorgänge nicht jeweils im Metadateneditor manuell eingegeben werden sollen, ist es möglich, die Daten direkt in der meta.xml-Datei zu kopieren [1]. Dies muss sehr sorgfältig durchgeführt werden! 
 
-[1] Kopieren-von-Strukturelmenten-und-deren-Metadaten-in-einer-meta.xml-Datei
+[1] https://github.com/kitodo/kitodo-production/wiki/Kopieren-von-Strukturelmenten-und-deren-Metadaten-in-einer-meta.xml-Datei
 
 --- 
 
@@ -188,7 +188,7 @@ Wenn die Strukturelemente und deren Metadaten gleicher oder ähnlicher Vorgänge
 
 Kitodo.Production unterstützt UTF-8 und es können Sonderzeichen wie das sorbische Ṕ, ṕ, Ẃ, ẃ oder auch nicht-lateinische Schriftzeichen [1] verarbeitet werden. Die Eingabe im Metadateneditor wird jedoch nicht unterstützt. Daher müssen Sonderzeichen, die nicht auf der Tastatur vorhanden sind, aus anderen Systemen kopiert und eingefügt oder mit Tastenkombinationen eingegeben werden. 
 
-[1] Bearbeitung-von-Titeln-in-nicht-lateinischer-Sprache
+[1] https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-von-Titeln-in-nicht-lateinischer-Sprache
 
 --- 
 
@@ -196,8 +196,8 @@ Kitodo.Production unterstützt UTF-8 und es können Sonderzeichen wie das sorbis
 
 In Kitodo.Production kann ein Laufzettel [1] erstellt werden, der Angaben wie Signatur, Projektname, Identifier oder andere Angaben aus Werkstück- und Vorlageneigenschaften enthält. Die Angaben können in einer Konfigurationsdatei angepasst werden. Eine Anleitung dazu findet sich unter [2]. 
 
-[1] Laufzettel
+[1] https://github.com/kitodo/kitodo-production/wiki/Laufzettel
 
-[2] Anpassungen-in-der-docket.xsl 
+[2] https://github.com/kitodo/kitodo-production/wiki/Anpassungen-in-der-docket.xsl 
 
 --- 

@@ -1,150 +1,146 @@
-# Grundinstallation
- Die folgende Anleitung beschreibt exemplarisch die Installation von Kitodo.Production auf einem Debian-System mit lokaler Datenbank. Für andere Distributionen sind insbesondere die Pfadangaben entsprechend anzupassen. Soll ein separater Datenbankserver verwendet werden, ist dies beim Anlegen des Datenbanknutzers für Kitodo bei der Rechtevergabe zu beachten (Schritt 3 der Grundinstallation).
+# Install Kitodo 3.0.0-beta.1
 
-Kitodo.Production benötigt mindestens 1 leistungsstarke CPU und 2 GB RAM sowie ca. 10 GB Festplattenspeicher. Darin ist der Speicherplatzbedarf der Digitalisierungsdaten nicht enthalten!
+Die folgende Anleitung beschreibt exemplarisch die Installation von Kitodo.Production auf einem Debian-System mit lokaler Datenbank. Für andere Distributionen sind insbesondere die Pfadangaben entsprechend anzupassen. Soll ein separater Datenbankserver verwendet werden, ist dies beim Anlegen des Datenbanknutzers für Kitodo bei der Rechtevergabe zu beachten.
 
-Stand: März 2017.
+Kitodo.Production benötigt mindestens 1 leistungsstarke CPU und 3 GB RAM sowie ca. 10 GB Festplattenspeicher. Darin ist der Speicherplatzbedarf der Digitalisierungsdaten nicht enthalten!
 
-# Grundinstallation
+## A) Installation
 
-## 1. Debian 8 (Jessie) installieren
+We will install the [Kitodo.Production 3.0.0-beta.1 pre-release](https://github.com/kitodo/kitodo-production/releases/tag/kitodo-production-3.0.0-beta.1) on a Debian 9.5 operating system with Tomcat 8, MySQL 5.7 and Elasticsearch 5.x. Please follow the instructions.
 
-- OpenJDK8
-- Tomcat8
-- MySQL-Server 5.6 / MariaDB
+### A1. Install Debian 9.5 (Stretch)
 
-## 2. MySQL-Konfiguration für InnoDB anpassen (in `/etc/mysql/my.cnf`)
+Download and install [Debian 9.5](https://cdimage.debian.org/debian-cd/9.5.0/amd64/iso-cd/).
 
-- `[mysqld] innodb_file_per_table`
-- MySQL-Dienst neustarten
+### A2. Install sudo and reboot
 
-## 3. MySQL-Datenbank und -Nutzer für Kitodo anlegen
+Debian recommends to use [sudo](https://wiki.debian.org/sudo) instead of opening a session as root.
 
-- `mysql -uroot -p`
-- `create database kitodo;`
-- `grant all privileges on kitodo.* to kitodo@localhost identified by ´kitodo´;`
-- `flush privileges;`
-- `exit;`
-
-Migration machen:
-[Flyway Migration](https://github.com/kitodo/kitodo-production/wiki/Flyway-migration)
-
-## 4. Tomcat-Konfiguration für Speichermanagement anpassen (in /`etc/default/tomcat7`)
-
-- `JAVA_OPTS="-Djava.awt.headless=true -Xmx1920m -XX:MaxPermSize=128m -XX:+UseConcMarkSweepGC"`
-- Tomcat-Dienst neustarten
-
-Hinweis: Wenn unter Tomcat neben Kitodo.Production noch weitere Applikationen (beispielsweise Solr für Kitodo.Presentation) laufen, dann sollte ein größerer Wert für MaxPermSize konfiguriert werden, beispielsweise `-XX:MaxPermSize=256m`.
-
-## 5. Kitodo.Production WAR-Datei von GitHub ins `webapps` Verzeichnis des Tomcat kopieren
-
-Die WAR-Datei findet man auf https://github.com/kitodo/kitodo-production/releases, und man kopiert sie bei Debian nach `/var/lib/tomcat7/webapps/`.
-
-- Deployment läuft automatisch
-- `Kitodo/src/main/resources/hibernate.cfg.xml` anpassen
-  - `hibernate.connection.url`
-  - `hibernate.connection.username`
-  - `hibernate.connection.password`
-
-## 6. Elasticsearch starten
- - Einen ElasticSearch-server starten.(mind. Version 5.x, am besten [5.4.3](https://www.elastic.co/downloads/past-releases/elasticsearch-5-4-3))
- - Die Konfiguration des Servers erfolgt in der Datei kitodo_config.properties
-   - elasticsearch.host
-   - elasticsearch.protocol
-   - elasticsearch.port
-   - elasticsearch.index
-   - elasticsearch.useAuthentication
-   - elasticsearch.user
-   - elasticsearch.password
-
-## 6.1 ElasticSearch für Authentifizierung konfiguieren
-
-Möchte man ElasticSearch mit Authentifizierung betreiben `elasticsearch.useAuthentication = true` in der `kitodo_config.properties`, dann sind die folgenden Schritte notwendig:
-- Installation des X-Packs für ElasticSearch nach der [Anleitung für die genutzte Version](https://www.elastic.co/guide/en/x-pack/5.4/installing-xpack.html)
-- Hinzufügen einer administrativen Rolle für den Zugriff auf den genutzten Index (bspw. kitodo):
 ```
-curl -XPOST -u elastic 'localhost:9200/_xpack/security/role/kitodo_admin' -H "Content-Type: application/json" -d '{ "indices" : [{ "names" : [ "kitodo*" ],"privileges" : [ "all" ]}]}'
+su -c "apt install -y sudo && adduser $USER sudo && echo \"Defaults timestamp_timeout=300\" >> /etc/sudoers.d/timeout && reboot"
 ```
-- Hinzufügen einer einfachen Rolle auf das Monitoring des Clusters:
+
+### A3. Add mysql.com 5.7 and elastic.co 5.x repositories
+
+We will add official repositories of Oracle and elastic to get the newest versions of MySQL 5.7 and Elasticsearch 5.x.
+
 ```
-curl -XPOST -u elastic 'localhost:9200/_xpack/security/role/kitodo_cluster_monitor' -H "Content-Type: application/json" -d '{ "cluster" : [ "monitor" ]}'
+sudo apt install -y apt-transport-https dirmngr
 ```
-- Hinzufügen des Benutzers:
+
 ```
-curl -XPOST -u elastic 'localhost:9200/_xpack/security/user/kitodoAdmin' -H "Content-Type: application/json" -d '{  "password" : "kitodo",  "full_name" : "Kitodo Admin",  "email" : "kitodo@example.org",  "roles" : [ "kitodo_admin,kitodo_cluster_monitor" ]}'
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5072E1F5 && echo "deb http://repo.mysql.com/apt/debian/ stretch mysql-5.7" | sudo tee -a /etc/apt/sources.list.d/mysql-5.7.list
+wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add - && echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list
 ```
- - der genutzte Benutzer `kitodoAdmin` und das dazu passende Passwort muss mit denen in der `kitodo_config.properties` übereinstimmen.
 
-# Grundkonfiguration
+### A4. Install packages openjdk-8, tomcat8, mysql-community-server, elasticsearch and curl
 
-## 1. Verzeichnisse anlegen (Pfade nach Bedarf anpassen)
+You will be asked to set a root password for mysql. You may leave it blank (not recommended for production mode).
 
-- `/usr/local/kitodo/config/` (Konfiguration)
-- `/usr/local/kitodo/debug/` (*) (Debug-Meldungen des OPAC-Beautifiers)
-- `/usr/local/kitodo/import/`
-- `/usr/local/kitodo/logs/` (*) (Log-Meldungen)
-- `/usr/local/kitodo/messages/` (Lokalisierungsdateien)
-- `/usr/local/kitodo/metadata/` (*) (Vorgangsverzeichnisse)
-- `/usr/local/kitodo/plugins/` (Funktionsmodule)
-  - `./command/`
-  - `./import/`
-  - `./opac/`
-  - `./step/`
-  - `./validation/`
-- `/usr/local/kitodo/rulesets/` (Regelsätze)
-- `/usr/local/kitodo/scripts/` (Shell-Skripte)
-- `/usr/local/kitodo/swap/` (*) (ausgelagerte Vorgänge)
-- `/usr/local/kitodo/temp/` (*) (Temporäre Dateien)
-- `/usr/local/kitodo/users/` (*) (Benutzer-Verzeichnisse)
-- `/usr/local/kitodo/xslt/` (XSL-Stylesheets)
+```
+sudo apt update && sudo apt install -y openjdk-8-jdk tomcat8 mysql-community-server elasticsearch curl
+```
 
-## 2. Zugriffsrechte für Tomcat-User (z. B. tomcat7) für die Verzeichnisse anpassen
+### A5. Configure Tomcat
 
-- Lese-/Schreibzugriff als auch Ausführungsrecht für mit * markierte Verzeichnisse
-- Lesezugriff und Ausführungsrecht für alle anderen Verzeichnisse
+We recommend to provide at least 1920m JAVA heap space to Tomcat.
 
-## 3. `Kitodo/src/main/resources/kitodo_config.properties` anpassen
+```
+sudo sed -i 's/JAVA_OPTS="-Djava.awt.headless=true/JAVA_OPTS="-Djava.awt.headless=true -Xmx1920m/' /etc/default/tomcat8
+```
 
-- Verzeichnisse konfigurieren
-  - `MetadatenVerzeichnis=/usr/local/kitodo/metadata/`
-  - `RegelsaetzeVerzeichnis=/usr/local/kitodo/rulesets/`
-  - `KonfigurationVerzeichnis=/usr/local/kitodo/config/`
-  - `xsltFolder=/usr/local/kitodo/xslt/`
-  - `dir_Users=/usr/local/kitodo/users/`
-  - `debugFolder=/usr/local/kitodo/debug/`
-  - `pluginFolder=/usr/local/kitodo/plugins/`
-  - `swapPath=/usr/local/kitodo/swap/`
-  - `tempfolder=/usr/local/kitodo/temp/`
-  - `localMessages=/usr/local/kitodo/messages/`
+### A6. Configure MySQL
 
-- Shell-Skripte konfigurieren (Vorlagen unter Kitodo/scripts/)
-  - `script_createDirUserHome=/usr/local/kitodo/scripts/script_createDirUserHome.sh` (Neues Benutzerverzeichnis anlegen)
-  - `script_createDirMeta=/usr/local/kitodo/scripts/script_createDirMeta.sh` (Neues Vorgangsverzeichnis anlegen)
-  - `script_createSymLink=/usr/local/kitodo/scripts/script_createSymLink.sh` (Vorgang im Home-Verzeichnis verlinken)
-  - `script_deleteSymLink=/usr/local/kitodo/scripts/script_deleteSymLink.sh` (Vorgang aus dem Home-Verzeichnis entfernen)
+The following commands will preconfigure MySQL, create a database and a database user. You will be asked for the MySQL root password that you set before.
 
-- Namenskonventionen
-  - `ImagePrefix=\\d{8}` (Namenskonvention für Image-Dateien)
-  - `ImageSorting=number` (Numerische oder alphanumerische Sortierung)
+```
+sudo sh -c "echo '[mysqld] innodb_file_per_table' >> /etc/mysql/my.cnf"
+sudo service mysql restart
+sudo mysql -e "create database kitodo;grant all privileges on kitodo.* to kitodo@localhost identified by 'kitodo';flush privileges;"
+```
 
-## 4. `WEB-INF/classes/log4j2.properties` anpassen:
+Now we will ingest a SQL file from the Kitodo GitHub Repository to set up the database schema and provide some example data.
 
-- `property.filename=/usr/local/kitodo/logs/kitodo.log`
+```
+curl -L https://github.com/kitodo/kitodo-production/releases/download/kitodo-production-3.0.0-beta.1/kitodo-production-3.0.0-beta.1.sql | mysql -u kitodo -D kitodo --password=kitodo
+```
 
-## 5. Schritt:
-- Alle `kitodo_*.xml` und `modules.xml` aus `Kitodo/src/main/resources/` in das in `kitodo_config.properties` angegebene `KonfigurationVerzeichnis` kopieren 
+### A7. Configure ElasticSearch
 
-## 6. Schritt
-- `docket.xsl` und `docket_multipage.xsl` aus `Kitodo/src/main/resources/` in das in `kitodo_config.properties` angegebene `xsltFolder` kopieren
+The following commands will set configs in `/etc/elasticsearch/elasticsearch.yml` and create an index named `kitodo`.
 
-## 7. Schritt:
-- Shell-Skripte (*.sh) aus dem Unterverzeichnis `scripts` der deployten Kitodo Anwendung in `kitodo_config.properties` angegebenen Stellen (`script_*`) legen, Ausführungsrechte geben und ggf. anpassen
+```
+sudo sed -i 's/#path.data: \/path\/to\/data/path.data: \/var\/lib\/elasticsearch/' /etc/elasticsearch/elasticsearch.yml
+sudo sed -i 's/#path.logs: \/path\/to\/logs/path.logs: \/var\/log\/elasticsearch/' /etc/elasticsearch/elasticsearch.yml
+sudo sed -i 's/#cluster.name: my-application/cluster.name: kitodo/' /etc/elasticsearch/elasticsearch.yml
+sudo sed -i 's/#node.name: node-1/node.name: kitodo-1/' /etc/elasticsearch/elasticsearch.yml
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable elasticsearch.service
+sudo systemctl start elasticsearch.service
+```
 
-## 8. _Optional_: 
-- Verzeichnis `pages/imagesTemp/` in der WebApp als symbolischen Link auf ein temporäres Verzeichnis anlegen
-  - Damit Tomcat symbolischen Links folgt, muss auch dessen Konfiguration angepasst werden!
+Other ElasticSearch settings can be adjusted in _kitodo_config.properties_ file:
 
-## 9. Datei `kitodo_projects.xml` im `KonfigurationVerzeichnis` anpassen:
+```
+elasticsearch.host=localhost
+elasticsearch.port=9200
+elasticsearch.protocol=http
+elasticsearch.index=kitodo
+elasticsearch.batch=1000
+elasticsearch.useAuthentication=true
+elasticsearch.user=kitodo
+elasticsearch.password=kitodo
+```
+
+### A8. Create directories and set permissions
+
+We will download a zip file from the Kitodo GitHub Repository that contains all needed directories and additional config files. We will extract the zip archive into the default folder `usr/local/kitodo`. If you want to use another folder please update paths in `/var/lib/tomcat8/webapps/kitodo/WEB-INF/classes/kitodo_config.properties` (will be generated in the deployment of war file below) also.
+
+```
+sudo mkdir /usr/local/kitodo
+wget https://github.com/kitodo/kitodo-production/releases/download/kitodo-production-3.0.0-beta.1/kitodo-production-3.0.0-beta.1-config.zip
+sudo unzip kitodo-production-3.0.0-beta.1-config.zip -d /usr/local/kitodo
+sudo chown -R tomcat8:tomcat8 /usr/local/kitodo
+```
+
+### A9. Download modules
+
+Modules need to be downloaded and copied into the modules folder, e.g. `/usr/local/kitodo/modules/`
+
+```
+sudo mkdir /usr/local/kitodo/modules
+wget https://github.com/kitodo/kitodo-production/releases/download/kitodo-production-3.0.0-beta.1/kitodo-production-3.0.0-beta.1-modules.zip
+sudo unzip kitodo-production-3.0.0-beta.1-modules.zip -d /usr/local/kitodo/modules
+sudo chown -R tomcat8:tomcat8 /usr/local/kitodo/modules
+```
+
+### A10. Deploy war file into Tomcat
+
+Moving the prepared war file from the Kitodo GitHub Repository into the webapps directory triggers Tomcat to deploy the application automatically.
+
+```
+wget https://github.com/kitodo/kitodo-production/releases/download/kitodo-production-3.0.0-beta.1/kitodo-3.0.0-beta.1.war
+sudo chown tomcat8:tomcat8 kitodo-3.0.0-beta.1.war
+sudo mv kitodo-3.0.0-beta.1.war /var/lib/tomcat8/webapps/kitodo.war
+until curl -s GET "localhost:8080/kitodo/pages/login.jsf" | grep -q -o "KITODO.PRODUCTION" ; do sleep 1; done
+```
+
+### A11. Login
+
+The Kitodo Webapp should be available at <http://localhost:8080/kitodo/> now. Give it a try before you continue to configure the system.
+
+* user: testAdmin
+* pass: test
+
+### A12. Index example data
+
+After logging in you can access the indexing page (via menu "System" or directly at <http://localhost:8080/kitodo/pages/system.jsf>). First create mapping by clicking button "Create mapping". Next, start indexing the provided example data by clicking on the button "Start indexing" (at whole index).
+
+## B) Configuration (optional)
+
+### B1. change default project settings
+
+You may want to set some defaults in config file `/usr/local/kitodo/config/kitodo_projects.xml`.
 
 - `<project name="default">` wird als Standard-Projekt verwendet, weitere Projekte können definiert werden
 - `<item>/<hide>` definiert das Mapping einzelner Metadatenfelder, wobei "hide"-Felder in der Oberfläche nicht angezeigt, aber dennoch prozessiert werden
@@ -169,24 +165,32 @@ curl -XPOST -u elastic 'localhost:9200/_xpack/security/user/kitodoAdmin' -H "Con
   - `endswith` (Metadatenfeld endet mit dieser Zeichenfolge)
   - `createelementfrom` (Namen der zusammenzuführenden Metadatenfelder)
 
-## 10. Schritt:
-- Datei `kitodo_metadataDisplayRules.xml` im `KonfigurationVerzeichnis` anpassen
+### B2. change further configs
 
-## 11. Schritt:
-- Datei `kitodo_processProperties.xml` im `KonfigurationVerzeichnis` anpassen
+Further settings may be made in the following config files:
 
-## 12. Schritt:
-- Datei `kitodo_digitalCollections.xml` im `KonfigurationVerzeichnis` anpassen
+* `/usr/local/kitodo/config/kitodo_opac.xml`
+* `/usr/local/kitodo/config/kitodo_metadataDisplayRules.xml`
+* `/usr/local/kitodo/config/kitodo_digitalCollections.xml`
+* `/var/lib/tomcat8/webapps/kitodo/WEB-INF/classes/kitodo_config.properties` (general settings, e.g. filename prefix for images)
+* `/var/lib/tomcat8/webapps/kitodo/WEB-INF/classes/hibernate.cfg.xml` (connection url, username and password to mysql database)
+* `/var/lib/tomcat8/webapps/kitodo/WEB-INF/classes/log4j2.xml` (logging)
 
-## 13. Schritt
-- die Regelsatzdateien aus dem `rulesets` Verzeichnis der deployten Kitodo Anwendung in das in `kitodo_config.properties` angegebene `RegelsaetzeVerzeichnis` kopieren
+### B3. save temp images in /tmp instead of webapp folder
 
-# Plugins anpassen
+Temporary image files will be saved in the Tomcat webapp folder. You may want to save them in the /tmp directory to save disk space.
 
-## 1. OPAC-Import-Plugin
+```
+sudo ln -s /tmp /var/lib/tomcat8/webapps/kitodo/pages/imagesTemp
+sudo chown -h tomcat8:tomcat8 /var/lib/tomcat8/webapps/kitodo/pages/imagesTemp
+sudo sed -i 's/<\/Context>/    <Resources allowLinking="true" \/>\n<\/Context>/' /var/lib/tomcat8/webapps/kitodo/META-INF/context.xml
+```
 
-- Datei PicaPlugin.jar aus dem WEB-INF/lib Unterverzeichnis der deployten Kitodo Anwendung im Tomcat in das Unterverzeichnis opac des in kitodo_config.properties angegebenen pluginFolder kopieren oder unter Beibehaltung des Namens zu verlinken
- - `kitodo_opac.xml` im KonfigurationVerzeichnis anpassen
- - Überprüfen, ob eigener Verbundkatalog in `<catalogue>` definiert ist
- - `<doctypes>` nach Bedarf um eigene Dokumenttypen aus PICA 0500/002@ ergänzen
- - `<beautify>` nach Bedarf um eigene Konditionen ergänzen
+### B4. restart Tomcat
+
+To apply changes we need to reload the Kitodo webapp. Assuming there are no other webapps deployed on this server, we could just restart the Tomcat server.
+
+```
+sudo systemctl restart tomcat8
+until curl -s GET "localhost:8080/kitodo/pages/login.jsf" | grep -q -o "KITODO.PRODUCTION" ; do sleep 1; done
+```

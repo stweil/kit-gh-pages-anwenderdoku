@@ -1,3 +1,5 @@
+# Einleitung
+
 In Kitodo.Production kann in einer *Suchmaske* und in dem *Suchfeld* unter *Meine Aufgaben* und *Vorgang Suchen* nach Eigenschaften der Vorgänge gesucht werden. 
 Die unterschiedlichen Möglichkeiten werden auf dieser Seite erläutert. Abgeschlossen wird die Seite mit nützlichen Hinweisen zur Suche. 
 
@@ -13,19 +15,19 @@ In diesem Feld kann nach Bestandteilen des Vorgangstitels gesucht werden. So kan
 
 *Projekt*:
 
-In dieser Dropdown-Liste kann ein [Projekt](Projekt) ausgewählt werden, auf das die Suche beschränkt wird.
+In dieser Dropdown-Liste kann ein [Projekt](https://github.com/kitodo/kitodo-production/wiki/Projekt) ausgewählt werden, auf das die Suche beschränkt wird.
 
 *Vorgangseigenschaft*:
 
-In der Dropdown-Liste kann eine [Vorgangseigenschaft](Vorgangsdetails) ausgewählt werden, die nach dem Wert durchsucht wird, der in das Eingabefeld rechts daneben eingegeben wird.
+In der Dropdown-Liste kann eine [Vorgangseigenschaft](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails) ausgewählt werden, die nach dem Wert durchsucht wird, der in das Eingabefeld rechts daneben eingegeben wird.
 
 *Werkstückeigenschaft*:
 
-In der Dropdown-Liste kann eine [Werkstückeigenschaft ](Vorgangsdetails---Werkst%C3%BCckeigenschaft)ausgewählt werden, die nach dem Wert durchsucht wird, der in das Eingabefeld rechts daneben eingegeben wird.
+In der Dropdown-Liste kann eine [Werkstückeigenschaft ](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails---Werkst%C3%BCckeigenschaft)ausgewählt werden, die nach dem Wert durchsucht wird, der in das Eingabefeld rechts daneben eingegeben wird.
 
 *Vorlageneigenschaft*:
 
-In der Dropdown-Liste kann eine [Vorlageneigenschaft](Vorgangsdetails---Physische-Vorlagen) ausgewählt werden, die nach dem Wert durchsucht wird, der in das Eingabefeld rechts daneben eingegeben wird.
+In der Dropdown-Liste kann eine [Vorlageneigenschaft](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails---Physische-Vorlagen) ausgewählt werden, die nach dem Wert durchsucht wird, der in das Eingabefeld rechts daneben eingegeben wird.
 
 *Schritteigenschaft*:
 
@@ -33,7 +35,7 @@ In der Dropdown-Liste kann eine Schritteigenschaft ausgewählt werden, die nach 
 
 *Schritt*:
 
-In der ersten Dropdown-Liste kann der [Status](Status-der-Aufgaben) ausgewählt werden, den die Aufgabe haben soll, welche in der zweiten Dropdown-Liste ausgewählt wird.
+In der ersten Dropdown-Liste kann der [Status](https://github.com/kitodo/kitodo-production/wiki/Status-der-Aufgaben) ausgewählt werden, den die Aufgabe haben soll, welche in der zweiten Dropdown-Liste ausgewählt wird.
 
 *ID*:
 
@@ -45,7 +47,7 @@ Wird das Häkchen gesetzt, werden auch Vorgänge von deaktivierten Projekten ang
 
 *Abgeschlossene Vorgänge zeigen*:
 
-Wird das Häkchen gesetzt, werden auch Vorgänge angezeigt, die schon abgeschlossen ([alle Aufgaben = grün](Status-der-Aufgaben)) sind.
+Wird das Häkchen gesetzt, werden auch Vorgänge angezeigt, die schon abgeschlossen ([alle Aufgaben = grün](https://github.com/kitodo/kitodo-production/wiki/Status-der-Aufgaben)) sind.
 
  
 # Suche mit Suchbefehlen (Filter)
@@ -111,14 +113,14 @@ NAME steht für den Projektnamen oder ein Bestandteil des Projektnamens.
 ## Filtern nach Eigenschaften
 ### Filtern nach Angaben des Werkstücks
 
-Für jeden Vorgang in Kitodo.Production werden Angaben des [Werkstücks](Vorgangsdetails---Werkst%C3%BCckeigenschaft) (Digitalisat) in der Datenbank (nicht in der Metadaten-XML-Datei) gespeichert, welche gefiltert werden können.
+Für jeden Vorgang in Kitodo.Production werden Angaben des [Werkstücks](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails---Werkst%C3%BCckeigenschaft) (Digitalisat) in der Datenbank (nicht in der Metadaten-XML-Datei) gespeichert, welche gefiltert werden können.
 
 Angaben, die gefiltert werden können, sind:
 
 * PPN digital
 * Schrifttyp
 
-Eine umfassende Angabe der suchbaren Daten erhält man unter "Physische Vorlagen", wenn man die [Vorgangsdetails](Vorgangsdetails) eines beliebigen [Vorgangs](Vorgang) öffnet.
+Eine umfassende Angabe der suchbaren Daten erhält man unter "Physische Vorlagen", wenn man die [Vorgangsdetails](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails) eines beliebigen [Vorgangs](https://github.com/kitodo/kitodo-production/wiki/Vorgang) öffnet.
 
 Wichtig ist der Befehl, um alle Bände der zu einer Zeitschrift oder eines mehrbändigen Werks aufzulisten. Wenn mit dem Befehl die PPN digital der betreffenden Gesamtheit gesucht wird, werden alle Vorgänge, die diesen Wert in den Werkstückeigenschaften gespeichert haben, angezeigt.
 
@@ -134,7 +136,7 @@ WERT steht hier für den zugewiesen Wert (zum Beispiel Fraktur).
 
 ### Filtern nach Angaben der Vorlage
 
-Für jeden Vorgang in Kitodo.Production werden Angaben der [Vorlage](Vorgangsdetails---Physische-Vorlagen) in der Datenbank (nicht in der Metadaten-XML-Datei) gespeichert, welche gefiltert werden können.
+Für jeden Vorgang in Kitodo.Production werden Angaben der [Vorlage](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails---Physische-Vorlagen) in der Datenbank (nicht in der Metadaten-XML-Datei) gespeichert, welche gefiltert werden können.
 
 Angaben, die gefiltert werden können, sind:
 
@@ -142,7 +144,7 @@ Angaben, die gefiltert werden können, sind:
 * Signatur
 * Titel
 
-Eine umfassende Angabe der suchbaren Daten erhält man unter "Physische Vorlagen", wenn man die [Vorgangsdetails](Vorgangsdetails) eines beliebigen [Vorgangs](Vorgang) öffnet.
+Eine umfassende Angabe der suchbaren Daten erhält man unter "Physische Vorlagen", wenn man die [Vorgangsdetails](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails) eines beliebigen [Vorgangs](https://github.com/kitodo/kitodo-production/wiki/Vorgang) öffnet.
 
 Sind zum Beispiel in der Signatur Leerzeichen enthalten, muss der Suchterm (inklusive Befehl) in Anführungszeichen gesetzt werden.
 
@@ -238,3 +240,6 @@ Es ist auch möglich, Vorgänge mit bestimmten Inhalten des Vorgangstitels aus d
 Bei Zeitschriften können so anhand der Bandangabe bestimmte Bände ausgeschlossen werden.
 
 Zum Beispiel werden bei der Suche *PPN:XXXXX 185* alle Bände der PPN XXXXX der 1850er Jahre aufgelistet. Wenn jedoch der Band 1855 nicht in der Trefferliste angezeigt werden soll, kann dies mit "-1855" umgesetzt werden. Letztendlich kann ein Suchbefehl so formuliert sein: "*PPN:XXXXX 185 -1855*"
+
+# Weitere Informationen
+Tutorial: [Statistik](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/10_statistik.md)

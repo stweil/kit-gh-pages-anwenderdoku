@@ -1,6 +1,6 @@
 # Einleitung 
 
-Auf dieser Seite ist der Ablauf beschrieben, der in der der SLUB durchgeführt wird. Unter [Staats und Universitätsbibliothek Hamburg Carl von Ossietzky](Staats--und-Universit%C3%A4tsbibliothek-Hamburg-Carl-von-Ossietzky) wird in dem Dokument [Anlegen von Vorgängen (PDF)](SUBHH_Doku_goobi/Anlegen von Vorgängen – Medienwerkstatt.pdf) der Ablauf an der SUB Hamburg beschrieben. 
+Auf dieser Seite ist der Ablauf beschrieben, der in der der SLUB durchgeführt wird. Unter [Staats und Universitätsbibliothek Hamburg Carl von Ossietzky](https://github.com/kitodo/kitodo-production/wiki/Staats--und-Universit%C3%A4tsbibliothek-Hamburg-Carl-von-Ossietzky) wird in dem Dokument [Anlegen von Vorgängen (PDF)](SUBHH_Doku_goobi/Anlegen von Vorgängen – Medienwerkstatt.pdf) der Ablauf an der SUB Hamburg beschrieben. 
 
 # Neuen Vorgang anlegen
 
@@ -10,7 +10,7 @@ Um einen neuen Vorgang anlegen zu können, wird auf der Startseite der Menüpunk
 
 # Auswahl der korrekten Produktionsvorlage
 
-Als [Produktionsvorlagen](Produktionsvorlage) werden die Vorgänge bezeichnet, die als Template (Vorlage, Muster) für die Bearbeitung von Vorgangstiteln verwendet werden.
+Als [Produktionsvorlagen](https://github.com/kitodo/kitodo-production/wiki/Produktionsvorlage) werden die Vorgänge bezeichnet, die als Template (Vorlage, Muster) für die Bearbeitung von Vorgangstiteln verwendet werden.
 
 ![](images/00002.jpg)
 
@@ -28,13 +28,13 @@ _Erfahrungen aus der Praxis:_
 Es öffnet sich eine Eingabemaske und es erfolgen folgende Schritte:
 
 1. Identifier des Digitalisats (aus der Katalogdatenbank) eingeben und Übernehmen (Felder werden je nach Festlegung im Regelsatz mit den entsprechenden Metadaten gefüllt)
-1. Auswahl der [digitalen Kollektion](Digitale-Kollektionen) und ggf. anderer, zusätzlicher Metadaten
+1. Auswahl der [digitalen Kollektion](https://github.com/kitodo/kitodo-production/wiki/Digitale-Kollektionen) und ggf. anderer, zusätzlicher Metadaten
 1. Vorgangstitel generieren
 
 Diese Schritte sind im Folgendem anhand eines Beispiels einer Monographie ausführlich beschrieben.
 
-* Das Anlegen von Mehrbändigen Werken ist in [Neuen Vorgang anlegen I Mehrbändige Werke](Neuen-Vorgang-anlegen-I-Mehrb%C3%A4ndige-Werke) beschrieben. 
-* Das Anlegen von Zeitungen ist in [Neuen Vorgang anlegen I Zeitungen](Neuen-Vorgang-anlegen-I-Zeitungen) beschrieben. 
+* Das Anlegen von Mehrbändigen Werken ist in [Neuen Vorgang anlegen I Mehrbändige Werke](https://github.com/kitodo/kitodo-production/wiki/Neuen-Vorgang-anlegen-I-Mehrb%C3%A4ndige-Werke) beschrieben. 
+* Das Anlegen von Zeitungen ist in [Neuen Vorgang anlegen I Zeitungen](https://github.com/kitodo/kitodo-production/wiki/Neuen-Vorgang-anlegen-I-Zeitungen) beschrieben. 
 
 Identifier des Digitalisats eingeben und Übernehmen anklicken.
 
@@ -102,8 +102,9 @@ Wenn ein Vorgang erfolgreich angelegt wurde, erscheint ein Menü mit drei Auwahl
 
 ![](images/00008.jpg)
 
-* Durch die Funktion _Laufzettel drucken_ wird ein [Laufzettel](Laufzettel) im PDF-Format generiert
+* Durch die Funktion _Laufzettel drucken_ wird ein [Laufzettel](https://github.com/kitodo/kitodo-production/wiki/Laufzettel) im PDF-Format generiert
 * Durch die Funktion _Weiteren Vorgang anlegen_ wird die Eingabemaske zum Anlegen eines Vorgangs wieder aufgerufen. Man bleibt jedoch im gleichen Workflow (Zum Beispiel VD_18)! Soll ein Vorgang in einem anderen Workflow angelegt werden, muss die Funktion Neuen Vorgang anlegen im linken Frame ausgewählt werden.
-* Durch die Funktion _Den erzeugten Vorgang öffnen_ werden die [Vorgangsdetails](Vorgangsdetails) angezeigt.
+* Durch die Funktion _Den erzeugten Vorgang öffnen_ werden die [Vorgangsdetails](https://github.com/kitodo/kitodo-production/wiki/Vorgangsdetails) angezeigt.
 
- 
+# Weitere Informationen
+* Tutorial: [Vorgänge anlegen](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/05_vorgaenge-anlegen.md)

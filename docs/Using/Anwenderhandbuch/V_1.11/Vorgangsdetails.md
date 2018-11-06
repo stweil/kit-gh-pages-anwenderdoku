@@ -63,3 +63,5 @@ Sollten bei einem Versionswechsel diese Angaben nicht migriert werden, ist eine 
 
 **Achtung**: Wird der Titel (oder andere Metadatenfelder) eines Vorgangs in den Metadaten (XML-Datei) geändert, wird er an in den Vorgangsdetails nicht automatisch korrigiert! Somit kann es sein, dass die Angaben dieser Felder von denen in den Metadaten (XML-Datei) in der abweichen.
 
+# Weitere Informationen
+* Tutorial: [Vorgänge anlegen](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/05_vorgaenge-anlegen.md)

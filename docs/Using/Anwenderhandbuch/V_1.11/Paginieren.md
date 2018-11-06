@@ -127,3 +127,6 @@ Von _Accent Graves_ umschlossener Text (z.B. `` `mil.` ``, MIL ≙ 1049) wird al
 Während die Zeile `([26] - [1])` am einfachsten durch Freitexteingabe erstellt wird, wäre es schön, die folgenden Zeilen automatisch erzeugen zu lassen. Dies kann durch eingabe des folgenden Textes in das Feld erreicht werden: ``([`26` - 2 3)``. 
 
 Die Paginierung für Fortgeschrittene kann über den Konfigurationsparameter `advancedPaginationEnabled=false` ausgeschaltet werden, falls dieses erforderlich ist.
+
+# Weitere Informationen
+Tutorial: [Paginierung definieren](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/07_paginierung-definieren.md)

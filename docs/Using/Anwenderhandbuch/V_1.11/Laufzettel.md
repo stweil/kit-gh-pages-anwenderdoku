@@ -90,3 +90,6 @@ In der UB Leipzig werden folgende Felder aus den [Vorlageneigenschaften](https:/
 * Regelsatz
 * Signatur
 * Barcode mit Vorgangstitel
+
+# Weitere Informationen
+* Tutorial: [Vorgänge anlegen](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/05_vorgaenge-anlegen.md)
