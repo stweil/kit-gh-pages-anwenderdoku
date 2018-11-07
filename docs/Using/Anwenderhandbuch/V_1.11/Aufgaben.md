@@ -16,7 +16,7 @@ Je nach Projektziel können auch beliebige andere erstellt werden, wie zum Beisp
 * Qualitätskontrolle
 * Nachbearbeitung
 
-Jede Aufgabe kann einen von vier [Status](https://github.com/kitodo/kitodo-production/wiki/Status-der-Aufgaben) annehmen und muss mindestens einer [Benutzergruppe](https://intranet.slub-dresden.de/display/GOOBI/Aufgaben) zugeordnet sein. Dies ist notwendig, um die Zugriffsberechtigung für die Schritte zu ermöglichen. Weitere Informationen zur Bearbeitung, bzw. zum Erstellen von Aufgaben finden sich unter [Bearbeitung Aufgabe](https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Aufgabe).
+Jede Aufgabe kann einen von vier [Status](Status-der-Aufgaben.md) annehmen und muss mindestens einer [Benutzergruppe](https://intranet.slub-dresden.de/display/GOOBI/Aufgaben) zugeordnet sein. Dies ist notwendig, um die Zugriffsberechtigung für die Schritte zu ermöglichen. Weitere Informationen zur Bearbeitung, bzw. zum Erstellen von Aufgaben finden sich unter [Bearbeitung Aufgabe](Bearbeitung-Aufgabe.md).
 
 Zum Beispiel:  
 

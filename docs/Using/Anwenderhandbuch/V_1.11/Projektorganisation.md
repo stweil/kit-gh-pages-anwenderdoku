@@ -41,16 +41,19 @@ Wenn eine Produktionsvorlage erstellt wird, muss ein Projekt angegeben werden. D
 
 Angaben, die notwendig sind:
 
-* Titel der [Produktionsvorlage](https://github.com/kitodo/kitodo-production/wiki/Produktionsvorlage)
-* [Aufgaben](https://github.com/kitodo/kitodo-production/wiki/Aufgaben) und deren Reihenfolge 
-* [Projekt](https://github.com/kitodo/kitodo-production/wiki/Projekt)
-* [Regelsatz](https://github.com/kitodo/kitodo-production/wiki/Regelsatz)
-* [Laufzettel](https://github.com/kitodo/kitodo-production/wiki/Laufzettel)
+* Titel der [Produktionsvorlage](Produktionsvorlage.md)
+* [Aufgaben](Aufgaben.md) und deren Reihenfolge 
+* [Projekt](Projekt.md)
+* [Regelsatz](Regelsatz.md)
+* [Laufzettel](Laufzettel.md)
 
 
 # Digitale Kollektion
 
-Bevor ein neues Projekt erstellt wird, müssen die [Digitalen Kollektionen](https://github.com/kitodo/kitodo-production/wiki/Digitale-Kollektionen) benannt und gegebenenfalls erstellt werden, die den Vorgängen des Projekts zugewiesen werden sollen. Wenn eine neue Digitale Kollektion angelegt wird, sind auch Einstellungen außerhalb von Kitodo.Production notwendig, weshalb hier je nach Einrichtung die IT-Administratoren tätig werden müssen.
+Bevor ein neues Projekt erstellt wird, müssen die [Digitalen Kollektionen](Digitale-Kollektionen.md) benannt und gegebenenfalls 
+erstellt werden, die den Vorgängen des Projekts zugewiesen werden sollen. 
+Wenn eine neue Digitale Kollektion angelegt wird, sind auch Einstellungen außerhalb von Kitodo.Production notwendig, 
+weshalb hier je nach Einrichtung die IT-Administratoren tätig werden müssen.
 
 Angaben, die notwendig sind:
 
@@ -60,7 +63,7 @@ Angaben, die notwendig sind:
 
 
 # Benutzer
-Selbstverständlich müssen alle notwendigen [Benutzer](https://github.com/kitodo/kitodo-production/wiki/Benutzer) für das Projekt zugelassen werden. Hier müssen auch die [Berechtigungsstufen](https://github.com/kitodo/kitodo-production/wiki/Berechtigungsstufen) beachtet werden, die angeben, welcher Benutzer bestimmte Aufgaben übernehmen darf.
+Selbstverständlich müssen alle notwendigen [Benutzer](Benutzer.md) für das Projekt zugelassen werden. Hier müssen auch die [Berechtigungsstufen](Berechtigungsstufen.md) beachtet werden, die angeben, welcher Benutzer bestimmte Aufgaben übernehmen darf.
 
 # Weitere Informationen
 Tutorial: [Projekt anlegen](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/02_projekt-anlegen.md)

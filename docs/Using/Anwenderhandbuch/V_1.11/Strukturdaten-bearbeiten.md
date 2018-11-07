@@ -62,7 +62,7 @@ Durch Auswahl von _Mehrere_ ist es möglich, mehrere gleichartige Strukturelemen
 * Beim Versuch, mehr als 28 Strukturelementen auf einmal anzulegen erfolgt eine Rückfrage.
 * Die verfügbaren Optionen im Metadaten-Drop-Down-Auswahlfeld variieren abhängig vom ausgewählten Typ des anzulegenden Strukturelements.
 * Ist _Keine Nutzung_ ausgewählt, ist die Funktion zum Hinzufügen eines Metadatenfeldes deaktiviert.
-* Der Wert wird gemäß den [Regeln zur Paginierung für Fortgeschrittene](Paginieren#paginierung-f%C3%BCr-fortgeschrittene) hochgezählt.
+* Der Wert wird gemäß den [Regeln zur Paginierung für Fortgeschrittene](Paginieren.md#paginierung-f%C3%BCr-fortgeschrittene) hochgezählt.
 
 Durch Klicken auf _Einfach_ ist eine Rückkehr zum Modus zum Einfügen genau eines Strukturelementes mit der Option der Seitenzuordnung möglich.
 
@@ -74,15 +74,22 @@ In diesem Feld stehen sechs Funktionen zur Verfügung, mit denen Korrekturen an 
 * Strukturelement nach unten schieben
 * Strukturelement an andere Stelle schieben
 * Typ des Strukturelements ändern
-* Strukturelemente aus Opac hinzufügen (siehe: [Staatsbibliothek zu Berlin Preußischer Kulturbesitz](https://github.com/kitodo/kitodo-production/wiki/Staatsbibliothek-zu-Berlin---Preu%C3%9Fischer-Kulturbesitz#anh%C3%A4ngende-werke-pdf))
+* Strukturelemente aus Opac hinzufügen (siehe: [Staatsbibliothek zu Berlin Preußischer Kulturbesitz](../../../BestPractice/Von_Anwendern/SBB/goobi-anhaengende-werke.pdf))
 * Strukturelement löschen
 
 ## Seitenzuordnung
 
-In diesem Feld können einem Strukturelement nachträglich Seiten zugewiesen werden, wenn es zum Beispiel beim Anlegen nicht durchgeführt wurde, beziehungsweise wenn nachträglich etwas geändert werden muss. Die einfachste Methode ist es, wenn unter *Erste Seite* das erste Image/Seite und unter Letzte Seite das letzte Image/Seite des Strukturelements eingegeben wird und diese mit dem Befehl Seiten zuweisen dem Strukturelement zugewiesen werden. Bereits zugewiesene Seiten eines Strukturelements werden überschrieben.
+In diesem Feld können einem Strukturelement nachträglich Seiten zugewiesen werden, wenn es zum Beispiel beim Anlegen 
+nicht durchgeführt wurde, beziehungsweise wenn nachträglich etwas geändert werden muss. Die einfachste Methode ist es, 
+wenn unter *Erste Seite* das erste Image/Seite und unter Letzte Seite das letzte Image/Seite des Strukturelements 
+eingegeben wird und diese mit dem Befehl Seiten zuweisen dem Strukturelement zugewiesen werden. 
+Bereits zugewiesene Seiten eines Strukturelements werden überschrieben.
 
 
-Zudem können markierte Seiten in dem Feld *Alle Seiten* (unten links) mit dem Pfeil nach rechts ![](images/IconSeiten zuweisen.jpg) dem ausgewählten Strukturelement zugewiesen werden. Seiten eines Strukturelements können entfernt werden, wenn sie in dem Feld *Zugehörige Seiten* (unten rechts) markiert werden und danach der Pfeil, der nach links zeigt ![](images/Icon_Seiten_löschen.jpg) angeklickt wird.
+Zudem können markierte Seiten in dem Feld *Alle Seiten* (unten links) mit dem Pfeil nach rechts ![](images/IconSeiten zuweisen.jpg) dem 
+ausgewählten Strukturelement zugewiesen werden. Seiten eines Strukturelements können entfernt werden, wenn Sie in 
+dem Feld *Zugehörige Seiten* (unten rechts) markiert werden und danach der Pfeil, 
+der nach links zeigt ![](images/Icon_Seiten_löschen.jpg) angeklickt wird.
 
 ## Ablauf
 

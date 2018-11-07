@@ -1,8 +1,8 @@
 # Scriptschritte
 
-Scriptschritte werden unter [Aufgabendetails](https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Aufgabe) definiert.
+Scriptschritte werden unter [Aufgabendetails](Bearbeitung-Aufgabe.md) definiert.
 
-Dies erfolgt, wenn eine [Aufgabe](https://github.com/kitodo/kitodo-production/wiki/Aufgaben) nicht direkt von Kitodo.Production durchgeführt werden kann. Zum Beispiel kann dies eine eine OCR-Anbindung sein, in der die OCR zwar von einem anderen Programm durchgeführt wird, der Datentransfer jedoch automatisch erfolgen soll. Mit einem Kommandozeilenaufruf lässt sich das Script auslösen.
+Dies erfolgt, wenn eine [Aufgabe](Aufgaben.md) nicht direkt von Kitodo.Production durchgeführt werden kann. Zum Beispiel kann dies eine eine OCR-Anbindung sein, in der die OCR zwar von einem anderen Programm durchgeführt wird, der Datentransfer jedoch automatisch erfolgen soll. Mit einem Kommandozeilenaufruf lässt sich das Script auslösen.
 
 Es gibt zwei Möglichkeiten, das Script auszulösen:
 
@@ -15,4 +15,4 @@ Bei der ersten Möglichkeit wird die Aufgabe (und damit das Script) automatisch 
 
 # Weitere Informationen
 * Tutorial: [Produktionsvorlage anlegen und Workflow definieren](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/04_produktionsvorlage-anlegen-und-workflow-definieren.md)
-* Anwenderdokumentation: [Aufgabendetails](https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Aufgabe)
+* Anwenderdokumentation: [Aufgabendetails](Bearbeitung-Aufgabe.md)

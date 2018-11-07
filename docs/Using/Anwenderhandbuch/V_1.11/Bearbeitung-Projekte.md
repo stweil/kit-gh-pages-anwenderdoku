@@ -1,6 +1,6 @@
 # Einleitung
 
-[Projekte](https://github.com/kitodo/kitodo-production/wiki/Projekt) dienen der Verwaltung von Digitalisierungsprojekten. Um dies zu ermöglichen, sind mehrere Einstellungen notwendig. Darunter unter anderem die Speicherorte für die Metadaten und Images, die Bildung der PURL, die URL des Rechteinhabers, und weitere. Diese werden in den folgenden Abschnitten erläutert. 
+[Projekte](Projekt.md) dienen der Verwaltung von Digitalisierungsprojekten. Um dies zu ermöglichen, sind mehrere Einstellungen notwendig. Darunter unter anderem die Speicherorte für die Metadaten und Images, die Bildung der PURL, die URL des Rechteinhabers, und weitere. Diese werden in den folgenden Abschnitten erläutert. 
 
 Die Einstiegsseite unter dem Menüpunkt *Projekte* bietet eine Übersicht über bereits vorhandene Projekte. Diese lassen sich in der Spalte *Aktionen* über den Button Bearbeiten ![](images/Icon_Benutzer_bearbeiten.gif) editieren. Über den Link *Neues Projekt anlegen* öffnet sich die Tabelle zur Definition eines neuen Projektes.
 
@@ -15,10 +15,10 @@ Die Angaben für ein neues Projekt sind auf mehrere Menüpunkte aufgeteilt, die 
 * Mets Parameter
 * Statistik
 
-Bei den meisten Feldern empfiehlt es sich, sich an bestehenden Projekten (falls vorhanden) zu orientieren. Zudem muss beachtet werden, dass in der Konfigurationsdatei _goobi_digitalCollections.xml_ die Projekte eingetragen müssen (siehe [Installationsanleitung](https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung)). Wenn dies nicht gemacht wird, werden keine Digitale Kollektionen beim Anlegen eines Vorgangs angezeigt. Da zumindest eine Kollektion gewählt werden muss, wäre das Anlegen des Vorgangs somit nicht möglich. 
+Bei den meisten Feldern empfiehlt es sich, sich an bestehenden Projekten (falls vorhanden) zu orientieren. Zudem muss beachtet werden, dass in der Konfigurationsdatei _goobi_digitalCollections.xml_ die Projekte eingetragen müssen (siehe [Installationsanleitung](Installationsanleitung.md)). Wenn dies nicht gemacht wird, werden keine Digitale Kollektionen beim Anlegen eines Vorgangs angezeigt. Da zumindest eine Kollektion gewählt werden muss, wäre das Anlegen des Vorgangs somit nicht möglich. 
 Eine Beispiel _goobi_digitalCollections.xml_-Datei findet sich unter [https://github.com/kitodo/kitodo-production/tree/1.11.x/Goobi/config](https://github.com/kitodo/kitodo-production/tree/1.11.x/Goobi/config). 
 
-Einige Angaben müssen in der sogenannten goobi_projects.xml-Datei hinterlegt sein und können nicht über das Frontend eingegeben werden. Erläuterungen zu der goobi_projects.xml-Datei finden sich unter [Projekt XML Datei](https://github.com/kitodo/kitodo-production/wiki/Projekt-XML-Datei). 
+Einige Angaben müssen in der sogenannten goobi_projects.xml-Datei hinterlegt sein und können nicht über das Frontend eingegeben werden. Erläuterungen zu der goobi_projects.xml-Datei finden sich unter [Projekt XML Datei](Projekt-XML-Datei.md). 
 
 Es ist nicht möglich, allgemein gültige Feldbelegungen zu nennen. Diese hängen von den Bedingungen in den jeweiligen Institutionen ab. In dieser Dokumentation können Inhalte nur **beispielhaft** genannt werden.   
 
@@ -79,7 +79,7 @@ Wenn die Vorgänge dieses Projekts automatisch exportiert werden sollen, muss
 * bei *DMS-Export-Ordner für XML-Datei* der entsprechende Pfad eingetragen werden
 * bei *DMS-Export-Images-Ordner* der entsprechende Pfad eingetragen werden
 
-Siehe auch: [Export](https://github.com/kitodo/kitodo-production/wiki/Export).
+Siehe auch: [Export](Export.md).
 
 ## METS Parameter
 
@@ -295,7 +295,7 @@ RDF
 Beim RDF-Format handelt es sich um ein älteres proprietäres XML-Format, das sämtliche Struktur- und Metadaten sowie die Paginierungen weitestgehend abbilden kann. Problematisch ist dieses Format lediglich im Hinblick auf spezielle Paginierungssequenzen. Insbesondere bei der Blatt- und Spaltenzählung können die besonderen Zählweisen nicht durch dieses Format gespeichert werden, so dass die Paginierungssequenzen verloren gehen. Die Speicherung von der verbreiteten Seitenzählung ist jedoch vollkommen unproblematisch durch RDF.
 
 Update Februar 2016: Dies ist obsolet und soll sollte nicht genutzt werden. Er diente früher dem Export von AgoraXML. 
-Siehe auch [Regelsatz XML Datei](https://github.com/kitodo/kitodo-production/wiki/Regelsatz-XML-Datei)
+Siehe auch [Regelsatz XML Datei](Regelsatz-XML-Datei.md)
 
 xStream
 

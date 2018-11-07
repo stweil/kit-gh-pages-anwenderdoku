@@ -4,7 +4,7 @@ KitodoScripte dienen dazu, eine Aktion an mehreren Vorgängen durchzuführen, an
 
 # Schritt 1: Vorgänge suchen
 
-Führen Sie zunächst eine [Suche](https://github.com/kitodo/kitodo-production/wiki/Suche-und-Filtern) durch, die genau die Vorgänge als Treffer anzeigen wird, die bearbeitet werden sollen. Wenn es nicht möglich ist, die Treffermenge durch die Suche exakt zu beschränken, kann Schritt 2 durchgeführt werden. 
+Führen Sie zunächst eine [Suche](Suche-und-Filtern.md) durch, die genau die Vorgänge als Treffer anzeigen wird, die bearbeitet werden sollen. Wenn es nicht möglich ist, die Treffermenge durch die Suche exakt zu beschränken, kann Schritt 2 durchgeführt werden. 
 
 # Schritt 2: Vorgänge selektieren
 
@@ -142,7 +142,7 @@ Sriptname: *addShellScriptToStep*
 
 Script: `action:addShellScriptToStep "steptitle:TITLE_STEP" "label:LABEL_FOR_SCRIPT" "script:PATH_TO_SCRIPT"`
 
-Erläuterung: Mit diesem Befehl kann in den Vorgängen eines Treffersets der "Script Schritt" in den [Eigenschaften einer Aufgabe](https://github.com/kitodo/kitodo-production/wiki/Aufgaben-Einstellungen) geändert werden. 
+Erläuterung: Mit diesem Befehl kann in den Vorgängen eines Treffersets der "Script Schritt" in den [Eigenschaften einer Aufgabe](Aufgaben-Einstellungen.md) geändert werden. 
 
 - `label` = Skriptname
 - `script` = Skriptpfad
@@ -152,7 +152,7 @@ Sriptname: *setTaskProperty*
 
 Script: `action:setTaskProperty "steptitle:TITLE_STEP" property:metadata_readimages_writeimages_validate_exportdms_automatic_batch value:true_OR_false`
 
-Erläuterung: Mit diesem Befehl kann in den Vorgängen eines Treffersets die [Eigenschaften einer Aufgabe](https://github.com/kitodo/kitodo-production/wiki/Aufgaben-Einstellungen) geändert werden. 
+Erläuterung: Mit diesem Befehl kann in den Vorgängen eines Treffersets die [Eigenschaften einer Aufgabe](Aufgaben-Einstellungen.md) geändert werden. 
 
 Folgende Aufgabeneigenschaften können aktiviert / deaktiviert werden:
 - `metadata` = Metadaten

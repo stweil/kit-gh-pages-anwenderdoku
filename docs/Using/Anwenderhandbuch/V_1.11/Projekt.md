@@ -7,12 +7,12 @@ Durch Projekte lässt sich die Statistik einfacher erstellen, da die Vorgänge e
 
 Es sollte jedoch auch bedacht werden, dass viele Projekte den Verwaltungsaufwand erhöhen. Deshalb sollte man hier gut überlegen, wie viele Projekte verwendet werden. 
 
-Die Staatsbibliothek zu Berlin hat einige ihrer [Leitlinien](https://github.com/kitodo/kitodo-production/wiki/Staatsbibliothek-zu-Berlin---Preu%C3%9Fischer-Kulturbesitz#projekte) dem Wiki bereitgestellt. 
+Die Staatsbibliothek zu Berlin hat einige ihrer [Leitlinien](../../../BestPractice/Von_Anwendern/SBB/Staatsbibliothek-zu-Berlin---Preußischer-Kulturbesitz.md#projekte) dem Wiki bereitgestellt. 
  
 
 # Hinweise
 
-Einem Projekt können mehrere Produktionsvorlagen zugewiesen werden, zum Beispiel wenn einige Vorgänge in einem Projekt in die OCR sollen (Drucke) und andere Vorgänge nicht (Handschriften). Weitere Informationen zur Bearbeitung, bzw. Erstellen von Benutzergruppen finden sich unter [Bearbeitung Projekte](https://github.com/kitodo/kitodo-production/wiki/Bearbeitung-Projekte).
+Einem Projekt können mehrere Produktionsvorlagen zugewiesen werden, zum Beispiel wenn einige Vorgänge in einem Projekt in die OCR sollen (Drucke) und andere Vorgänge nicht (Handschriften). Weitere Informationen zur Bearbeitung, bzw. Erstellen von Benutzergruppen finden sich unter [Bearbeitung Projekte](Bearbeitung-Projekte.md).
 
 # Weitere Informationen
 Tutorial: [Projekt anlegen](https://github.com/kitodo/kitodo-tutorials/blob/master/kitodo2/02_projekt-anlegen.md)

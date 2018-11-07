@@ -37,7 +37,7 @@ Nach jeder Korrektur muss die Prüfsummendatei neu erstellt werden.
 
 ## Imagenummerierung
 Wenn in der SLUB Korrekturmeldungen an das Scannen gesendet werden, muss nach der Korrektur darauf geachtet werden, dass die Imagenummerierung den Anforderungen entspricht. 
-Unter [Umbenennung von Images in der SLUB](https://github.com/kitodo/kitodo-production/wiki/Umbenennung-von-Images-in-der-SLUB) wird der Ablauf skizziert. 
+Unter [Umbenennung von Images in der SLUB](Umbenennung-von-Images-in-der-SLUB.md) wird der Ablauf skizziert. 
 
 ## Aufgabe abgeben/Problemlösung senden
 Wenn die LZA Validierungsskripte gestartet werden sollen, darf nicht *Problemlösung an nachfolgende Station senden* ausgelöst werden. Es muss *Die Bearbeitung dieser Aufgabe abschließen* genutzt werden, um die Aufgabe abzuschließen. 
