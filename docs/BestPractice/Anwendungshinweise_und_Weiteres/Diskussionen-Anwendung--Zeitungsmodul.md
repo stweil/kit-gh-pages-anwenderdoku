@@ -3,23 +3,22 @@
 ## Grundlegende Informationen 
 In diesem Wiki sind folgende Informationen zum Zeitungsmodul vorhanden: 
 
-_Anlegen von Vorgängen mit dem Zeitungsmodul auf Ausgabenebene_: 
+[Anlegen von Vorgängen mit dem Zeitungsmodul auf Ausgabenebene](../../Using/Anwenderhandbuch/V_1.11/Neuen-Vorgang-anlegen-I-Zeitungen.md) 
 
-https://github.com/kitodo/kitodo-production/wiki/Neuen-Vorgang-anlegen-I-Zeitungen 
-
-_Zeutschel-Dokumentation des Zeitungsmoduls_: 
-
-http://www.goobi.org/fileadmin/groups/goobi/pdf/TS-1090_TechnInfo_Zeitungsdigital.pdf
+[Zeutschel-Dokumentation des Zeitungsmoduls](../Von_Anwendern/Zeutschel_Doku/TS-1090_TechnInfo_Zeitungsdigital.pdf)
 
 ## Granularität
 Es muss entschieden werden, in welcher Granularität die Zeitungen in Kitodo.Production bearbeitet werden sollen. 
+
 ### Ausgaben-Granularität
 
 Vorteile: 
+
 * Flexibles Hinzufügen und Löschen von Ausgaben ohne Auswirkung auf andere Ausgaben 
 * Keine Strukturierung in den Vorgängen notwendig, um Ausgaben auszuzeichnen 
 
 Nachteile: 
+
 * Sehr großer Aufwand, um die Images aufzuteilen und nach Kitodo.Production zu verschieben 
 * Es muss vor dem Anlegen der Vorgänge bekannt sein, welche Ausgaben tatsächlich vorhanden sind (ansonsten sind „leere“ Vorgänge  vorhanden oder die Vorgänge müssen gelöscht werden)
 
@@ -42,24 +41,27 @@ Je nach Vorlage der Beilagen und deren geplante Bearbeitung treten umfangreiche 
 
 ## Skizze des geplanten Ablaufs in der SBB
 Vorbemerkung: der Ablauf bezieht sich auf Ausgaben-Granularität
+
 * Anlegen eines (temporären) _Kitodo_-Vorgangs zwecks Scannen das vorliegenden Originals (z.B. gebundener Jahrgang)
 * Scannen des physikalisch vorliegenden Originals
 * Erfassung erster Metadaten mittels ``CreateMetadata`` (siehe unten)
- * es entstehen die Einträge in der _Kitodo_-Datenbank
- * es entstehen die _Kitodo_-XML-Metadaten im Filesystem
- * es entstehen die Verzeichnisse mit Images
-* temporärer Vorgang kann (nach Prüfung, ggf. automatisch) gelöscht werden
+    * es entstehen die Einträge in der _Kitodo_-Datenbank
+    * es entstehen die _Kitodo_-XML-Metadaten im Filesystem
+    * es entstehen die Verzeichnisse mit Images
+    * temporärer Vorgang kann (nach Prüfung, ggf. automatisch) gelöscht werden
 
 ### Programm CreateMetadata
-In Java geschriebenes Programm zur Metadaten-Erfassung mit grafischer Unterstützung. Damit zügiges Arbeiten ermöglicht wird, werden Derivate der Master-Images abgelegt 
+In Java geschriebenes Programm zur Metadaten-Erfassung mit grafischer Unterstützung. Damit zügiges Arbeiten ermöglicht wird, werden Derivate der Master-Images abgelegt
+ 
 * Vorteile
- * die oben aufgeführten Nachteile der Ausgaben-Granularität treten nicht auf
- * intuitives, zügiges Arbeiten (1 Jahrgang mit knapp 1000 Images in 20 Minuten)
- * Unterstützung der Fehlererkennung
- * funktionell getestet (European Newspaper Project)
- * nur relativ geringe Anpassungen der vorhandenen Software nötig
- * jederzeit an veränderte Anforderungen anpassbar (Java-Kompetenz ist im Haus vorhanden)
+    * die oben aufgeführten Nachteile der Ausgaben-Granularität treten nicht auf
+    * intuitives, zügiges Arbeiten (1 Jahrgang mit knapp 1000 Images in 20 Minuten)
+    * Unterstützung der Fehlererkennung
+    * funktionell getestet (European Newspaper Project)
+    * nur relativ geringe Anpassungen der vorhandenen Software nötig
+    * jederzeit an veränderte Anforderungen anpassbar (Java-Kompetenz ist im Haus vorhanden)
+ 
 * Nachteile
- * Vorverarbeitung (für Thumbnails) notwendig, könnte aber ggf. automatisiert werden
- * proprietäre Software
+    * Vorverarbeitung (für Thumbnails) notwendig, könnte aber ggf. automatisiert werden
+    * proprietäre Software
 
