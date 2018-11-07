@@ -20,6 +20,7 @@ In der Anwenderdokumentation der _Staatsbibliothek zu Berlin - Preußischer Kult
 In diesem Dokument wird beschrieben, wie anhängende Werke über den Befehl _Strukturelemente aus Opac hinzufügen_ die Struktur- und Metadaten einer anderen Publikation in einen Vorgang eingefügt werden können. 
 
 Siehe auch: 
+
 * [Strukturdaten bearbeiten](../../../Using/Anwenderhandbuch/V_1.11/Strukturdaten-bearbeiten.md)
 * [Metadaten bearbeiten](../../../Using/Anwenderhandbuch/V_1.11/Metadaten-bearbeiten.md)
 
@@ -30,6 +31,7 @@ Siehe auch:
 In diesem Dokument werden die Konfigurationsdateien von Kitodo.Production skizziert. Dieses Dokument eignet sich hervorragend, um Artikel für die Dateien im Wiki zu erstellen und um diese mit der Installationsanleitung, beziehungsweise den Beispiel-Dateien zu verknüpfen.   
 
 Siehe auch: 
+
 * [Installationsanleitung für Goobi.Production CE 1.10](https://github.com/kitodo/kitodo-production/wiki/Installationsanleitung-f%C3%BCr-Goobi.Production-CE-1.10)
 * [Regelsatz](../../../Using/Anwenderhandbuch/V_1.11/Regelsatz.md)
 * [goobi_opac.xml](https://github.com/kitodo/kitodo-production/blob/master/Goobi/config/goobi_opac.xml)
@@ -48,6 +50,7 @@ Produktionsvorlagen werden modulartig aus bekannten Schritten zusammengesetzt un
 Somit kann aus dem Namen bereits auf grundsätzliche Abläufe im Digitalisierungsworkflow geschlossen werden.
 
 Siehe auch:
+
 * [Produktionsvorlage](../../../Using/Anwenderhandbuch/V_1.11/Produktionsvorlage.md)
 * [Projektorganisation](../../../Using/Anwenderhandbuch/V_1.11/Projektorganisation.md)
 
@@ -64,6 +67,7 @@ In der SBB sollen keine unnötigen Projekte eingerichtet werden. Daher werden ne
 In der projects.xml-Konfigurationsdatei werden nur im begründeten Fall abweichende Projektfestlegungen definiert. 
 
 Siehe auch:
+
 * [Projekt](../../../Using/Anwenderhandbuch/V_1.11/Projekt.md)
 * [goobi_digitalCollections.xml](https://github.com/kitodo/kitodo-production/blob/master/Goobi/config/goobi_digitalCollections.xml)
 * [Projektorganisation](../../../Using/Anwenderhandbuch/V_1.11/Projektorganisation.md)
@@ -86,6 +90,7 @@ Um die Abwärtskompatibilität der Regelsätze zu gewährleisten, werden alle ei
 Zur Veranschaulichung wird eine [Regelsatz-Datei](SBB_Regelsatz_Drucke_Kommentiert_20160423.xml) bereitgestellt. **Achtung**: Dieser Regelsatz wird nicht zur praktischen Anwendung bereitgestellt! Ohne die ursprüngliche Kitodo.Production-Umgebung kann eine erfolgreiche Implementierung nicht garantiert werden. 
 
 Siehe auch:
+
 * [Regelsatz](../../../Using/Anwenderhandbuch/V_1.11/Regelsatz.md)
 * [Regelsatz XML Datei](../../../Using/Anwenderhandbuch/V_1.11/Regelsatz-XML-Datei.md)
 

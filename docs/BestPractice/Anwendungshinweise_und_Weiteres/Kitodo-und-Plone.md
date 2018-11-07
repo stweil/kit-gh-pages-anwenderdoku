@@ -12,4 +12,7 @@ Zusammengefasst lässt sich feststellen, dass es nicht möglich ist, Kitodo.Pres
 
 
 
-Siehe auch: [Kitodo.Presentation auf GitHub] (https://github.com/kitodo/kitodo-presentation), [Kitodo.Presentation auf Kitodo.org] (http://www.kitodo.org/software/kitodopresentation/)
+Siehe auch: 
+
+* [Kitodo.Presentation auf GitHub] (https://github.com/kitodo/kitodo-presentation)
+* [Kitodo.Presentation auf Kitodo.org] (http://www.kitodo.org/software/kitodopresentation/)
