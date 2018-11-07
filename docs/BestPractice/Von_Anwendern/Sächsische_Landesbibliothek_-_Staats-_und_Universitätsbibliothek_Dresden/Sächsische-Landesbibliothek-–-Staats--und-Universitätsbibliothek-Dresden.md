@@ -20,6 +20,7 @@ Der Workflow entspricht zum Großteil der [Anwenderdokumentation Kitodo.Producti
 Auf dieser Seite werden die Aufgaben aufgelistet, die in der SLUB angewendet werden. 
 
 Siehe auch:
+
 * [Bearbeitung Aufgabe](../../../Using/Anwenderhandbuch/V_1.11/Bearbeitung-Aufgabe.md)
 * [Aufgaben Einstellungen](Aufgaben-Einstellungen.md)
 
@@ -30,6 +31,7 @@ Siehe auch:
 Auf dieser Seite werden die konkreten Einstellungen der Aufgaben in einer Tabelle aufgelistet, wie sie in der SLUB angewendet werden. 
 
 Siehe auch:
+
 * [Aufgaben](../../../Using/Anwenderhandbuch/V_1.11/Aufgaben.md)
 * [Bearbeitung Aufgabe](../../../Using/Anwenderhandbuch/V_1.11/Bearbeitung-Aufgabe.md)
 
@@ -41,6 +43,7 @@ Auf dieser Seite wird eine Checkliste angeboten, die Eigenschaften und Aufgaben 
 Nicht alle Schritte müssen beachtet werden! Es bietet eine gute Übersicht, was bedacht werden muss/kann/soll. Die Varietät der Projekte erschwert es, ein allgemeingültiges und übersichtliches Dokument zu erstellen. 
 
 Siehe auch:
+
 * [Projektorganisation](../../../Using/Anwenderhandbuch/V_1.11/Projektorganisation.md#checkliste) 
 
 ---
@@ -49,6 +52,7 @@ Siehe auch:
 Auf dieser Seite werden die in der SLUB genutzten Benutzergruppen aufgelistet. 
 
 Siehe auch:
+
 * [Bearbeitung Benutzergruppen](../../../Using/Anwenderhandbuch/V_1.11/Bearbeitung-Benutzergruppen.md) 
 
 ---
@@ -63,7 +67,8 @@ Institutionsspezifische Angaben zum Laufzettel finden sich unter [Laufzettel / S
 
 Auf dieser Seite wird beschrieben, wie die LZA Validierung in der SLUB durchgeführt wird. 
 
-Siehe auch: 
+Siehe auch:
+ 
 * [Kitodo.Production und Langzeitarchivierung](../../Anwendungshinweise_und_Weiteres/Kitodo.Production-und-Langzeitarchivierung.md)
 
 ---
@@ -73,6 +78,7 @@ Siehe auch:
 Auf dieser Seite werden die OCR-Einstellungen in der SLUB beschrieben. 
 
 Siehe auch:
+
 * [OCR](../../../Using/Anwenderhandbuch/V_1.11/OCR.md)
 
 ---
@@ -82,6 +88,7 @@ Siehe auch:
 In diesem Dokument werden Leitlinien zur Struktur- und Metadatenvergabe in der SLUB erläutert. 
 
 Siehe auch:
+
 * [Metadaten bearbeiten](../../../Using/Anwenderhandbuch/V_1.11/Metadaten-bearbeiten.md)
 * [Strukturdaten bearbeiten](../../../Using/Anwenderhandbuch/V_1.11/Strukturdaten-bearbeiten.md)
 
@@ -90,6 +97,7 @@ Siehe auch:
 ##### _[Umbenennung von Images in der SLUB](../../../Using/Anwenderhandbuch/V_1.11/Umbenennung-von-Images-in-der-SLUB.md)_
 
 Siehe auch: 
+
 * [Korrekturmeldungen](../../../Using/Anwenderhandbuch/V_1.11/Korrekturmeldungen.md)
 
 ---
@@ -99,6 +107,7 @@ Siehe auch:
 Auf dieser Seite wird skizziert, wie Zeitungen in der SLUB bearbeitet werden. 
 
 Siehe auch: 
+
 * [Neuen Vorgang anlegen I Zeitungen](../../../Using/Anwenderhandbuch/V_1.11/Neuen-Vorgang-anlegen-I-Zeitungen.md)
 * [Diskussionen Anwendung Zeitungsmodul](../../Anwendungshinweise_und_Weiteres/Diskussionen-Anwendung--Zeitungsmodul.md)
 
