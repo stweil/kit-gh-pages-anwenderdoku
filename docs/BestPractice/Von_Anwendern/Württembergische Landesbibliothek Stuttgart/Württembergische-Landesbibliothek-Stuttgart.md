@@ -19,6 +19,8 @@ In der Anwenderdokumentation der Württembergischen Landesbibliothek Stuttgart (
 
 In diesem Dokument wird die Bearbeitung von Digitalisaten in Kitodo.Production in der WLB beschrieben. 
 
-Siehe auch: [Neuen Vorgang anlegen](https://github.com/kitodo/kitodo-production/wiki/Neuen-Vorgang-anlegen), [Erfassen der Meta und Strukturdaten](https://github.com/kitodo/kitodo-production/wiki/Erfassen-der-Meta--und-Strukturdaten)
+Siehe auch:
+* [Neuen Vorgang anlegen](../../../Using/Anwenderhandbuch/V_1.11/Neuen-Vorgang-anlegen.md)
+* [Erfassen der Meta und Strukturdaten](../../../Using/Anwenderhandbuch/V_1.11/Erfassen-der-Meta--und-Strukturdaten.md)
 
 ---

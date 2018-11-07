@@ -26,5 +26,5 @@ Wir unterstützen den Community-Ansatz von Kitodo, indem wir uns aktiv an der We
 
 ##### _Laufzettel_
 
-Institutionsspezifische Angaben zum Laufzettel finden sich unter [Laufzettel / UB Mannheim](../../../Using/AusWiki//Laufzettel.md). 
+Institutionsspezifische Angaben zum Laufzettel finden sich unter [Laufzettel / UB Mannheim](../../../Using/Anwenderhandbuch/V_1.11/Laufzettel.md). 
 

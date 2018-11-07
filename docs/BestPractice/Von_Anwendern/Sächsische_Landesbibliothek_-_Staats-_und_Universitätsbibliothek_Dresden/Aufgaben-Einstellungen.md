@@ -1,4 +1,4 @@
-Auf dieser Seite werden die Einstellungen der [Aufgaben](https://github.com/kitodo/kitodo-production/wiki/Aufgaben) einer Produktionsvorlage beispielhaft aufgeführt. Dies soll zeigen, welche Aktionen in einer Aufgabe möglich sind. So wird durch Aktivierung von _Images lesen_ und _Images schreiben_ die Verlinkung ins Homeverzeichnis ermöglicht, um Images nach Kitodo.Production verschieben zu können. Durch Aktivierung von _Metadaten_ wird der Metadateneditor gestartet, wenn eine Aufgabe übernommen wird.
+Auf dieser Seite werden die Einstellungen der [Aufgaben](../../../Using/Anwenderhandbuch/V_1.11/Aufgaben.md) einer Produktionsvorlage beispielhaft aufgeführt. Dies soll zeigen, welche Aktionen in einer Aufgabe möglich sind. So wird durch Aktivierung von _Images lesen_ und _Images schreiben_ die Verlinkung ins Homeverzeichnis ermöglicht, um Images nach Kitodo.Production verschieben zu können. Durch Aktivierung von _Metadaten_ wird der Metadateneditor gestartet, wenn eine Aufgabe übernommen wird.
 Kurzum, kann aus folgender Tabelle eine Einstellung übernommen werden, die die grundlegenden Funktionen der Aufgaben ermöglicht. 
 
 
