@@ -19,7 +19,10 @@ In der Anwenderdokumentation der _Staats- und Universitätsbibliothek Hamburg Ca
 
 In diesem Dokument wird beschrieben, wie Workflows definiert werden und welche Benutzergruppen verwendet werden. 
 
-Siehe auch: [Produktionsvorlage](https://github.com/kitodo/kitodo-production/wiki/Produktionsvorlage),  [Benutzergruppen](https://github.com/kitodo/kitodo-production/wiki/Benutzergruppen), [Status der Aufgaben](https://github.com/kitodo/kitodo-production/wiki/Status-der-Aufgaben)
+Siehe auch:
+* [Produktionsvorlage](../../../Using/Anwenderhandbuch/V_1.11/Produktionsvorlage.md)
+* [Benutzergruppen](../../../Using/Anwenderhandbuch/V_1.11/Benutzergruppen.md)
+* [Status der Aufgaben](../../../Using/Anwenderhandbuch/V_1.11/Status-der-Aufgaben.md)
 
 ---
 
@@ -27,7 +30,9 @@ Siehe auch: [Produktionsvorlage](https://github.com/kitodo/kitodo-production/wik
 
 In diesem Dokument wird beschrieben, wie Vorgänge (Monografien, mehrbändige Werke, Zeitschriften) in Kitodo.Production angelegt werden und wie Vorgänge gelöscht werden. 
 
-Siehe auch: [Neuen Vorgang anlegen](https://github.com/kitodo/kitodo-production/wiki/Neuen-Vorgang-anlegen), [Löschen von Vorgängen](https://github.com/kitodo/kitodo-production/wiki/L%C3%B6schen-von-Vorg%C3%A4ngen)
+Siehe auch:
+* [Neuen Vorgang anlegen](../../../Using/Anwenderhandbuch/V_1.11/Neuen-Vorgang-anlegen.md)
+* [Löschen von Vorgängen](../../../Using/Anwenderhandbuch/V_1.11/Löschen-von-Vorgängen.md)
 
 ---
 
@@ -35,7 +40,8 @@ Siehe auch: [Neuen Vorgang anlegen](https://github.com/kitodo/kitodo-production/
 
 In diesem Dokument wird beschrieben, wie die Scan-Aufgabe übernommen und abgeschlossen wird. Zudem enthält es Scanner-spezifische Hinweise. 
 
-Siehe auch: [Scannen oder Images einfügen](https://github.com/kitodo/kitodo-production/wiki/Scannen-oder-Images-einf%C3%BCgen) 
+Siehe auch:
+* [Scannen oder Images einfügen](../../../Using/Anwenderhandbuch/V_1.11/Scannen-oder-Images-einfügen.md) 
 
 ---
 
@@ -43,7 +49,10 @@ Siehe auch: [Scannen oder Images einfügen](https://github.com/kitodo/kitodo-pro
 
 In diesem Dokument werden die Arbeitsschritte Paginierung, sowie Struktur- und Metadatenvergabe beschrieben. Neben der Funktionsbeschreibung enthält das Dokument auch Hinweise zur praktischen Anwendung (zum Beispiel fingierte Zählung: ja oder nein). 
 
-Siehe auch: [Paginieren](https://github.com/kitodo/kitodo-production/wiki/Paginieren), [Strukturdaten bearbeiten](https://github.com/kitodo/kitodo-production/wiki/Strukturdaten-bearbeiten), [Metadaten bearbeiten](https://github.com/kitodo/kitodo-production/wiki/Metadaten-bearbeiten)
+Siehe auch: 
+* [Paginieren](../../../Using/Anwenderhandbuch/V_1.11/Paginieren.md)
+* [Strukturdaten bearbeiten](../../../Using/Anwenderhandbuch/V_1.11/Strukturdaten-bearbeiten.md)
+* [Metadaten bearbeiten](../../../Using/Anwenderhandbuch/V_1.11/Metadaten-bearbeiten.md)
 
 ---
 
@@ -51,7 +60,8 @@ Siehe auch: [Paginieren](https://github.com/kitodo/kitodo-production/wiki/Pagini
 
 In diesem Dokument wird die Suche über Filter beschrieben. 
 
-Siehe auch: [Suche und Filtern](https://github.com/kitodo/kitodo-production/wiki/Suche-und-Filtern)
+Siehe auch:
+* [Suche und Filtern](../../../Using/Anwenderhandbuch/V_1.11/Suche-und-Filtern.md)
 
 ---
 
