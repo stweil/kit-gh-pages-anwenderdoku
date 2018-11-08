@@ -1,6 +1,7 @@
-site_name: Anwenderdoku
+site_name: Kitodo.Production Anwenderdokumenation
 
 # repo_url: https://github.com/Ishiido/kit-gh-pages-anwenderdoku
 
 pages:
 
+theme: readthedocs
