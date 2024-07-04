@@ -42,77 +42,77 @@ Großgeschriebene Textteile (TITLE_STEP, USER_NAME,...) sind Variable, die vor d
 
  
 ### addUser
-Sriptname: *addUser*
+Skriptname: *addUser*
 
 Script: `action:addUser "steptitle:TITLE_STEP" username:USER_NAME`
 
 Erläuterung: Mit diesem Befehl kann den Vorgängen eines Treffersets einer Aufgabe ein bestimmter Benutzer zugewiesen werden. 
 
 ### addUserGroup
-Sriptname: *addUserGroup*
+Skriptname: *addUserGroup*
 
 Script: `action:addUserGroup "steptitle:TITLE_STEP" group:GROUP_NAME`
 
 Erläuterung: Mit diesem Befehl kann den Vorgängen eines Treffersets einer Aufgabe eine bestimmte Benutzergruppe zugewiesen werden. 
 
 ### deleteTiffHeaderFile
-Sriptname: *deleteTiffHeaderFile*
+Skriptname: *deleteTiffHeaderFile*
 
 Script:	`action:deleteTiffHeaderFile`
 
 Erläuterung: Zu diesem Befehl liegen keine gesicherten Informationen vor. 
 
 ### swapSteps
-Sriptname: *swapSteps*
+Skriptname: *swapSteps*
 
 Script:	`action:swapSteps swap1nr:ORDER_NUMBER_FIRST_STEP "swap1title:TITLE_FIRST_STEP"swap2nr:ORDER_NUMBER_SECOND_STEP "swap2title:TITLE_SECOND_STEP"`
 
 Erläuterung: Zu diesem Befehl liegen keine gesicherten Informationen vor.
 
 ### importFromFileSystem
-Sriptname: *importFromFileSystem*
+Skriptname: *importFromFileSystem*
 
 Script:	`action:importFromFileSystem sourcefolder:SOURCE_FOLDER`
 
 Erläuterung: Zu diesem Befehl liegen keine gesicherten Informationen vor.
 
 ### swapProzessesOut
-Sriptname: *swapProzessesOut*
+Skriptname: *swapProzessesOut*
 
 Script: `action:swapProzessesOut`
 
 Erläuterung: Zu diesem Befehl liegen keine gesicherten Informationen vor. -> Das Script scheint nicht zu funktionieren: https://bugs.launchpad.net/goobi-production/+bug/789027
 
 ### setRuleset
-Sriptname: *setRuleset*
+Skriptname: *setRuleset*
 
 Script:	`action:setRuleset "ruleset:TITLE_RULESET"`
 
 Erläuterung: Mit diesem Befehl kann den Vorgängen eines Treffersets ein anderer Regelsatz zugewiesen werden. 
 
 ### swapProzessesIn
-Sriptname: *swapProzessesIn*
+Skriptname: *swapProzessesIn*
 
 Script:	`action:swapProzessesIn`
 
 Erläuterung: Zu diesem Befehl liegen keine gesicherten Informationen vor.
 
 ### deleteStep
-Sriptname: *deleteStep*
+Skriptname: *deleteStep*
 
 Script:	`action:deleteStep "steptitle:TITLE_STEP"`
 
 Erläuterung: Mit diesem Befehl kann in den Vorgängen eines Treffersets eine Aufgabe gelöscht werden.
 
 ### addStep
-Sriptname: *addStep*
+Skriptname: *addStep*
 
 Script:	`action:addStep "steptitle:TITLE_STEP" number:NUMBER_1_TO_?`
 
 Erläuterung: Mit diesem Befehl kann den Vorgängen eines Treffersets eine weitere Aufgabe und deren Reihenfolge hinzugefügt werden. 
 
 ### setStepStatus
-Sriptname: *setStepStatus*
+Skriptname: *setStepStatus*
 
 Script:	`action:setStepStatus "steptitle:TITLE_STEP" status:NUMBER_0_TO_3`
 
@@ -124,21 +124,21 @@ Erläuterung: Mit diesem Befehl kann in den Vorgängen eines Treffersets der Sta
 - `3` = Abgeschlossen
 
 ### setStepNumber
-Sriptname: *setStepNumber*
+Skriptname: *setStepNumber*
 
 Script: `action:setStepNumber "steptitle:TITLE_STEP" number:NUMBER_1_TO_?`
 
 Erläuterung: Mit diesem Befehl kann in den Vorgängen eines Treffersets die Reihenfolge (Nummer) einer Aufgabe geändert werden. 
 
 ### addModuleToStep
-Sriptname: *addModuleToStep*
+Skriptname: *addModuleToStep*
 
 Script: `action:addModuleToStep "steptitle:TITLE_STEP" "module:MODULE_NAME"`
 
 Erläuterung: Zu diesem Befehl liegen keine gesicherten Informationen vor.
 
 ### addShellScriptToStep
-Sriptname: *addShellScriptToStep*
+Skriptname: *addShellScriptToStep*
 
 Script: `action:addShellScriptToStep "steptitle:TITLE_STEP" "label:LABEL_FOR_SCRIPT" "script:PATH_TO_SCRIPT"`
 
@@ -148,7 +148,7 @@ Erläuterung: Mit diesem Befehl kann in den Vorgängen eines Treffersets der "Sc
 - `script` = Skriptpfad
 
 ### setTaskProperty
-Sriptname: *setTaskProperty*
+Skriptname: *setTaskProperty*
 
 Script: `action:setTaskProperty "steptitle:TITLE_STEP" property:metadata_readimages_writeimages_validate_exportdms_automatic_batch value:true_OR_false`
 
@@ -169,7 +169,7 @@ Aktivierung/Deaktivierung
 
 
 ### tiffWriter
-Sriptname: *tiffWriter*
+Skriptname: *tiffWriter*
 
 Script:	`action:tiffWriter`
 
@@ -179,14 +179,14 @@ Erläuterung: Zu diesem Befehl liegen keine gesicherten Informationen vor.
 
 **ACHTUNG: Dieses Script ist in neuen Kitodo-Versionen nicht mehr unter "KitodoScript ausführen" vorhanden.**
 
-Sriptname: *export*
+Skriptname: *export*
 
 Script:	`action:export exportImages:{true|false} exportOcr:{false|true}`
 
 Erläuterung: Mit diesem Befehl werden die Vorgänge eines Trefferset exportiert. Über die Parameter `exportImages` und `exportOcr` kann bestimmt werden, ob die Bilddaten und / oder OCR Daten mit exportiert werden oder nicht.
 
 ### exportDms
-Sriptname: *exportDms*
+Skriptname: *exportDms*
 
 Script:	`action:exportDms exportImages:false`
 
